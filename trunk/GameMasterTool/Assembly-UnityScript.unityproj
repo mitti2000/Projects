@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\GUIrescaler\Script\GUIrescaler.js" />
      <Compile Include="Assets\Necromancer GUI\GUITestScript.js" />
+     <Compile Include="Assets\Scripts\ListSortingTest.js" />
      <Compile Include="Assets\Scripts\PlayerPrefsX.js" />
      <Compile Include="Assets\Scripts\TestArraySave.js" />
      <Compile Include="Assets\Scripts\mainScript.js" />
