@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\mainScript.js">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ListSortingTest.js">
     <Files>
-      <File FileName="Assets\Scripts\mainScript.js" Line="245" Column="88" />
+      <File FileName="Assets\Scripts\ListSortingTest.js" Line="119" Column="24" />
+      <File FileName="Assets\Scripts\mainScript.js" Line="70" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
