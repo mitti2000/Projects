@@ -76,6 +76,7 @@ var tempMin :int = 1;
 var sortExist : boolean = false;
 var iniCount : int;
 var sortDiff : int;
+var tempMinChar : int =0;
 
 
 function Start () {
@@ -83,7 +84,7 @@ function Start () {
 	//Set Player 0
 	playerNames[0] = "empty";
 	healthPoints[0]=0;
-	initiative[0]=1;
+	initiative[0]=0;
 	npc[0]=false;
 	
 	//Set Player 1 called "Name"
@@ -98,6 +99,27 @@ function Start () {
 	initiative[1] = 0;
 	npc[1]=false;
 	
+	//Temporary for Delete Testing
+	System.Array.Resize.<String>(playerNames,playerNames.length+3);
+	System.Array.Resize.<int>(healthPoints,healthPoints.length+3);
+	System.Array.Resize.<int>(initiative,initiative.length+3);
+	System.Array.Resize.<boolean>(npc,npc.length+3);
+	System.Array.Resize.<int>(charSort,charSort.length+3);
+	
+	playerNames[2] = "Gilliath";
+	healthPoints[2] = 15;
+	initiative[2] = 10;
+	npc[2]=false;
+	
+	playerNames[3] = "Emgrisch";
+	healthPoints[3] = 25;
+	initiative[3] = 19;
+	npc[3]=false;
+	
+	playerNames[4] = "Goblin 1";
+	healthPoints[4] = 11;
+	initiative[4] = 13;
+	npc[4]=true;
 		
 	//Set Display Size
 	guiSizeDiceResultWidth = Screen.width*0.3;
@@ -147,37 +169,13 @@ function Update(){
 			scrollPositionCharacter.y += touch.deltaPosition.y;
 			}
 		}
+	if (Input.GetKeyDown(KeyCode.Escape)) {
+ 		Application.Quit(); 
+ 		}
 	}
 
 function OnGUI (){
-	//Get amount of Initiative Characters and set length of sorting Array
-	/*
-	for(var a=0;a<playerNames.Length;a++){
-		if(initiative[a]>0) iniCount++;
-		}
-	sortDiff=(charSort.Length-iniCount)-1;
-	if (charSort.Length!=iniCount) System.Array.Resize.<int>(charSort,charSort.length-sortDiff);
-	Debug.Log(charSort.Length);
-	iniCount=0;
-	*/
-	//Sort List
-	for (var k=1;k<charSort.Length;k++){
-		for (var j=1; j<playerNames.Length; j++){
-			if(initiative[j]<=minValue && initiative[j]>=tempMin){
-				for(var l=1; l<=k; l++){
-					if(j==charSort[l]) sortExist = true;
-					}
-				if (!sortExist){
-					minValue=initiative[j];
-					charSort[k]=j;
-					}
-				}
-			sortExist = false;
-			}
-		tempMin = minValue;
-		minValue = 1000;
-		}
-	tempMin = 1;
+	SortList();
 	
 	//set GUI Style for Dice Area
 	GUI.skin = styleDice;
@@ -213,9 +211,9 @@ function OnGUI (){
 	//Group for Toolbar
 	GUI.skin = styleToolbar;
 	GUILayout.BeginArea(Rect(Screen.width*0.03,guiSizeSelectBeginY,guiSizeDiceWidth, guiSizeSelectHeight));
-		GUILayout.BeginHorizontal();
-			gridSelectedButton = GUILayout.Toolbar (gridSelectedButton, gridStrings);
-		GUILayout.EndHorizontal();
+	//	GUILayout.BeginHorizontal();
+	//		gridSelectedButton = GUILayout.Toolbar (gridSelectedButton, gridStrings);
+	//	GUILayout.EndHorizontal();
 	GUILayout.EndArea();
 	
 	//***********************************************************************************************************************
@@ -247,8 +245,7 @@ function OnGUI (){
 									GUILayout.Label(healthPoints[charSort[i]].ToString(), styleInitiative.customStyles[1],GUILayout.Width(Screen.width*0.125));
 									GUILayout.Label(initiative[charSort[i]].ToString(), styleInitiative.customStyles[1],GUILayout.Width(Screen.width*0.125));
 									if(npc[charSort[i]]==true)GUILayout.Label("X", styleInitiative.customStyles[1],GUILayout.Width(Screen.width*0.125));
-									//GUILayout.Label(""+charSort[i]);
-									//GUILayout.Label("Sort"+i);
+									else GUILayout.Label("", styleInitiative.customStyles[1],GUILayout.Width(Screen.width*0.125));
 								GUILayout.EndHorizontal();
 								GUILayout.Space(guiSizeInitiativeHeight*0.01);
 								}
@@ -281,13 +278,13 @@ function OnGUI (){
 				//Character Selection Left/Right
 				GUILayout.BeginHorizontal();
 					GUILayout.Space(Screen.width*0.25);
-					if (selectedCharacter>1){if(GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.05))) selectedCharacter--;}
+					if (selectedCharacter>1){if(GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.05))) NextCharacter(selectedCharacter,0);}
 					else GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.05));
-					if(selectedCharacter < playerNames.Length-1){if(GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.05))) selectedCharacter++;}
+					if(selectedCharacter < playerNames.Length-1){if(GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.05))) NextCharacter(selectedCharacter,1);}
 					else GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.05));
 					GUILayout.Label(playerNames[selectedCharacter], styleCharacter.customStyles[0], GUILayout.Width(Screen.width*0.4));
-					
 				GUILayout.EndHorizontal();
+				
 				//Character Editor
 				GUILayout.BeginVertical();
 					GUILayout.BeginHorizontal();
@@ -315,9 +312,17 @@ function OnGUI (){
 						else GUILayout.Label(initiative[selectedCharacter].ToString(), styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2));
 						GUILayout.Space(Screen.width*0.02);
 						if(initiative[selectedCharacter]<1) GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.05));
-					  	else {if(GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.05))) initiative[selectedCharacter]--;}
+					  	else {
+					  		if(GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.05))){
+					  			initiative[selectedCharacter]--;
+					  			SortList();
+					  			}
+					  		}
 					  	GUILayout.Space(Screen.width*0.02);
-					  	if(GUILayout.Button("", styleCharacter.customStyles[6],GUILayout.Width(Screen.width*0.05))) initiative[selectedCharacter]++;
+					  	if(GUILayout.Button("", styleCharacter.customStyles[6],GUILayout.Width(Screen.width*0.05))){
+					  		initiative[selectedCharacter]++;
+					  		SortList();
+					  		}
 					  	GUILayout.Space(Screen.width*0.02);
 					  	if(GUILayout.Button("reset", styleCharacter.customStyles[7])) initiative[selectedCharacter]=0;
 						GUILayout.FlexibleSpace();
@@ -333,7 +338,7 @@ function OnGUI (){
 						GUILayout.FlexibleSpace();
 						if(GUILayout.Button("Neu", styleCharacter.customStyles[8])) AddNewCharacter();
 						GUILayout.Space(Screen.width*0.1);
-						GUILayout.Button("Delete", styleCharacter.customStyles[8]);
+						if(GUILayout.Button("Delete", styleCharacter.customStyles[8])) DeleteCharacter(selectedCharacter);
 						GUILayout.FlexibleSpace();
 					GUILayout.EndHorizontal();
 				GUILayout.EndVertical();
@@ -382,10 +387,63 @@ function AddNewCharacter(){
 	System.Array.Resize.<boolean>(npc,npc.length+1);
 	npc[playerNames.Length-1] = true;
 	selectedCharacter = playerNames.Length-1;
+	SortList();
 	}
 	
+//Sort List
+function SortList(){
+	for (var x=0;x<charSort.Length;x++) charSort[x]=0;
 
-	
+	for (var k=1;k<charSort.Length;k++){
+		for (var j=1; j<playerNames.Length; j++){
+			if(initiative[j]<=minValue && initiative[j]>=tempMin){
+				for(var l=1; l<charSort.Length; l++){
+					if(charSort[l]==j) sortExist = true;
+					else if (charSort[l]!=j && !sortExist) sortExist=false;
+					}
+				if (!sortExist){
+					minValue=initiative[j];
+					tempMinChar=j;
+					}
+				sortExist = false;
+				}
+			}
+		if(minValue<1000) tempMin = minValue;
+		minValue = 1000;
+		if(tempMinChar>0)charSort[k]=tempMinChar;
+		tempMinChar=0;
+		}
+	tempMinChar=0;
+	tempMin = 1;
+	}
+
+
+//Delete Character or NPC
+function DeleteCharacter(character:int){
+	playerNames[character]="";
+	healthPoints[character]=0;
+	initiative[character]=0;
+	}
+
+function NextCharacter(character:int,direction:int){
+	switch(direction){
+		case 0:
+		for(var i=1; i<=character;i++){
+			if(playerNames[character-i]!=""){
+				selectedCharacter=character-i;
+				return;
+				}
+			}
+		case 1:
+		for(var j=1; j<=playerNames.Length-character;j++){
+			if(playerNames[character+j]!=""){
+				selectedCharacter=character+j;
+				return;
+				}
+			}
+		}
+	}
+		
 	
 	
 	
