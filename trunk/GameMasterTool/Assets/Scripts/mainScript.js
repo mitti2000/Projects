@@ -82,7 +82,7 @@ var tempMinChar : int =0;
 function Start () {
 
 	//Set Player 0
-	playerNames[0] = "empty";
+	playerNames[0] = "";
 	healthPoints[0]=0;
 	initiative[0]=0;
 	npc[0]=false;
@@ -113,7 +113,7 @@ function Start () {
 	
 	playerNames[3] = "Emgrisch";
 	healthPoints[3] = 25;
-	initiative[3] = 19;
+	initiative[3] = 25;
 	npc[3]=false;
 	
 	playerNames[4] = "Goblin 1";
@@ -255,15 +255,14 @@ function OnGUI (){
 					GUILayout.BeginHorizontal();
 						GUILayout.FlexibleSpace();
 						if(GUILayout.Button("Kampfbeginn", styleInitiative.customStyles[2])) {
+							InitiativeBeginFight();
 							fight = true;
-							activeCharacter=playerNames.Length-1;
 							}
 						if(GUILayout.Button("Nächster", styleInitiative.customStyles[2])&& fight){
-							if(activeCharacter>1)activeCharacter--;
-							else activeCharacter=playerNames.Length-1;
+							InitiativeNextCharacter(activeCharacter);
 							}
 						if(GUILayout.Button("Kampfende",styleInitiative.customStyles[2])){
-							activeCharacter=playerNames.Length;
+							activeCharacter=0;
 							fight = false;
 							}
 						GUILayout.FlexibleSpace();
@@ -414,35 +413,83 @@ function SortList(){
 		tempMinChar=0;
 		}
 	tempMinChar=0;
-	tempMin = 1;
+	tempMin = 1; 
 	}
 
 
 //Delete Character or NPC
 function DeleteCharacter(character:int){
+	if(character==1){
+		playerNames[1]="Name";
+		healthPoints[1]=0;
+		initiative[1]=0;
+		return;
+		}
 	playerNames[character]="";
 	healthPoints[character]=0;
 	initiative[character]=0;
+	if(character==playerNames.Length-1){
+		for(var a=playerNames.Length-1;a>0;a--){
+			if(playerNames[a]!=""){
+				selectedCharacter=a;
+				break;
+				}
+			}
+		}
+	else{
+		for(var b=character;b<playerNames.Length;b++){
+			if(playerNames[b]!=""){
+				selectedCharacter=b;
+				break;
+				}
+			}
+		selectedCharacter=charSort[1];
+		}
 	}
 
+//Switch through the Character in the character editor
 function NextCharacter(character:int,direction:int){
 	switch(direction){
 		case 0:
-		for(var i=1; i<=character;i++){
-			if(playerNames[character-i]!=""){
-				selectedCharacter=character-i;
+		for(var i=character-1;i>0;i--){
+			if(playerNames[i]!=""){
+				selectedCharacter=i;
 				return;
 				}
 			}
 		case 1:
-		for(var j=1; j<=playerNames.Length-character;j++){
-			if(playerNames[character+j]!=""){
-				selectedCharacter=character+j;
+		for(var j=character+1; j<playerNames.Length;j++){
+			if(playerNames[j]!=""){
+				selectedCharacter=j;
 				return;
 				}
 			}
 		}
 	}
+
+//Set active Character to the one with the highest Initiative
+function InitiativeBeginFight(){
+	for(var a=charSort.Length-1;a>0;a--){
+		if(charSort[a]!=0){
+			activeCharacter=a;
+			break;
+			}
+		}
+	}
+
+//Set the active Character to the one next in the initiative order
+function InitiativeNextCharacter(character:int){
+	 if(activeCharacter>1)activeCharacter--;
+	 else {
+	 	for(var a=charSort.Length-1;a>=0;a--){
+	 		if(charSort[a]!=0){
+				activeCharacter=a;
+				break;
+				}
+			}
+		}
+	}
+	
 		
 	
 	
