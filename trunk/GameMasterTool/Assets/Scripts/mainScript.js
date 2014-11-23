@@ -124,12 +124,12 @@ function Start () {
 	//Set Display Size
 	guiSizeDiceResultWidth = Screen.width*0.3;
 	guiSizeDiceResultHeight = Screen.height*0.2;
-	guiSizeDiceWidth = Screen.width*0.67;
+	guiSizeDiceWidth = Screen.width*0.63;
 	guiSizeDiceHeight = Screen.height*0.2;
-	guiSizeDiceBeginX = Screen.width*0.3;
+	guiSizeDiceBeginX = Screen.width*0.33;
 	guiSizeSelectHeight = Screen.height*0.04;
 	guiSizeSelectBeginY = guiSizeDiceHeight;
-	guiSizeInitiativeHeight = Screen.height*0.5;
+	guiSizeInitiativeHeight = Screen.height*0.45;
 	guiSizeInitiativeBeginY = guiSizeSelectBeginY + guiSizeSelectHeight;
 	guiSizeCharacterHeight = Screen.height - guiSizeDiceHeight - guiSizeSelectHeight-guiSizeInitiativeHeight;
 	guiSizeCharacterBeginY = guiSizeInitiativeBeginY + guiSizeInitiativeHeight;
@@ -153,6 +153,7 @@ function Start () {
 	styleCharacter.customStyles[7].fontSize= Mathf.RoundToInt (fontSizeCharButton * Screen.width / (defaultWidth * 1.0));
 	styleCharacter.customStyles[3].fontSize= Mathf.RoundToInt (fontSizeCharTable * Screen.width / (defaultWidth * 1.0));
 	styleCharacter.customStyles[4].fontSize= Mathf.RoundToInt (fontSizeCharEditor * Screen.width / (defaultWidth * 1.0));
+	styleCharacter.customStyles[8].fontSize= Mathf.RoundToInt (fontSizeCharButton * Screen.width / (defaultWidth * 1.0));
 	
 	//Set Font Sizes for Initiative Table
 	styleInitiative.customStyles[0].fontSize = Mathf.RoundToInt (fontSizeInitiativeTitle * Screen.width / (defaultWidth * 1.0));
@@ -183,7 +184,7 @@ function OnGUI (){
 	GUI.Box(Rect(0,0,Screen.width, Screen.height),"");
 	//***********************************************************************************************************************
 	//Group for Dice Rolling
-	GUILayout.BeginArea (Rect (Screen.width*0.03,0,guiSizeDiceResultWidth,guiSizeDiceResultHeight));
+	GUILayout.BeginArea (Rect (Screen.width*0.03,guiSizeSelectHeight/2,guiSizeDiceResultWidth,guiSizeDiceResultHeight));
 		GUILayout.BeginVertical();
 			GUILayout.Label("Würfelwurf",styleDice.customStyles[2]);
 			GUILayout.Label(diceResult,styleDice.customStyles[0]);
@@ -191,7 +192,7 @@ function OnGUI (){
 			GUILayout.Label(lastRolls[0]+lastRolls[1]+lastRolls[2]+lastRolls[3]+lastRolls[4],styleDice.customStyles[1]);
 		GUILayout.EndVertical();
 	GUILayout.EndArea();
-	GUILayout.BeginArea (Rect (guiSizeDiceBeginX,0,guiSizeDiceWidth,guiSizeDiceHeight));	
+	GUILayout.BeginArea (Rect (guiSizeDiceBeginX,guiSizeSelectHeight/2,guiSizeDiceWidth,guiSizeDiceHeight));	
 		GUILayout.BeginVertical();
 			GUILayout.BeginHorizontal();
 				if(GUILayout.Button("W2 ",styleDice.customStyles[4])) RollDice(2);
@@ -210,7 +211,7 @@ function OnGUI (){
 	//***********************************************************************************************************************
 	//Group for Toolbar
 	GUI.skin = styleToolbar;
-	GUILayout.BeginArea(Rect(Screen.width*0.03,guiSizeSelectBeginY,guiSizeDiceWidth, guiSizeSelectHeight));
+	GUILayout.BeginArea(Rect(Screen.width*0.03,guiSizeSelectBeginY,guiSizeDiceWidth, guiSizeSelectHeight/2));
 	//	GUILayout.BeginHorizontal();
 	//		gridSelectedButton = GUILayout.Toolbar (gridSelectedButton, gridStrings);
 	//	GUILayout.EndHorizontal();
@@ -274,18 +275,21 @@ function OnGUI (){
 			//Fight Character Editor
 			GUI.skin = styleCharacter;
 			GUILayout.BeginArea(Rect(0,guiSizeCharacterBeginY,Screen.width, guiSizeCharacterHeight));
-				//Character Selection Left/Right
-				GUILayout.BeginHorizontal();
-					GUILayout.Space(Screen.width*0.25);
-					if (selectedCharacter>1){if(GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.05))) NextCharacter(selectedCharacter,0);}
-					else GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.05));
-					if(selectedCharacter < playerNames.Length-1){if(GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.05))) NextCharacter(selectedCharacter,1);}
-					else GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.05));
-					GUILayout.Label(playerNames[selectedCharacter], styleCharacter.customStyles[0], GUILayout.Width(Screen.width*0.4));
-				GUILayout.EndHorizontal();
-				
-				//Character Editor
 				GUILayout.BeginVertical();
+					GUILayout.Space(guiSizeCharacterHeight*0.01);
+					//Character Selection Left/Right
+					GUILayout.BeginHorizontal();
+						GUILayout.Space(Screen.width*0.25);
+						if (selectedCharacter>1){if(GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.1))) NextCharacter(selectedCharacter,0);}
+						else GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.1));
+						GUILayout.Space(Screen.width*0.1);
+						if(selectedCharacter < playerNames.Length-1){if(GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.1))) NextCharacter(selectedCharacter,1);}
+						else GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.1));
+						GUILayout.Label(playerNames[selectedCharacter], styleCharacter.customStyles[0], GUILayout.Width(Screen.width*0.4));
+					GUILayout.EndHorizontal();
+					GUILayout.Space(guiSizeCharacterHeight*0.05);
+					
+					//Character Editor
 					GUILayout.BeginHorizontal();
 						GUILayout.Space(Screen.width*0.01);
 						GUILayout.Label("Name:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2));
@@ -340,6 +344,7 @@ function OnGUI (){
 						if(GUILayout.Button("Delete", styleCharacter.customStyles[8])) DeleteCharacter(selectedCharacter);
 						GUILayout.FlexibleSpace();
 					GUILayout.EndHorizontal();
+					GUILayout.FlexibleSpace();
 				GUILayout.EndVertical();
 			GUILayout.EndArea();
 			break;
