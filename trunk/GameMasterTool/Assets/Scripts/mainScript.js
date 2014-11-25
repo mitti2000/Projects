@@ -98,38 +98,16 @@ function Start () {
 	healthPoints[1] = 0;
 	initiative[1] = 0;
 	npc[1]=false;
-	
-	//Temporary for Delete Testing
-	System.Array.Resize.<String>(playerNames,playerNames.length+3);
-	System.Array.Resize.<int>(healthPoints,healthPoints.length+3);
-	System.Array.Resize.<int>(initiative,initiative.length+3);
-	System.Array.Resize.<boolean>(npc,npc.length+3);
-	System.Array.Resize.<int>(charSort,charSort.length+3);
-	
-	playerNames[2] = "Gilliath";
-	healthPoints[2] = 15;
-	initiative[2] = 10;
-	npc[2]=false;
-	
-	playerNames[3] = "Emgrisch";
-	healthPoints[3] = 25;
-	initiative[3] = 25;
-	npc[3]=false;
-	
-	playerNames[4] = "Goblin 1";
-	healthPoints[4] = 11;
-	initiative[4] = 13;
-	npc[4]=true;
 		
 	//Set Display Size
 	guiSizeDiceResultWidth = Screen.width*0.3;
-	guiSizeDiceResultHeight = Screen.height*0.2;
+	guiSizeDiceResultHeight = Screen.height*0.25;
 	guiSizeDiceWidth = Screen.width*0.63;
-	guiSizeDiceHeight = Screen.height*0.2;
+	guiSizeDiceHeight = Screen.height*0.20;
 	guiSizeDiceBeginX = Screen.width*0.33;
 	guiSizeSelectHeight = Screen.height*0.04;
 	guiSizeSelectBeginY = guiSizeDiceHeight;
-	guiSizeInitiativeHeight = Screen.height*0.45;
+	guiSizeInitiativeHeight = Screen.height*0.4;
 	guiSizeInitiativeBeginY = guiSizeSelectBeginY + guiSizeSelectHeight;
 	guiSizeCharacterHeight = Screen.height - guiSizeDiceHeight - guiSizeSelectHeight-guiSizeInitiativeHeight;
 	guiSizeCharacterBeginY = guiSizeInitiativeBeginY + guiSizeInitiativeHeight;
@@ -280,11 +258,11 @@ function OnGUI (){
 					//Character Selection Left/Right
 					GUILayout.BeginHorizontal();
 						GUILayout.Space(Screen.width*0.25);
-						if (selectedCharacter>1){if(GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.1))) NextCharacter(selectedCharacter,0);}
-						else GUILayout.Button("", styleCharacter.customStyles[2], GUILayout.Width(Screen.width*0.1));
+						if (selectedCharacter>1){if(GUILayout.Button("", styleCharacter.customStyles[9], GUILayout.Width(Screen.width*0.1))) NextCharacter(selectedCharacter,0);}
+						else GUILayout.Button("", styleCharacter.customStyles[9], GUILayout.Width(Screen.width*0.1));
 						GUILayout.Space(Screen.width*0.1);
-						if(selectedCharacter < playerNames.Length-1){if(GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.1))) NextCharacter(selectedCharacter,1);}
-						else GUILayout.Button("", styleCharacter.customStyles[6], GUILayout.Width(Screen.width*0.1));
+						if(selectedCharacter < playerNames.Length-1){if(GUILayout.Button("", styleCharacter.customStyles[10], GUILayout.Width(Screen.width*0.1))) NextCharacter(selectedCharacter,1);}
+						else GUILayout.Button("", styleCharacter.customStyles[10], GUILayout.Width(Screen.width*0.1));
 						GUILayout.Label(playerNames[selectedCharacter], styleCharacter.customStyles[0], GUILayout.Width(Screen.width*0.4));
 					GUILayout.EndHorizontal();
 					GUILayout.Space(guiSizeCharacterHeight*0.05);
@@ -299,30 +277,30 @@ function OnGUI (){
 					GUILayout.Space(guiSizeCharacterHeight*0.05);
 					GUILayout.BeginHorizontal();
 						GUILayout.Space(Screen.width*0.01);
-						GUILayout.Label("HP:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2));
-					  	GUILayout.Label(healthPoints[selectedCharacter].ToString(), styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2));
+						GUILayout.Label("HP:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2), GUILayout.Height(Screen.width*0.07));
+					  	GUILayout.Label(healthPoints[selectedCharacter].ToString(), styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2), GUILayout.Height(Screen.width*0.07));
 					  	GUILayout.Space(Screen.width*0.02);
-					  	if(GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.05))) healthPoints[selectedCharacter]--;
+					  	if(GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.07), GUILayout.Height(Screen.width*0.07))) healthPoints[selectedCharacter]--;
 					  	GUILayout.Space(Screen.width*0.02);
-					  	if(GUILayout.Button("", styleCharacter.customStyles[6],GUILayout.Width(Screen.width*0.05))) healthPoints[selectedCharacter]++;
+					  	if(GUILayout.Button("", styleCharacter.customStyles[6],GUILayout.Width(Screen.width*0.07), GUILayout.Height(Screen.width*0.07))) healthPoints[selectedCharacter]++;
 						GUILayout.FlexibleSpace();
 					GUILayout.EndHorizontal();
 					GUILayout.Space(guiSizeCharacterHeight*0.05);
 					GUILayout.BeginHorizontal();
 						GUILayout.Space(Screen.width*0.01);
-						GUILayout.Label("Initiative:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2));
-						if(initiative[selectedCharacter]==0) GUILayout.Label("-", styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2));
-						else GUILayout.Label(initiative[selectedCharacter].ToString(), styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2));
+						GUILayout.Label("Initiative:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2), GUILayout.Height(Screen.width*0.07));
+						if(initiative[selectedCharacter]==0) GUILayout.Label("-", styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2), GUILayout.Height(Screen.width*0.07));
+						else GUILayout.Label(initiative[selectedCharacter].ToString(), styleCharacter.customStyles[3],GUILayout.Width(Screen.width*0.2), GUILayout.Height(Screen.width*0.07));
 						GUILayout.Space(Screen.width*0.02);
-						if(initiative[selectedCharacter]<1) GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.05));
+						if(initiative[selectedCharacter]<1) GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.07), GUILayout.Height(Screen.width*0.07));
 					  	else {
-					  		if(GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.05))){
+					  		if(GUILayout.Button("", styleCharacter.customStyles[2],GUILayout.Width(Screen.width*0.07), GUILayout.Height(Screen.width*0.07))){
 					  			initiative[selectedCharacter]--;
 					  			SortList();
 					  			}
 					  		}
 					  	GUILayout.Space(Screen.width*0.02);
-					  	if(GUILayout.Button("", styleCharacter.customStyles[6],GUILayout.Width(Screen.width*0.05))){
+					  	if(GUILayout.Button("", styleCharacter.customStyles[6],GUILayout.Width(Screen.width*0.07), GUILayout.Height(Screen.width*0.07))){
 					  		initiative[selectedCharacter]++;
 					  		SortList();
 					  		}
@@ -333,10 +311,11 @@ function OnGUI (){
 					GUILayout.Space(guiSizeCharacterHeight*0.05);
 					GUILayout.BeginHorizontal();
 						GUILayout.Space(Screen.width*0.01);
-						GUILayout.Label("NPC?:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2));
-						npc[selectedCharacter] = GUILayout.Toggle(npc[selectedCharacter], "");
+						GUILayout.Label("NPC?:", styleCharacter.customStyles[1],GUILayout.Width(Screen.width*0.2), GUILayout.Height(Screen.width*0.07) );
+						npc[selectedCharacter] = GUILayout.Toggle(npc[selectedCharacter], "", GUILayout.Width(Screen.width*0.07), GUILayout.Height(Screen.width*0.07) );
 						GUILayout.FlexibleSpace();
 					GUILayout.EndHorizontal();
+					GUILayout.Space(guiSizeCharacterHeight*0.05);
 					GUILayout.BeginHorizontal();
 						GUILayout.FlexibleSpace();
 						if(GUILayout.Button("Neu", styleCharacter.customStyles[8])) AddNewCharacter();
@@ -498,6 +477,15 @@ function InitiativeNextCharacter(character:int){
 		
 	
 	
+	
+/*
+Update Log
+
+-Dice Button Texture
+-Removed Sample Characters
+-Changed Button Size Character Area
+
+*/
 	
 	
 	
