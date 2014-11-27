@@ -64,10 +64,13 @@ var fontSizeInitiativeTable :int;
 var fontSizeInitiativeButton :int;
 
 //PlayerPrefsX
+
+
 var playerNames = new String[1];
 var healthPoints = new int[1];
 var initiative = new int[1];
 var npc = new boolean [1];
+
 
 //List sorting
 var charSort = new int[1];
@@ -80,24 +83,43 @@ var tempMinChar : int =0;
 
 
 function Start () {
-
-	//Set Player 0
-	playerNames[0] = "";
-	healthPoints[0]=0;
-	initiative[0]=0;
-	npc[0]=false;
+	//playerNames = PlayerPrefsX.GetStringArray ("playerNames");
+	//healthPoints = PlayerPrefsX.GetIntArray ("healthPoints");
+	//initiative = PlayerPrefsX.GetIntArray ("initiative");
+	//npc = PlayerPrefsX.GetBoolArray ("npc");
 	
-	//Set Player 1 called "Name"
-	System.Array.Resize.<String>(playerNames,playerNames.length+1);
-	System.Array.Resize.<int>(healthPoints,healthPoints.length+1);
-	System.Array.Resize.<int>(initiative,initiative.length+1);
-	System.Array.Resize.<boolean>(npc,npc.length+1);
-	System.Array.Resize.<int>(charSort,charSort.length+1);
 	
-	playerNames[1] = "Name";
-	healthPoints[1] = 0;
-	initiative[1] = 0;
-	npc[1]=false;
+	if(PlayerPrefsX.GetStringArray ("playerNames").Length==0){
+	
+		Debug.Log("newPlayer");
+		//Set Player 0
+		playerNames[0] = "";
+		healthPoints[0]=0;
+		initiative[0]=0;
+		npc[0]=false;
+		
+		//Set Player 1 called "Name"
+		System.Array.Resize.<String>(playerNames,playerNames.length+1);
+		System.Array.Resize.<int>(healthPoints,healthPoints.length+1);
+		System.Array.Resize.<int>(initiative,initiative.length+1);
+		System.Array.Resize.<boolean>(npc,npc.length+1);
+		System.Array.Resize.<int>(charSort,charSort.length+1);
+		
+		playerNames[1] = "Name";
+		healthPoints[1] = 0;
+		initiative[1] = 0;
+		npc[1]=false;
+		}
+	
+	else{
+	Debug.Log("loadGame");
+	playerNames = PlayerPrefsX.GetStringArray ("playerNames");
+	healthPoints = PlayerPrefsX.GetIntArray ("healthPoints");
+	initiative = PlayerPrefsX.GetIntArray ("initiative");
+	npc = PlayerPrefsX.GetBoolArray ("npc");
+	charSort = PlayerPrefsX.GetIntArray ("charSort");
+	}
+	
 		
 	//Set Display Size
 	guiSizeDiceResultWidth = Screen.width*0.3;
@@ -138,6 +160,7 @@ function Start () {
 	styleInitiative.customStyles[1].fontSize = Mathf.RoundToInt (fontSizeInitiativeTable * Screen.width / (defaultWidth * 1.0));
 	styleInitiative.customStyles[2].fontSize = Mathf.RoundToInt (fontSizeInitiativeButton * Screen.width / (defaultWidth * 1.0));
 	
+	SaveData();
 	
 	}
 
@@ -149,12 +172,14 @@ function Update(){
 			}
 		}
 	if (Input.GetKeyDown(KeyCode.Escape)) {
+		SaveData();
  		Application.Quit(); 
  		}
 	}
 
 function OnGUI (){
 	SortList();
+	InvokeRepeating("SaveData", 1, 5);
 	
 	//set GUI Style for Dice Area
 	GUI.skin = styleDice;
@@ -472,6 +497,15 @@ function InitiativeNextCharacter(character:int){
 				}
 			}
 		}
+	}
+
+//DatenSpeichern
+function SaveData(){
+	PlayerPrefsX.SetStringArray ("playerNames", playerNames);
+	PlayerPrefsX.SetIntArray  ("healthPoints", healthPoints);
+	PlayerPrefsX.SetIntArray ("initiative", initiative);
+	PlayerPrefsX.SetBoolArray ("npc", npc);
+	PlayerPrefsX.SetIntArray ("charSort", initiative);
 	}
 	
 		
