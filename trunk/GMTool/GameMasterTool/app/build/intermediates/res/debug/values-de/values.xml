@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values-de/strings.xml -->
-    <eat-comment/>
-    <string name="app_name">GameMaster Tool</string>
-    <string name="diceResult">Würfelergebnis</string>
-</resources>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="fontSize_DiceResultTag">20sp</dimen>
-    <dimen name="fontSize_DiceButton">20sp</dimen>
-</resources>
