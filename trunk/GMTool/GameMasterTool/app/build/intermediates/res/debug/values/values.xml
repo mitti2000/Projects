@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black_overlay">#66000000</color>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="metaButtonBarStyle"/><attr format="reference" name="metaButtonBarButtonStyle"/></declare-styleable>
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="fontSize_DiceButton">20sp</dimen>
+    <dimen name="fontSize_DiceResultTag">20sp</dimen>
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="DiceClear">"Clear"</string>
+    <string name="DiceW10">"W10"</string>
+    <string name="DiceW100">"W100"</string>
+    <string name="DiceW12">"W12"</string>
+    <string name="DiceW2">"W2"</string>
+    <string name="DiceW20">"W20"</string>
+    <string name="DiceW30">"W30"</string>
+    <string name="DiceW4">"W4"</string>
+    <string name="DiceW6">"W6"</string>
+    <string name="DiceW8">"W8"</string>
+    <string name="app_name">GameMasterTool</string>
+    <string name="diceResult"/>
+    <string name="diceResultLast5"/>
+    <string name="diceResultLast5Tag">Letzte 5 Würfe</string>
+    <string name="diceResultTag">Würfelergebnis</string>
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+</resources>

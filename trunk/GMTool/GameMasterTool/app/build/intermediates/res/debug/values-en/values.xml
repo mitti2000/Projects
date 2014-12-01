@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">GameMasterTool</string>
+    <string name="diceResult">Dice Result</string>
+</resources>

@@ -1,0 +1,153 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context=".Main">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DiceResultArea"
+        android:layout_alignParentRight="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diceResultTag"
+            android:id="@+id/DiceResultTag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diceResult"
+            android:id="@+id/DiceResult"
+            android:password="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diceResultLast5Tag"
+            android:id="@+id/DiceResultLast5Tag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diceResultLast5"
+            android:id="@+id/DiceResultLast5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/DiceResultArea"
+        android:layout_toEndOf="@+id/DiceResultArea"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/DiceButtons"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true">
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DiceButtonFirstLayer">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW2"
+                android:id="@+id/W2"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW4"
+                android:id="@+id/W4"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW6"
+                android:id="@+id/W6"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW8"
+                android:id="@+id/W8"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW10"
+                android:id="@+id/W10"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:textSize="@dimen/fontSize_DiceButton" />
+        </GridLayout>
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DiceButtonSecondLayer">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW12"
+                android:id="@+id/W12"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW20"
+                android:id="@+id/W20"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW30"
+                android:id="@+id/W30"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW100"
+                android:id="@+id/W100"
+                android:textSize="@dimen/fontSize_DiceButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DiceW30"
+                android:id="@+id/Clear"
+                android:textSize="@dimen/fontSize_DiceButton" />
+        </GridLayout>
+    </LinearLayout>
+</RelativeLayout>
