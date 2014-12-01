@@ -7,6 +7,8 @@
      http://forum.unity3d.com/threads/28500-SQLite-Class-Easier-Database-Stuff    
      Modified 2011 by Alan Chatham
      Modified 2014 by Shinsuke Sugita           */
+     import LostPolygon.System.Net;
+import LostPolygon.System.Net.Sockets;
 import System.Data;  // we import our  data class
 import Mono.Data.Sqlite; // we import sqlite
 import System.Collections.Generic;
