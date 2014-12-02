@@ -88,6 +88,9 @@
  <Reference Include="System.Security">
  <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/System.Security.dll</HintPath>
  </Reference>
+ <Reference Include="Mono.Data.Tds">
+ <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Tds.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
