@@ -2,6 +2,7 @@ package com.mittidesign.training;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,6 +13,13 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Sheep sheep = new Sheep();
+        sheep.setName("Tony");
+        Log.d("Sheep", sheep.getName());
+        int wool = sheep.shear();
+        Log.d("Sheep", Integer.toString((wool)));
+        int age = sheep.getAge();
+        Log.d("Sheep", Integer.toString(age));
     }
 
 
