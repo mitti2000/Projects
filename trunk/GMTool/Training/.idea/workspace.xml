@@ -18,10 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="276ecb18-ece9-4186-bbbb-975208893c07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/mittidesign/training/Animal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/mittidesign/training/Sheep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/mittidesign/training/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/mittidesign/training/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Training.iws" />
@@ -58,8 +54,8 @@
       <file leaf-file-name="Animal.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mittidesign/training/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4981685" vertical-offset="0" max-vertical-offset="546">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="546">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="e#140#141#0" expanded="true" />
                 <element signature="e#168#169#0" expanded="true" />
@@ -1352,6 +1348,11 @@
       <created>1417455291026</created>
       <updated>1417455291026</updated>
     </task>
+    <task id="LOCAL-00001">
+      <created>1417627713679</created>
+      <updated>1417627713679</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1376,7 +1377,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291262" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1663,8 +1664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mittidesign/training/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4981685" vertical-offset="0" max-vertical-offset="546">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="546">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="e#140#141#0" expanded="true" />
             <element signature="e#168#169#0" expanded="true" />
