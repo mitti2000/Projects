@@ -2,17 +2,17 @@
 <pre-dex-items>
 
     <item
+        dex="C:\MittiUnityProjects\trunk\GMTool\Testing\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-7e41016d74971bd662b8c21e0c0b939af5269f5b.jar"
+        jar="C:\Program Files\android sdk\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6"/>
+    <item
         dex="C:\MittiUnityProjects\trunk\GMTool\Testing\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-179817362de8de6d1ad39832cb46b6aa4cf23801.jar"
         jar="C:\MittiUnityProjects\trunk\GMTool\Testing\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f"/>
-    <item
-        dex="C:\MittiUnityProjects\trunk\GMTool\Testing\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-5e67aff98be8cb74fb07704dd6caf39297d1672b.jar"
-        jar="C:\adt-bundle-windows-x86_64-20140321\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6"/>
     <item
         dex="C:\MittiUnityProjects\trunk\GMTool\Testing\app\build\intermediates\pre-dexed\debug\classes-64c942181db5b24daf4a02ab18cf6f52e271a4c4.jar"
         jar="C:\MittiUnityProjects\trunk\GMTool\Testing\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"

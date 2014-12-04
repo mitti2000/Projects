@@ -1,0 +1,9 @@
+
+public class Animals {
+	private int age;
+	private String name="";
+	
+	public Animals(){
+		
+	}
+}
