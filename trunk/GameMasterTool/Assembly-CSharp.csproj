@@ -56,37 +56,37 @@
      <None Include="Assets\Necromancer GUI\Readme.txt" />
      <None Include="Assets\GoodOldSockets\license.txt" />
  <Reference Include="GoodOldSockets">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/GoodOldSockets.dll</HintPath>
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/GoodOldSockets.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/Mono.Data.dll</HintPath>
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.SqliteClient">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
- </Reference>
- <Reference Include="SQLite4Unity3d">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
- </Reference>
- <Reference Include="System.Configuration">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/System.Configuration.dll</HintPath>
- </Reference>
- <Reference Include="System.Data">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/System.Data.dll</HintPath>
- </Reference>
- <Reference Include="System.EnterpriseServices">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
- </Reference>
- <Reference Include="System.GoodOldSockets.Helper">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/System.GoodOldSockets.Helper.dll</HintPath>
- </Reference>
- <Reference Include="System.Security">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/System.Security.dll</HintPath>
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Tds">
- <HintPath>C:/MittiUnityProject/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Tds.dll</HintPath>
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Tds.dll</HintPath>
+ </Reference>
+ <Reference Include="SQLite4Unity3d">
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Configuration">
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.Configuration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.EnterpriseServices">
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.GoodOldSockets.Helper">
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.GoodOldSockets.Helper.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security">
+ <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.Security.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
