@@ -1249,14 +1249,15 @@ containing a value of this type.
         public static final int dialog_fixed_width_minor=0x7f07002a;
         public static final int disabled_alpha_material_dark=0x7f07002b;
         public static final int disabled_alpha_material_light=0x7f07002c;
-        public static final int text_dice_result=0x7f07002d;
-        public static final int text_dice_result_tag=0x7f07002e;
-        public static final int text_dice_size_1digit=0x7f07002f;
-        public static final int text_dice_size_2digit=0x7f070030;
-        public static final int text_dice_size_3digit=0x7f070031;
-        public static final int text_dice_size_clear=0x7f070032;
-        public static final int text_last_5_rolls=0x7f070033;
-        public static final int text_last_5_rolls_tag=0x7f070034;
+        public static final int table_chararacter_title=0x7f07002d;
+        public static final int text_dice_result=0x7f07002e;
+        public static final int text_dice_result_tag=0x7f07002f;
+        public static final int text_dice_size_1digit=0x7f070030;
+        public static final int text_dice_size_2digit=0x7f070031;
+        public static final int text_dice_size_3digit=0x7f070032;
+        public static final int text_dice_size_clear=0x7f070033;
+        public static final int text_last_5_rolls=0x7f070034;
+        public static final int text_last_5_rolls_tag=0x7f070035;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1330,6 +1331,10 @@ containing a value of this type.
         public static final int toggle_on=0x7f020044;
     }
     public static final class id {
+        public static final int HP=0x7f080056;
+        public static final int HP_1=0x7f08005b;
+        public static final int Ini=0x7f080057;
+        public static final int NPC=0x7f080054;
         public static final int action_bar=0x7f080031;
         public static final int action_bar_activity_content=0x7f080000;
         public static final int action_bar_container=0x7f080030;
@@ -1343,17 +1348,25 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080057;
+        public static final int action_settings=0x7f080063;
+        public static final int active=0x7f080058;
+        public static final int active_1=0x7f08005d;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
+        public static final int characterTable=0x7f080053;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
         public static final int decor_content_parent=0x7f08002f;
         public static final int default_activity_button=0x7f080024;
         public static final int dialog=0x7f08001b;
+        public static final int dice12toclear=0x7f080062;
+        public static final int diceArea=0x7f08005e;
+        public static final int diceResults=0x7f08005f;
+        public static final int diceRollers=0x7f080060;
         public static final int dice_10_to_clear_area=0x7f08004d;
         public static final int dice_2_to_10_area=0x7f080047;
+        public static final int dice_2to10=0x7f080061;
         public static final int dice_area=0x7f080040;
         public static final int dice_clear=0x7f080052;
         public static final int dice_d10=0x7f08004c;
@@ -1381,15 +1394,18 @@ containing a value of this type.
         public static final int icon=0x7f080026;
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
+        public static final int ini_1=0x7f08005c;
         public static final int last_5_rolls=0x7f080045;
         public static final int last_5_rolls_tag=0x7f080044;
-        public static final int linearLayout=0x7f080056;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
         public static final int middle=0x7f080015;
+        public static final int name=0x7f080055;
+        public static final int name_1=0x7f08005a;
         public static final int never=0x7f080019;
         public static final int none=0x7f08000e;
         public static final int normal=0x7f08000a;
+        public static final int npc_1=0x7f080059;
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
@@ -1410,9 +1426,6 @@ containing a value of this type.
         public static final int split_action_bar=0x7f080007;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
-        public static final int textView=0x7f080053;
-        public static final int textView2=0x7f080054;
-        public static final int textView3=0x7f080055;
         public static final int title=0x7f080027;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
@@ -1480,11 +1493,18 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a0017;
         public static final int abc_toolbar_collapse_description=0x7f0a0018;
         public static final int action_settings=0x7f0a0019;
-        public static final int app_name=0x7f0a001a;
-        public static final int clear=0x7f0a001b;
-        public static final int dice_result_tag=0x7f0a001c;
-        public static final int hello_world=0x7f0a001d;
-        public static final int last_5_rolls_tag=0x7f0a001e;
+        public static final int active=0x7f0a001a;
+        public static final int app_name=0x7f0a001b;
+        public static final int char_name=0x7f0a001c;
+        public static final int clear=0x7f0a001d;
+        public static final int dice_result_tag=0x7f0a001e;
+        public static final int hp=0x7f0a001f;
+        public static final int initiative_long=0x7f0a0020;
+        public static final int initiative_short=0x7f0a0021;
+        public static final int last_5_rolls_tag=0x7f0a0022;
+        public static final int no=0x7f0a0023;
+        public static final int npc=0x7f0a0024;
+        public static final int yes=0x7f0a0025;
     }
     public static final class style {
         /**  Customize your theme here. 
