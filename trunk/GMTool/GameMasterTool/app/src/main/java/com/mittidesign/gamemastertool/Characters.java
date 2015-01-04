@@ -4,18 +4,27 @@ package com.mittidesign.gamemastertool;
  Each object represents a character
  */
 public class Characters {
+    private long id;
     private String name;
     private int healthPoints = 0;
     private int initiative = 0;
     private int stamina = 0;
-    private boolean npc = true;
+    private int npc = 1;
 
-    public Characters(String name, int healthPoints, int initiative, int stamina, boolean npc) {
+    public Characters(String name) {  //old contructor , int healthPoints, int initiative, int stamina, int npc
         this.name = name;
-        this.healthPoints = healthPoints;
+        /*this.healthPoints = healthPoints;
         this.initiative = initiative;
         this.stamina = stamina;
-        this.npc = npc;
+        this.npc = npc;*/
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -50,11 +59,11 @@ public class Characters {
         this.stamina = stamina;
     }
 
-    public boolean isNpc() {
+    public int isNpc() {
         return npc;
     }
 
-    public void setNpc(boolean npc) {
+    public void setNpc(int npc) {
         this.npc = npc;
     }
 }

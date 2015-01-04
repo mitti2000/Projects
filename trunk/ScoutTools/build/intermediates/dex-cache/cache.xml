@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="D:\_Videotraining\3037_Witt\Uebungsmaterial\sources\ScoutTools\app\build\intermediates\pre-dexed\debug\support-v13-19.1.0-7861d1a83604b02008ec3d1978cd9e59d14d049c.jar"
+        jar="C:\Program Files (x86)\Android\android-studio2\sdk\extras\android\m2repository\com\android\support\support-v13\19.1.0\support-v13-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6b852a232f642c75a7fdfc7212b841b8c8f8959c"/>
+    <item
+        dex="D:\_Videotraining\3037_Witt\Uebungsmaterial\sources\ScoutTools\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-cdd8000611f2105690e18ad5479c304cee9e60f7.jar"
+        jar="C:\Program Files (x86)\Android\android-studio2\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>
