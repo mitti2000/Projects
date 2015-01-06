@@ -95,7 +95,7 @@
                         android:text="@string/D2"
                         android:id="@+id/dice_d2"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_1digit" />
                     <Button
@@ -104,7 +104,7 @@
                         android:text="@string/D4"
                         android:id="@+id/dice_d4"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_1digit"
                         />
@@ -114,7 +114,7 @@
                         android:text="@string/D6"
                         android:id="@+id/dice_d6"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_1digit"
                         />
@@ -124,7 +124,7 @@
                         android:text="@string/D8"
                         android:id="@+id/dice_d8"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_1digit"
                         />
@@ -134,7 +134,7 @@
                         android:text="@string/D10"
                         android:id="@+id/dice_d10"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_2digit"
                         />
@@ -153,7 +153,7 @@
                         android:text="@string/D12"
                         android:id="@+id/dice_d12"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_2digit"
                         />
@@ -163,7 +163,7 @@
                         android:text="@string/D20"
                         android:id="@+id/dice_d20"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_2digit"
                         />
@@ -173,7 +173,7 @@
                         android:text="@string/D30"
                         android:id="@+id/dice_d30"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_2digit"
                         />
@@ -184,7 +184,7 @@
                         android:text="@string/D100"
                         android:id="@+id/dice_d100"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_white"
                         android:textSize="@dimen/text_dice_size_3digit"
                         />
@@ -194,7 +194,7 @@
                         android:text="@string/clear"
                         android:id="@+id/dice_clear"
                         android:layout_weight="2"
-                        android:background="@drawable/button_custom"
+                        android:background="@drawable/button_dice"
                         android:textColor="@color/text_red"
                         android:textSize="@dimen/text_dice_size_clear"
                         android:textStyle="bold" />
@@ -207,13 +207,168 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/charList"
-        android:layout_weight="50" />
+        android:layout_weight="40"
+        android:layout_marginBottom="5dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/detailArea"
-        android:layout_weight="25"></LinearLayout>
+        android:layout_weight="35">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selected_character"
+            android:id="@+id/tag_selected_char"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/detail_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Name"
+            android:id="@+id/tag_charName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/detail_text"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/input_charName"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/input_charName"
+            android:textSize="@dimen/detail_text"
+            android:layout_toRightOf="@+id/tag_charName"
+            android:layout_toEndOf="@+id/tag_charName"
+            android:layout_below="@+id/tag_selected_char" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initiative_short"
+            android:id="@+id/tag_initiative"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/input_initiative"
+            android:textSize="@dimen/detail_text"
+            android:textStyle="bold"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/input_initiative"
+            android:layout_below="@+id/input_charName"
+            android:layout_toRightOf="@+id/tag_initiative" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_initiative_minus"
+            android:background="@drawable/button_minus"
+            android:layout_alignTop="@+id/input_initiative"
+            android:layout_alignBottom="@+id/input_initiative"
+            android:layout_toRightOf="@+id/input_initiative"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_initiative_plus"
+            android:background="@drawable/button_plus"
+            android:layout_alignTop="@+id/input_initiative"
+            android:layout_alignBottom="@+id/input_initiative"
+            android:layout_toRightOf="@+id/btn_initiative_minus"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hp"
+            android:id="@+id/tag_healthPoints"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/input_healthPoints"
+            android:textSize="@dimen/detail_text"
+            android:textStyle="bold"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/input_healthPoints"
+            android:layout_below="@+id/input_initiative"
+            android:layout_toRightOf="@+id/tag_healthPoints" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_healthPoints_minus"
+            android:background="@drawable/button_minus"
+            android:layout_alignTop="@+id/input_healthPoints"
+            android:layout_alignBottom="@+id/input_healthPoints"
+            android:layout_toRightOf="@+id/input_healthPoints"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_healthPoints_plus"
+            android:background="@drawable/button_plus"
+            android:layout_alignTop="@+id/input_healthPoints"
+            android:layout_alignBottom="@+id/input_healthPoints"
+            android:layout_toRightOf="@+id/btn_initiative_minus"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stamina"
+            android:id="@+id/tag_stamina"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/input_stamina"
+            android:textSize="@dimen/detail_text"
+            android:textStyle="bold"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/input_stamina"
+            android:layout_below="@+id/input_healthPoints"
+            android:layout_toRightOf="@+id/tag_stamina" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_stamina_minus"
+            android:background="@drawable/button_minus"
+            android:layout_alignTop="@+id/input_stamina"
+            android:layout_alignBottom="@+id/input_stamina"
+            android:layout_toRightOf="@+id/input_stamina"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_stamina_plus"
+            android:background="@drawable/button_plus"
+            android:layout_alignTop="@+id/input_stamina"
+            android:layout_alignBottom="@+id/input_stamina"
+            android:layout_toRightOf="@+id/btn_initiative_minus"
+            android:paddingLeft="10dp"/>
+
+    </RelativeLayout>
 </LinearLayout>
-<!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/MittiUnityProject/trunk/GMTool/GameMasterTool/app/src/main/res/layout/activity_main.xml -->

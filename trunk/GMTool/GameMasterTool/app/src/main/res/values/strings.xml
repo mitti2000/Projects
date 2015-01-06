@@ -25,6 +25,7 @@
     <string name="no">No</string>
     <string name="action_test">Test</string>
     <string name="stamina">Sta</string>
+    <string name="selected_character">Selected Character</string>
 
 
 </resources>

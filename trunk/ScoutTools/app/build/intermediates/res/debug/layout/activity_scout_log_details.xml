@@ -17,4 +17,4 @@
         android:layout_centerHorizontal="true"
         tools:layout="@layout/fragment_scout_log_details" />
 </RelativeLayout>
-<!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/layout/activity_scout_log_details.xml -->
+<!-- From: file:/C:/MittiUnityProject/trunk/ScoutTools/app/src/main/res/layout/activity_scout_log_details.xml -->

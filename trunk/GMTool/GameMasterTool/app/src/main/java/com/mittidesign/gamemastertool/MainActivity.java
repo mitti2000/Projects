@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
     //TODO: Variabel for ListView Test
     private ListView charList;
 
-   // private CharDataSource dataSource;
+    private CharDataSource dataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +37,11 @@ public class MainActivity extends ActionBarActivity {
         //TODO: Testing area for ListView
         //**********************************************************************
         Character character_data[] = new Character[]{
-                new Character("", "Tyrill", 25,10,30,""),
-                new Character("X", "Emgrisch", 25,10,30,""),
-                new Character("", "Balbarosch", 25,10,30,""),
-                new Character("", "Sam", 25,10,30,""),
-                new Character("", "Goblinkönig", 25,10,30,""),
+                new Character("Tyrill", 25,10,""),
+                new Character("Emgrisch", 25,10,""),
+                new Character("Balbarosch", 25,10,""),
+                new Character("Sam", 25,10,""),
+                new Character("Goblinkönig", 25,10,""),
         };
 
         CharacterAdapter adapter = new CharacterAdapter(this, R.layout.charlist_item_row, character_data);
@@ -144,12 +144,12 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-      /*  dataSource = new CharDataSource(this);
+      dataSource = new CharDataSource(this);
         try {
             dataSource.open();
         } catch (SQLException e) {
             e.printStackTrace();
-        }*/
+        }
     }
 
     //Dice roller according to Dice Size

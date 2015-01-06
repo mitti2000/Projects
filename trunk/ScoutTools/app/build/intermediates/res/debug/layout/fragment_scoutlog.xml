@@ -27,4 +27,4 @@
         android:layout_height="wrap_content"
         android:id="@android:id/list"
         android:layout_gravity="center_horizontal" />
-</LinearLayout><!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/layout/fragment_scoutlog.xml -->
+</LinearLayout><!-- From: file:/C:/MittiUnityProject/trunk/ScoutTools/app/src/main/res/layout/fragment_scoutlog.xml -->

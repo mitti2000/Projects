@@ -39,7 +39,7 @@ public class CharDataSource {
     }
 
     //Method to create a new Character with the Name Required
-    public Characters createCharacter(String name) {
+    public Character createCharacter(String name) {
         ContentValues values = new ContentValues();  //Create a new contentvalues array
         values.put(CharactersDbHelper.COLUMN_NAME, name); //Set the value to the colume "name" and set the value to the chacter name
         long insertId = database.insert(CharactersDbHelper.TABLE_CHARACTERS, null, values);
@@ -50,10 +50,10 @@ public class CharDataSource {
                 null, null,null, null);
         cursor.moveToFirst();
 
-        Characters characters;
-        characters = populateCharacters(cursor);
+        Character character;
+        character = populateCharacters(cursor);
         cursor.close();
-        return characters;
+        return character;
     }
 
     public void deleteCharacter(Characters character){
@@ -61,7 +61,7 @@ public class CharDataSource {
         database.delete(CharactersDbHelper.TABLE_CHARACTERS, CharactersDbHelper.COLUMN_ID + "=" + id,null );
     }
 
-    private Characters populateCharacters(Cursor cursor){
+    private Character populateCharacters(Cursor cursor){
         int idIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_ID);
         int nameIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_NAME);
         int initiativeIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_INITIATIVE);
@@ -69,14 +69,14 @@ public class CharDataSource {
         int staminaIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_STAMINA);
         int npcIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_NPC);
 
-        Characters characters = new Characters(cursor.getString(nameIndex));
-        characters.setId(cursor.getLong(idIndex));
-        characters.setInitiative(cursor.getInt(initiativeIndex));
-        characters.setHealthPoints(cursor.getInt(hpIndex));
-        characters.setStamina(cursor.getInt(staminaIndex));
-        characters.setNpc(cursor.getInt(npcIndex));
+        Character character = new Character(cursor.getString(nameIndex),0,0,"");
+        character.setId(cursor.getLong(idIndex));
+        character.setInitiative(cursor.getInt(initiativeIndex));
+        character.setHealthPoints(cursor.getInt(hpIndex));
+        character.setStamina(cursor.getInt(staminaIndex));
+        character.clearNPC();
 
-        return characters;
+        return character;
     }
 
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/values-de/strings.xml -->
+    <!-- From: file:/C:/MittiUnityProject/trunk/ScoutTools/app/src/main/res/values-de/strings.xml -->
     <eat-comment/>
     <string name="action_camera">Foto aufnehmen</string>
     <string name="action_settings">Settings</string>

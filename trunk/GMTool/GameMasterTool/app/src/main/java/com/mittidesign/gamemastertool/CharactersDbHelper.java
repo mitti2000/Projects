@@ -27,7 +27,7 @@ public class CharactersDbHelper extends SQLiteOpenHelper {
                     COLUMN_STAMINA + " integer, " +
                     COLUMN_NPC + " integer);";
 
-
+    //Constructor with Context, DBName, CurserFacory und DB Version
     public CharactersDbHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
