@@ -16,14 +16,15 @@
     <string name="D100">D100</string>
     <string name="clear">X</string>
     <string name="npc">NPC</string>
-    <string name="char_name">Name</string>
-    <string name="hp">HP</string>
+    <string name="Name">Name</string>
+    <string name="HealthPoints">HP</string>
     <string name="initiative_short">Ini</string>
     <string name="initiative_long">Initiative</string>
     <string name="active">Aktiv</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-
+    <string name="action_test">Test</string>
+    <string name="stamina">Sta</string>
 
 
 </resources>

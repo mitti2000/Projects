@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:id="@+id/dice_roller_area"
-        android:layout_weight="20">
+        android:layout_weight="25">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -32,7 +32,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/dice_result_area"
-                android:layout_weight="75">
+                android:layout_weight="70">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -48,14 +48,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:text="nein"
                     android:id="@+id/dice_result"
                     android:layout_weight="48"
                     android:background="@drawable/bg_dice_result"
                     android:textColor="@color/text_dark"
                     android:textSize="@dimen/text_dice_result"
                     android:textStyle="bold"
-                    android:gravity="center_horizontal|bottom" />
+                    android:gravity="center_vertical|center_horizontal" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,91 +203,17 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TableLayout
-        android:layout_width="fill_parent"
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="50"
-        android:id="@+id/characterTable"
-        android:layout_marginTop="5dp"
-        android:baselineAligned="false">
-
-        <TableRow android:layout_height="wrap_content">
-
-            <TextView
-                android:text="@string/npc"
-                android:id="@+id/NPC"
-                android:textStyle="bold"
-                android:textSize="@dimen/table_chararacter_title"
-                android:textColor="@color/text_dark"
-                android:layout_weight="1" />
-
-            <TextView
-                android:text="@string/char_name"
-                android:id="@+id/name"
-                android:layout_weight="5"
-                android:textStyle="bold"
-                android:textSize="@dimen/table_chararacter_title"
-                android:textColor="@color/text_dark" />
-
-            <TextView
-                android:text="@string/hp"
-                android:id="@+id/HP"
-                android:textStyle="bold"
-                android:textSize="@dimen/table_chararacter_title"
-                android:textColor="@color/text_dark"
-                android:layout_weight="1" />
-
-            <TextView
-                android:text="@string/initiative_short"
-                android:id="@+id/Ini"
-                android:textStyle="bold"
-                android:textSize="@dimen/table_chararacter_title"
-                android:textColor="@color/text_dark"
-                android:layout_weight="1" />
-
-            <TextView
-                android:text="@string/active"
-                android:id="@+id/active"
-                android:textStyle="bold"
-                android:textSize="@dimen/table_chararacter_title"
-                android:textColor="@color/text_dark"
-                android:layout_weight="1" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:text="X"
-                android:id="@+id/npc_1"
-                android:layout_weight="1" />
-
-            <TextView
-                android:text="Gilliath"
-                android:id="@+id/name_1"
-                android:layout_weight="5" />
-
-            <TextView
-                android:text="25"
-                android:id="@+id/HP_1"
-                android:layout_weight="1" />
-
-            <TextView
-                android:text="15"
-                android:id="@+id/ini_1"
-                android:layout_weight="1" />
-
-            <TextView
-                android:text="X"
-                android:id="@+id/active_1"
-                android:layout_weight="1" />
-        </TableRow>
-    </TableLayout>
+        android:id="@+id/charList"
+        android:layout_weight="50" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="30">
-    </LinearLayout>
+        android:id="@+id/detailArea"
+        android:layout_weight="25"></LinearLayout>
 </LinearLayout>
-<!-- From: file:/C:/MittiUnityProject/trunk/GMTool/GameMasterTool/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/layout/activity_main.xml -->

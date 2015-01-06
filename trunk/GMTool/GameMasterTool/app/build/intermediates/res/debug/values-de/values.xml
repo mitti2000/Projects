@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/MittiUnityProject/trunk/GMTool/GameMasterTool/app/src/main/res/values-de/strings.xml -->
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values-de/strings.xml -->
     <eat-comment/>
     <string name="D10">W10</string>
     <string name="D100">W100</string>
@@ -11,7 +11,7 @@
     <string name="D4">W4</string>
     <string name="D6">W6</string>
     <string name="D8">W8</string>
-    <!-- From: file:/C:/MittiUnityProject/trunk/GMTool/GameMasterTool/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-de/values.xml -->
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-de/values.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zur Startseite"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s: %2$s"</string>
@@ -28,7 +28,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sprachsuche"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
-    <!-- From: file:/C:/MittiUnityProject/trunk/GMTool/GameMasterTool/app/src/main/res/values-de/strings.xml -->
+    <!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/values-de/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Einstellungen</string>
     <string name="active">Aktiv</string>

@@ -58,7 +58,7 @@ public class CharDataSource {
 
     public void deleteCharacter(Characters character){
         long id = character.getId();
-        database.delete(CharactersDbHelper.TABLE_CHARACTERS, CharactersDbHelper.COLUMN_ID + "=" + id,null )
+        database.delete(CharactersDbHelper.TABLE_CHARACTERS, CharactersDbHelper.COLUMN_ID + "=" + id,null );
     }
 
     private Characters populateCharacters(Cursor cursor){

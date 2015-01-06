@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:id="@+id/dice_roller_area"
-        android:layout_weight="20">
+        android:layout_weight="25">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -32,7 +32,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/dice_result_area"
-                android:layout_weight="75">
+                android:layout_weight="70">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -48,14 +48,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:text="nein"
                     android:id="@+id/dice_result"
                     android:layout_weight="48"
                     android:background="@drawable/bg_dice_result"
                     android:textColor="@color/text_dark"
                     android:textSize="@dimen/text_dice_result"
                     android:textStyle="bold"
-                    android:gravity="center_horizontal|bottom" />
+                    android:gravity="center_vertical|center_horizontal" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,10 +203,16 @@
         </LinearLayout>
     </LinearLayout>
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/charList"
+        android:layout_weight="50" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="30">
-    </LinearLayout>
+        android:id="@+id/detailArea"
+        android:layout_weight="25"></LinearLayout>
 </LinearLayout>

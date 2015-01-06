@@ -8,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.sql.SQLException;
@@ -18,7 +21,10 @@ import org.w3c.dom.Text;
 public class MainActivity extends ActionBarActivity {
     public String[] last5rollsArray = new String[5];
 
-    private CharDataSource dataSource;
+    //TODO: Variabel for ListView Test
+    private ListView charList;
+
+   // private CharDataSource dataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,26 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         last5rollsClear();
+
+
+        //TODO: Testing area for ListView
+        //**********************************************************************
+        Character character_data[] = new Character[]{
+                new Character("", "Tyrill", 25,10,30,""),
+                new Character("X", "Emgrisch", 25,10,30,""),
+                new Character("", "Balbarosch", 25,10,30,""),
+                new Character("", "Sam", 25,10,30,""),
+                new Character("", "Goblinkönig", 25,10,30,""),
+        };
+
+        CharacterAdapter adapter = new CharacterAdapter(this, R.layout.charlist_item_row, character_data);
+
+
+        charList = (ListView) findViewById(R.id.charList);
+        View header = (View)getLayoutInflater().inflate(R.layout.charlist_header_row, null);
+        charList.addHeaderView(header);
+        charList.setAdapter(adapter);
+        //**********************************************************************
 
         //Roll Dice D2
         Button btnD2 = (Button) findViewById(R.id.dice_d2);
@@ -110,7 +136,7 @@ public class MainActivity extends ActionBarActivity {
 
         //Clear Rolls
         Button btnClear = (Button) findViewById(R.id.dice_clear);
-        btnD100.setOnClickListener(new View.OnClickListener() {
+        btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 last5rollsClear();
@@ -118,12 +144,12 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        dataSource = new CharDataSource(this);
+      /*  dataSource = new CharDataSource(this);
         try {
-            dataSource.open()
+            dataSource.open();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     //Dice roller according to Dice Size
@@ -165,7 +191,6 @@ public class MainActivity extends ActionBarActivity {
         textViewDiceResult.setText("");
     }
 
-
     //Reset last5rolls
     public void last5rollsClear(){
         TextView textViewLast5Rolls = (TextView) findViewById(R.id.last_5_rolls); //Get TextView
@@ -176,6 +201,36 @@ public class MainActivity extends ActionBarActivity {
         textViewLast5Rolls.setText(last5rollsArray[0] + "/" +last5rollsArray[1] + "/" +last5rollsArray[2] + "/" +last5rollsArray[3] + "/" +last5rollsArray[4]);
     }
 
+    //TODO: Delete if ListView Works
+    public void createTableRow(){
+        //Find table to add the row to
+        TableLayout charTable = (TableLayout) findViewById(R.id.charTable);
+        //Create container for row to add
+        TableRow charRow = new TableRow(this);
+        //Create TextViews for Character and fill with Value
+        TextView charActive = new TextView(this);
+        charActive.setText("X");
+        TextView charName = new TextView(this);
+        charActive.setText("Gilliath");
+        TextView charInitiative = new TextView(this);
+        charActive.setText(Integer.toString(25));
+        TextView charHP = new TextView(this);
+        charActive.setText(Integer.toString(13));
+        TextView charStamina = new TextView(this);
+        charActive.setText(Integer.toString(0));
+        TextView charNPC = new TextView(this);
+        charActive.setText("npc");
+
+        //Add Views to Row
+        charRow.addView(charActive,0);
+        charRow.addView(charName,1);
+        charRow.addView(charInitiative,2);
+        charRow.addView(charHP,3);
+        charRow.addView(charStamina,4);
+        charRow.addView(charNPC,5);
+
+        charTable.addView(charRow);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

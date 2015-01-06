@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,47 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GoodOldSockets\Demos\Scripts\HttpGet.cs" />
-     <Compile Include="Assets\GoodOldSockets\Demos\Scripts\QuoteOfTheDay.cs" />
-     <Compile Include="Assets\GoodOldSockets\Demos\Scripts\QuoteOfTheDayQuotes.cs" />
-     <Compile Include="Assets\GoodOldSockets\Demos\Scripts\SocketExamplesTools.cs" />
      <Compile Include="Assets\dbAccess.cs" />
-     <None Include="Assets\GUIrescaler\Documentation\aboutguirescaler.txt" />
-     <None Include="Assets\Necromancer GUI\Kingthings.txt" />
-     <None Include="Assets\Necromancer GUI\Readme.txt" />
-     <None Include="Assets\GoodOldSockets\license.txt" />
- <Reference Include="GoodOldSockets">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/GoodOldSockets.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Data">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Data.SqliteClient">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Data.Tds">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/Mono.Data.Tds.dll</HintPath>
- </Reference>
- <Reference Include="SQLite4Unity3d">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
- </Reference>
- <Reference Include="System.Configuration">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.Configuration.dll</HintPath>
- </Reference>
- <Reference Include="System.Data">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.Data.dll</HintPath>
- </Reference>
- <Reference Include="System.EnterpriseServices">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
- </Reference>
- <Reference Include="System.GoodOldSockets.Helper">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.GoodOldSockets.Helper.dll</HintPath>
- </Reference>
- <Reference Include="System.Security">
- <HintPath>C:/MittiUnityProjects/trunk/GameMasterTool/Assets/Plugins/System.Security.dll</HintPath>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
