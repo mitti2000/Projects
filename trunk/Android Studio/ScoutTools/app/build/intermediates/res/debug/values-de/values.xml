@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/values-de/strings.xml -->
+    <eat-comment/>
+    <string name="action_camera">Foto aufnehmen</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Pfadfinderwerkzeuge</string>
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="new_scoutlog">+</string>
+    <string name="orientation_landscape">Querformat</string>
+    <string name="orientation_portrait">Hochformat</string>
+    <string name="title_activity_scout_log_details">Details</string>
+    <string name="title_section1">Sektion 1</string>
+    <string name="title_section2">Sektion 2</string>
+    <string name="title_section3">Sektion 3</string>
+</resources>
