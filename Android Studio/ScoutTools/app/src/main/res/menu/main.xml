@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.galileo.scouttools.app.MainActivity" >
+    
+    <item android:id="@+id/action_orientation_landscape"
+        android:title="@string/orientation_landscape"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_orientation_portrait"
+        android:title="@string/orientation_portrait"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
