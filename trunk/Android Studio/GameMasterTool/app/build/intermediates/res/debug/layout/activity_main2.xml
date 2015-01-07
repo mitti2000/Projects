@@ -284,4 +284,4 @@
         android:id="@+id/detailArea"
         android:layout_weight="25"></LinearLayout>
 </LinearLayout>
-<!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/GameMasterTool/app/src/main/res/layout/activity_main2.xml -->
+<!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/GameMasterTool/app/src/main/res/layout/activity_main2.xml -->

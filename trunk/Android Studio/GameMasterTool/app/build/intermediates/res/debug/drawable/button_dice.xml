@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/button_dice_up"
         android:state_focused="true" />
     <item android:drawable="@drawable/button_dice_up" />
-</selector><!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/GameMasterTool/app/src/main/res/drawable/button_dice.xml -->
+</selector><!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/GameMasterTool/app/src/main/res/drawable/button_dice.xml -->

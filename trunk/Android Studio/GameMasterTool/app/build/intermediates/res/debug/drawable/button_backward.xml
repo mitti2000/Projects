@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/arrow_left"
         android:state_focused="true" />
     <item android:drawable="@drawable/arrow_left" />
-</selector><!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/GameMasterTool/app/src/main/res/drawable/button_backward.xml -->
+</selector><!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/GameMasterTool/app/src/main/res/drawable/button_backward.xml -->
