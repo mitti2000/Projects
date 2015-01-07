@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/action_camera"
-        android:icon="@android:drawable/ic_menu_camera"
-        android:title="@string/action_camera"
-        android:showAsAction="always"/>
-</menu><!-- From: file:/C:/Users/studio/AndroidStudioProjects/ScoutTools/app/src/main/res/menu/scoutlog_details.xml -->
