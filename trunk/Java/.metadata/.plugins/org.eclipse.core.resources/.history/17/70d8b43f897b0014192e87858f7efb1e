@@ -1,8 +1,0 @@
-
-public class Animals {
-	private int age=0;
-	private String name="";
-	public Animals(){
-		
-	}
-}

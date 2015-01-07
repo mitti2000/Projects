@@ -26,6 +26,9 @@
     <string name="action_test">Test</string>
     <string name="stamina">Sta</string>
     <string name="selected_character">Selected Character</string>
-
+    <string name="isNPC">NPC?</string>
+    <string name="title_activity_character_list">Character List</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_character">Add Character</string>
 
 </resources>

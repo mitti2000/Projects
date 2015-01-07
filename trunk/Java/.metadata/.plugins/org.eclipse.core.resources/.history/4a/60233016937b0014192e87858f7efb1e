@@ -1,8 +1,0 @@
-
-public class Sheep {
-	private int woolAmount;
-	public Sheep () {
-		
-	}
-}
-

@@ -5,4 +5,4 @@
         android:icon="@android:drawable/ic_menu_camera"
         android:title="@string/action_camera"
         android:showAsAction="always"/>
-</menu><!-- From: file:/C:/MittiUnityProject/trunk/ScoutTools/app/src/main/res/menu/scoutlog_details.xml -->
+</menu><!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/menu/scoutlog_details.xml -->

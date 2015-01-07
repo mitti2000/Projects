@@ -11,6 +11,6 @@
     <dimen name="text_last_5_rolls_tag">14sp</dimen>
     <dimen name="text_last_5_rolls">13sp</dimen>
     <dimen name="table_chararacter_title">14sp</dimen>
-    <dimen name="detail_title">20dp</dimen>
-    <dimen name="detail_text">18sp</dimen>
+    <dimen name="detail_title">16dp</dimen>
+    <dimen name="detail_text">14sp</dimen>
 </resources>

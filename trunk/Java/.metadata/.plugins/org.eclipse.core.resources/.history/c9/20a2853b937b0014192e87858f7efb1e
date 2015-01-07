@@ -1,9 +1,0 @@
-
-public class Sheep extends Animal {
-	private int woolAmount;
-	
-	public Sheep() {
-		
-	}
-}
-

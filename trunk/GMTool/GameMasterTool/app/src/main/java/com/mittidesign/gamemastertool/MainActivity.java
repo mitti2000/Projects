@@ -1,5 +1,6 @@
 package com.mittidesign.gamemastertool;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.os.Bundle;
@@ -150,6 +151,10 @@ public class MainActivity extends ActionBarActivity {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public void openCharacterList(View view) {
+        Intent intent = new Intent(this, CharacterList.class);
     }
 
     //Dice roller according to Dice Size

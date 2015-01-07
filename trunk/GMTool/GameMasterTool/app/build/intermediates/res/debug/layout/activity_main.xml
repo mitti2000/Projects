@@ -207,8 +207,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/charList"
-        android:layout_weight="40"
+        android:layout_weight="30"
         android:layout_marginBottom="5dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></FrameLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -249,6 +254,25 @@
             android:layout_toEndOf="@+id/tag_charName"
             android:layout_below="@+id/tag_selected_char" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_char_backward"
+            android:layout_toRightOf="@+id/tag_selected_char"
+            android:layout_toEndOf="@+id/tag_selected_char"
+            android:layout_alignBottom="@+id/tag_selected_char"
+            android:background="@drawable/button_backward"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_char_forward"
+            android:layout_toRightOf="@+id/btn_char_backward"
+            android:layout_toEndOf="@+id/tag_selected_char"
+            android:layout_alignBottom="@+id/tag_selected_char"
+            android:background="@drawable/button_forward" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -267,7 +291,8 @@
             android:ems="3"
             android:id="@+id/input_initiative"
             android:layout_below="@+id/input_charName"
-            android:layout_toRightOf="@+id/tag_initiative" />
+            android:layout_toRightOf="@+id/tag_stamina"
+            android:textSize="@dimen/detail_title" />
 
         <Button
             android:layout_width="wrap_content"
@@ -292,7 +317,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hp"
+            android:text="@string/HealthPoints"
             android:id="@+id/tag_healthPoints"
             android:layout_alignParentStart="true"
             android:layout_alignBottom="@+id/input_healthPoints"
@@ -307,7 +332,8 @@
             android:ems="3"
             android:id="@+id/input_healthPoints"
             android:layout_below="@+id/input_initiative"
-            android:layout_toRightOf="@+id/tag_healthPoints" />
+            android:layout_toRightOf="@+id/tag_stamina"
+            android:textSize="@dimen/detail_title" />
 
         <Button
             android:layout_width="wrap_content"
@@ -347,7 +373,8 @@
             android:ems="3"
             android:id="@+id/input_stamina"
             android:layout_below="@+id/input_healthPoints"
-            android:layout_toRightOf="@+id/tag_stamina" />
+            android:layout_toRightOf="@+id/tag_stamina"
+            android:textSize="@dimen/detail_title" />
 
         <Button
             android:layout_width="wrap_content"
@@ -369,6 +396,30 @@
             android:layout_toRightOf="@+id/btn_initiative_minus"
             android:paddingLeft="10dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/isNPC"
+            android:id="@+id/char_isNPC"
+            android:layout_toRightOf="@+id/input_charName"
+            android:layout_toEndOf="@+id/btn_char_backward"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/input_charName"
+            android:textSize="@dimen/detail_text"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggle_isNPC"
+            android:layout_below="@+id/char_isNPC"
+            android:layout_alignLeft="@+id/char_isNPC"
+            android:layout_alignStart="@+id/char_isNPC"
+            android:button="@drawable/checkbox"
+            android:checked="false"
+            android:layout_alignRight="@+id/char_isNPC"
+            android:layout_alignBottom="@+id/btn_initiative_plus" />
+
     </RelativeLayout>
 </LinearLayout>
-<!-- From: file:/C:/MittiUnityProject/trunk/GMTool/GameMasterTool/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/MittiUnityProjects/trunk/GMTool/GameMasterTool/app/src/main/res/layout/activity_main.xml -->

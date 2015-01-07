@@ -1,9 +1,0 @@
-
-public class Animals {
-	private int age;
-	private String name="";
-	
-	public Animal(){
-		Animals animals=new an
-	}
-}
