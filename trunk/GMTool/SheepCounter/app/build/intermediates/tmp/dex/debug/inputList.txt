@@ -1,5 +1,0 @@
-C:\MittiUnityProject\trunk\GMTool\SheepCounter\app\build\intermediates\classes\debug
-C:\MittiUnityProject\trunk\GMTool\SheepCounter\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-e7dea0a665a1f938b1408c3d3857f888ef4c40f2.jar
-C:\MittiUnityProject\trunk\GMTool\SheepCounter\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-347525a39af3c5e9aaeabc8f5d1700be6b64a1f4.jar
-C:\MittiUnityProject\trunk\GMTool\SheepCounter\app\build\intermediates\pre-dexed\debug\classes-48503bd744633a8def3b0646c85a6ac8d05c7f5f.jar
-C:\MittiUnityProject\trunk\GMTool\SheepCounter\app\build\intermediates\pre-dexed\debug\classes-7454e43d6e971c2c4e9a768d1b31620dcdf718b0.jar
