@@ -37,4 +37,4 @@
         android:src="@drawable/ic_launcher"
         android:scaleType="centerCrop" />
 </RelativeLayout>
-<!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/layout/fragment_scout_log_details.xml -->
+<!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/ScoutTools/app/src/main/res/layout/fragment_scout_log_details.xml -->

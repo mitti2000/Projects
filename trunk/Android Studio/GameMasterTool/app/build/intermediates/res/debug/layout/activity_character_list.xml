@@ -20,4 +20,4 @@
         android:id="@+id/button"
         android:layout_weight="10" />
 </LinearLayout>
-<!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/GameMasterTool/app/src/main/res/layout/activity_character_list.xml -->
+<!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/GameMasterTool/app/src/main/res/layout/activity_character_list.xml -->

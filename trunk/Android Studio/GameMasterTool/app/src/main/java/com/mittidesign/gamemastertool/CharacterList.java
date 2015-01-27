@@ -19,11 +19,11 @@ public class CharacterList extends ActionBarActivity {
         setContentView(R.layout.activity_character_list);
 
         Character character_data[] = new Character[]{
-                new Character("Tyrill", 25,10,""),
-                new Character("Emgrisch", 25,10,""),
-                new Character("Balbarosch", 25,10,""),
-                new Character("Sam", 25,10,""),
-                new Character("Goblinkönig", 25,10,""),
+                new Character("Tyrill"),
+                new Character("Emgrisch"),
+                new Character("Balbarosch"),
+                new Character("Sam"),
+                new Character("Goblinkönig"),
         };
 
         CharacterAdapter adapter = new CharacterAdapter(this, R.layout.charlist_item_row, character_data);
