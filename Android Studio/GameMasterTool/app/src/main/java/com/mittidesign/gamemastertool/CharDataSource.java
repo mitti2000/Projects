@@ -56,6 +56,7 @@ public class CharDataSource {
         return character;
     }
 
+
     public void deleteCharacter(Characters character){
         long id = character.getId();
         database.delete(CharactersDbHelper.TABLE_CHARACTERS, CharactersDbHelper.COLUMN_ID + "=" + id,null );
@@ -69,12 +70,12 @@ public class CharDataSource {
         int staminaIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_STAMINA);
         int npcIndex = cursor.getColumnIndex(CharactersDbHelper.COLUMN_NPC);
 
-        Character character = new Character(cursor.getString(nameIndex),0,0,"");
-        character.setId(cursor.getLong(idIndex));
+        Character character = new Character(cursor.getString(nameIndex));
+        /*character.setId(cursor.getLong(idIndex));
         character.setInitiative(cursor.getInt(initiativeIndex));
         character.setHealthPoints(cursor.getInt(hpIndex));
         character.setStamina(cursor.getInt(staminaIndex));
-        character.clearNPC();
+        character.clearNPC();*/
 
         return character;
     }

@@ -1,5 +1,5 @@
-C:\MittiUnityProjects\trunk\GMTool\GameMasterTool\app\build\intermediates\classes\debug
-C:\MittiUnityProjects\trunk\GMTool\GameMasterTool\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-7e41016d74971bd662b8c21e0c0b939af5269f5b.jar
-C:\MittiUnityProjects\trunk\GMTool\GameMasterTool\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-7ad14c13758c0550668f35988feb7f76ddd7fb8c.jar
-C:\MittiUnityProjects\trunk\GMTool\GameMasterTool\app\build\intermediates\pre-dexed\debug\classes-625d188625435c545ff4a565de24a69f79843c02.jar
-C:\MittiUnityProjects\trunk\GMTool\GameMasterTool\app\build\intermediates\pre-dexed\debug\classes-1acbd523a604952ea060ffb9f43029de440fd079.jar
+C:\MittiUnityProjects\trunk\Android Studio\GameMasterTool\app\build\intermediates\classes\debug
+C:\MittiUnityProjects\trunk\Android Studio\GameMasterTool\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-7e41016d74971bd662b8c21e0c0b939af5269f5b.jar
+C:\MittiUnityProjects\trunk\Android Studio\GameMasterTool\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-3f8a13ac6fe99c2f772fa92be46603c35f1f246d.jar
+C:\MittiUnityProjects\trunk\Android Studio\GameMasterTool\app\build\intermediates\pre-dexed\debug\classes-9fb32155e5678be94401d39d25c7adcdbdfc143c.jar
+C:\MittiUnityProjects\trunk\Android Studio\GameMasterTool\app\build\intermediates\pre-dexed\debug\classes-692cd3fa99c3e29fce64977755626327f461b5e6.jar

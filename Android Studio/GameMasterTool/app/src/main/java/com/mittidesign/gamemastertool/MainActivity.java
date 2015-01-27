@@ -19,7 +19,7 @@ import java.util.Random;
 import org.w3c.dom.Text;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity { //ActionBar
     public String[] last5rollsArray = new String[5];
 
     //TODO: Variabel for ListView Test
@@ -35,14 +35,24 @@ public class MainActivity extends ActionBarActivity {
         last5rollsClear();
 
 
+
+
+
+
         //TODO: Testing area for ListView
         //**********************************************************************
-        Character character_data[] = new Character[]{
+       /* Character character_data[] = new Character[]{
                 new Character("Tyrill", 25,10,""),
                 new Character("Emgrisch", 25,10,""),
                 new Character("Balbarosch", 25,10,""),
                 new Character("Sam", 25,10,""),
                 new Character("Goblinkönig", 25,10,""),
+        };*/
+
+        Character character_data[] = new Character[]{
+            dataSource.createCharacter("Tyrill"),
+            dataSource.createCharacter("Balbarosch"),
+            dataSource.createCharacter("Emgrisch")
         };
 
         CharacterAdapter adapter = new CharacterAdapter(this, R.layout.charlist_item_row, character_data);
@@ -145,9 +155,11 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+// TODO: Daten für Database
+// ********************************************
       dataSource = new CharDataSource(this);
         try {
-            dataSource.open();
+            dataSource.open(); //get writeable Database
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -156,6 +168,8 @@ public class MainActivity extends ActionBarActivity {
     public void openCharacterList(View view) {
         Intent intent = new Intent(this, CharacterList.class);
     }
+
+//*************************************
 
     //Dice roller according to Dice Size
     public void rollDice(int dizeSize){
@@ -206,36 +220,6 @@ public class MainActivity extends ActionBarActivity {
         textViewLast5Rolls.setText(last5rollsArray[0] + "/" +last5rollsArray[1] + "/" +last5rollsArray[2] + "/" +last5rollsArray[3] + "/" +last5rollsArray[4]);
     }
 
-    //TODO: Delete if ListView Works
-    public void createTableRow(){
-        //Find table to add the row to
-        TableLayout charTable = (TableLayout) findViewById(R.id.charTable);
-        //Create container for row to add
-        TableRow charRow = new TableRow(this);
-        //Create TextViews for Character and fill with Value
-        TextView charActive = new TextView(this);
-        charActive.setText("X");
-        TextView charName = new TextView(this);
-        charActive.setText("Gilliath");
-        TextView charInitiative = new TextView(this);
-        charActive.setText(Integer.toString(25));
-        TextView charHP = new TextView(this);
-        charActive.setText(Integer.toString(13));
-        TextView charStamina = new TextView(this);
-        charActive.setText(Integer.toString(0));
-        TextView charNPC = new TextView(this);
-        charActive.setText("npc");
-
-        //Add Views to Row
-        charRow.addView(charActive,0);
-        charRow.addView(charName,1);
-        charRow.addView(charInitiative,2);
-        charRow.addView(charHP,3);
-        charRow.addView(charStamina,4);
-        charRow.addView(charNPC,5);
-
-        charTable.addView(charRow);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

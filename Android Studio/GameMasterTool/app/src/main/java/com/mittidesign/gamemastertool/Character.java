@@ -10,14 +10,14 @@ public class Character {
     private String npc;
 
     //Constructor
-    public Character(String name, int healthPoints, int stamina, String npc) {
+    public Character(String name) {
         super();
         this.active = "";
         this.name = name;
         this.initiative = 0;
-        this.healthPoints = healthPoints;
-        this.stamina = stamina;
-        this.npc = npc;
+        this.healthPoints = 0;
+        this.stamina = 0;
+        this.npc = "yes";
     }
     //ID
     public long getId() {

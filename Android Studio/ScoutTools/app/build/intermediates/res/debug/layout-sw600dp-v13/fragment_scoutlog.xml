@@ -44,4 +44,4 @@
         android:background="#eeeeee"
         android:id="@+id/container_scoutlog_details"
         android:layout_weight="2"></FrameLayout>
-</LinearLayout><!-- From: file:/C:/MittiUnityProjects/trunk/ScoutTools/app/src/main/res/layout-sw600dp/fragment_scoutlog.xml -->
+</LinearLayout><!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/ScoutTools/app/src/main/res/layout-sw600dp/fragment_scoutlog.xml -->
