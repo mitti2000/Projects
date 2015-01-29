@@ -1,4 +1,4 @@
-package com.mittidesign.gamemastertool;
+package com.mittidesign.initiativemanager;
 
 
 import android.app.Activity;
@@ -9,13 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class CharacterAdapter extends ArrayAdapter<Character> {
+import java.util.ArrayList;
 
+public class CharacterAdapter extends ArrayAdapter<Character> {
     Context context;
     int layoutResourceId;
-    Character data[] = null;
+    ArrayList<Character> data;
 
-    public CharacterAdapter(Context context, int layoutResourceId, Character[] data) {
+    public CharacterAdapter(Context context, int layoutResourceId, ArrayList<Character> data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
@@ -25,7 +26,7 @@ public class CharacterAdapter extends ArrayAdapter<Character> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
-        CharacterHolder holder = null;
+        CharacterHolder holder;
 
         if(row == null)
         {
@@ -33,13 +34,9 @@ public class CharacterAdapter extends ArrayAdapter<Character> {
             row = inflater.inflate(layoutResourceId, parent, false);
 
             holder = new CharacterHolder();
-            holder.charActive = (TextView)row.findViewById(R.id.charActive);
             holder.charName = (TextView)row.findViewById(R.id.charName);
             holder.charInitiative = (TextView)row.findViewById(R.id.charInitiative);
             holder.charHealthPoints = (TextView)row.findViewById(R.id.charHealthPoints);
-            holder.charStamina = (TextView)row.findViewById(R.id.charStamina);
-            holder.charNPC = (TextView)row.findViewById(R.id.charNPC);
-
 
             row.setTag(holder);
         }
@@ -48,24 +45,18 @@ public class CharacterAdapter extends ArrayAdapter<Character> {
             holder = (CharacterHolder)row.getTag();
         }
 
-        Character character = data[position];
-        holder.charActive.setText(character.getActive());
+        Character character = data.get(position);
         holder.charName.setText(character.getName());
         holder.charInitiative.setText(Integer.toString(character.getInitiative()));
         holder.charHealthPoints.setText(Integer.toString(character.getHealthPoints()));
-        holder.charStamina.setText(Integer.toString(character.getStamina()));
-        holder.charNPC.setText(character.getNpc());
 
         return row;
     }
 
     static class CharacterHolder
     {
-        TextView charActive;
         TextView charName;
         TextView charInitiative;
         TextView charHealthPoints;
-        TextView charStamina;
-        TextView charNPC;
     }
 }
