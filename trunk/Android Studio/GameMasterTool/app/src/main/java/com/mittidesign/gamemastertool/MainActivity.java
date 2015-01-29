@@ -164,12 +164,12 @@ public class MainActivity extends Activity { //ActionBar
             e.printStackTrace();
         }
     }
-
+    //*************************************
     public void openCharacterList(View view) {
         Intent intent = new Intent(this, CharacterList.class);
     }
 
-//*************************************
+
 
     //Dice roller according to Dice Size
     public void rollDice(int dizeSize){

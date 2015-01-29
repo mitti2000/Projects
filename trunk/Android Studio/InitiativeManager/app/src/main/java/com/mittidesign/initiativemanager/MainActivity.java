@@ -2,17 +2,22 @@ package com.mittidesign.initiativemanager;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
+import java.util.ArrayList;
 
-import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    private ListView charList;
-    private CharDataSource dataSource;
+    private CharDataSource dataSource = null;
+    private CharacterAdapter adapter = null;
+    private ArrayList<Character> character_data = null;
+    public ListView charList;
 
 
 
@@ -20,7 +25,62 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // TODO: Laden der Datenbank
+        if(dataSource == null) {
+            dataSource = new CharDataSource(this);
+            try {
+                dataSource.open(); //get writeable Database
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        Button btn_delete = (Button) findViewById(R.id.btn_delete_table);
+        Button btn_newChar = (Button) findViewById(R.id.btn_new_char);
+
+        // TODO: Holen der Daten aus Datenbank
+        if(character_data == null) {
+            character_data = dataSource.getAllCharacters();
+        }
+
+
+        // TODO: Erstellen des Adapters
+        if(adapter == null) {
+            adapter = new CharacterAdapter(this, R.layout.charlist_item_row, character_data);
+        }
+
+
+        charList = (ListView) findViewById(R.id.char_list);
+        View header = getLayoutInflater().inflate(R.layout.charlist_header_row, null);
+        charList.addHeaderView(header);
+        charList.setAdapter(adapter);
+
+        btn_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dataSource.deleteDatabase();
+                adapter.clear();
+            }
+        });
+        btn_newChar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Character character = dataSource.createCharacter("New Char3");
+                adapter.add(character);
+            }
+        });
+
+
+
     }
+
+
+
+
+
+
+
 
 
     @Override

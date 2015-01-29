@@ -1,0 +1,5 @@
+C:\MittiUnityProjects\trunk\Android Studio\InitiativeManager\app\build\intermediates\classes\debug
+C:\MittiUnityProjects\trunk\Android Studio\InitiativeManager\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-e1d92373c0ca3c5bb5b7edaf8d43705af570f151.jar
+C:\MittiUnityProjects\trunk\Android Studio\InitiativeManager\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-55bf96d8fd12699c31abeee28a06ce8c7f659c69.jar
+C:\MittiUnityProjects\trunk\Android Studio\InitiativeManager\app\build\intermediates\pre-dexed\debug\classes-804f19d5644f418e7fa2892552713b3c50c4c6e7.jar
+C:\MittiUnityProjects\trunk\Android Studio\InitiativeManager\app\build\intermediates\pre-dexed\debug\classes-4c14216f63294998e49df38017371f38cc751d60.jar

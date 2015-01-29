@@ -9,13 +9,16 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class CharacterAdapter extends ArrayAdapter<Character> {
 
     Context context;
     int layoutResourceId;
-    Character data[] = null;
+    ArrayList<Character> data = 0;
+    //Character data[] = null;
 
-    public CharacterAdapter(Context context, int layoutResourceId, Character[] data) {
+    public CharacterAdapter(Context context, int layoutResourceId, ArrayList<Character> data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;

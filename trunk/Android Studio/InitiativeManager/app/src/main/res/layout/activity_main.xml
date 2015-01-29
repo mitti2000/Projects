@@ -9,14 +9,29 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/listView"
+        android:id="@+id/char_list"
         android:layout_gravity="center_horizontal"
         android:layout_weight="4" />
 
-    <Button
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_weight="1" />
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="New Char"
+            android:id="@+id/btn_new_char"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Delete Table"
+            android:id="@+id/btn_delete_table"
+            android:layout_weight="1" />
+    </LinearLayout>
+
 </LinearLayout>

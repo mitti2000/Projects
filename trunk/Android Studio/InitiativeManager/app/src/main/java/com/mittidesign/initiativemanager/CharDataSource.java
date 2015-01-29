@@ -6,6 +6,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.util.ArrayList;
+
 public class CharDataSource {
 
     private SQLiteDatabase database; //Variable for Database
@@ -53,6 +55,46 @@ public class CharDataSource {
         return character;
     }
 
+
+    public ArrayList<Character> getAllCharacters(){
+        String sortOrder = DBHelper.COLUMN_NAME + " DESC";
+        int indexID;
+        int indexName;
+        int indexHP;
+        int indexInitiative;
+        Character character;
+        ArrayList<Character> chars;
+
+
+        Cursor cursor= database.query(
+            DBHelper.TABLE_CHARACTERS,
+            columns,
+            null,null,null,null,
+            sortOrder
+            );
+        chars = new ArrayList<Character>();
+
+        cursor.moveToPosition(-1);
+        while(cursor.moveToNext()){
+            indexID = cursor.getColumnIndex(DBHelper.COLUMN_ID);
+            indexName =cursor.getColumnIndex(DBHelper.COLUMN_NAME);
+            indexHP = cursor.getColumnIndex(DBHelper.COLUMN_HP);
+            indexInitiative = cursor.getColumnIndex(DBHelper.COLUMN_INITIATIVE);
+
+            character = new Character(cursor.getString(indexName));
+            character.setId(cursor.getLong(indexID));
+            character.setHealthPoints(cursor.getInt(indexHP));
+            character.setInitiative(cursor.getInt(indexInitiative));
+            chars.add(character);
+        }
+        cursor.close();
+        return chars;
+    }
+
+    public void deleteDatabase(){
+        database.delete(DBHelper.TABLE_CHARACTERS,null,null);
+    }
+
     private Character populateCharacters(Cursor cursor){
         int idIndex = cursor.getColumnIndex(DBHelper.COLUMN_ID);
         int nameIndex = cursor.getColumnIndex(DBHelper.COLUMN_NAME);
@@ -64,7 +106,7 @@ public class CharDataSource {
         character.setHealthPoints(cursor.getInt(hpIndex));
         character.setInitiative(cursor.getInt(initiativeIndex));
 
-        return character
+        return character;
     }
 
 }
