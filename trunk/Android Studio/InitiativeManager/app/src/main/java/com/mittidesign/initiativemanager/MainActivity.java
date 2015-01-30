@@ -1,5 +1,6 @@
 package com.mittidesign.initiativemanager;
 
+import android.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,7 +18,8 @@ public class MainActivity extends ActionBarActivity {
     private CharDataSource dataSource = null;
     private CharacterAdapter adapter = null;
     private ArrayList<Character> character_data = null;
-    public ListView charList;
+    private ListView charList;
+    private DialogFragment alertFragment;
 
 
 
@@ -38,6 +40,7 @@ public class MainActivity extends ActionBarActivity {
 
         Button btn_delete = (Button) findViewById(R.id.btn_delete_table);
         Button btn_newChar = (Button) findViewById(R.id.btn_new_char);
+        Button btn_alert = (Button) findViewById(R.id.btn_alert);
 
         // TODO: Holen der Daten aus Datenbank
         if(character_data == null) {
@@ -68,6 +71,14 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Character character = dataSource.createCharacter("New Char3");
                 adapter.add(character);
+            }
+        });
+
+        btn_alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertFragment = new AddCharDialogFragment();
+                alertFragment.show(getFragmentManager(),"how_many");
             }
         });
 

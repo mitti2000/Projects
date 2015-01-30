@@ -1329,15 +1329,17 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080045;
+        public static final int action_settings=0x7f080047;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
+        public static final int btn_alert=0x7f080042;
         public static final int btn_delete_table=0x7f080041;
         public static final int btn_new_char=0x7f080040;
-        public static final int charHealthPoints=0x7f080044;
-        public static final int charInitiative=0x7f080043;
-        public static final int charName=0x7f080042;
+        public static final int charHealthPoints=0x7f080046;
+        public static final int charInitiative=0x7f080045;
+        public static final int charName=0x7f080044;
+        public static final int char_amount=0x7f080043;
         public static final int char_list=0x7f08003f;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
@@ -1415,9 +1417,10 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int charlist_header_row=0x7f030018;
-        public static final int charlist_item_row=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int alert_fragment=0x7f030018;
+        public static final int charlist_header_row=0x7f030019;
+        public static final int charlist_item_row=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
         public static final int menu_main=0x7f0c0000;
@@ -1453,21 +1456,24 @@ containing a value of this type.
         public static final int action_settings=0x7f0a001b;
         public static final int action_test=0x7f0a001c;
         public static final int active=0x7f0a001d;
-        public static final int add_character=0x7f0a001e;
-        public static final int app_name=0x7f0a001f;
-        public static final int clear=0x7f0a0020;
-        public static final int dice_result_tag=0x7f0a0021;
-        public static final int hello_world=0x7f0a0022;
-        public static final int initiative_long=0x7f0a0023;
-        public static final int initiative_short=0x7f0a0024;
-        public static final int isNPC=0x7f0a0025;
-        public static final int last_5_rolls_tag=0x7f0a0026;
-        public static final int no=0x7f0a0027;
-        public static final int npc=0x7f0a0028;
-        public static final int selected_character=0x7f0a0029;
-        public static final int stamina=0x7f0a002a;
-        public static final int title_activity_character_list=0x7f0a002b;
-        public static final int yes=0x7f0a002c;
+        public static final int add=0x7f0a001e;
+        public static final int add_character=0x7f0a001f;
+        public static final int app_name=0x7f0a0020;
+        public static final int cancel=0x7f0a0021;
+        public static final int character_amount=0x7f0a0022;
+        public static final int clear=0x7f0a0023;
+        public static final int dice_result_tag=0x7f0a0024;
+        public static final int hello_world=0x7f0a0025;
+        public static final int initiative_long=0x7f0a0026;
+        public static final int initiative_short=0x7f0a0027;
+        public static final int isNPC=0x7f0a0028;
+        public static final int last_5_rolls_tag=0x7f0a0029;
+        public static final int no=0x7f0a002a;
+        public static final int npc=0x7f0a002b;
+        public static final int selected_character=0x7f0a002c;
+        public static final int stamina=0x7f0a002d;
+        public static final int title_activity_character_list=0x7f0a002e;
+        public static final int yes=0x7f0a002f;
     }
     public static final class style {
         /**  Customize your theme here. 
