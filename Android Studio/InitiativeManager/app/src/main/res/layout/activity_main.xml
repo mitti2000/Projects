@@ -32,6 +32,13 @@
             android:text="Delete Table"
             android:id="@+id/btn_delete_table"
             android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Alert"
+            android:id="@+id/btn_alert"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>
