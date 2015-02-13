@@ -9,4 +9,4 @@
     <item android:state_checked="true"
         android:drawable="@drawable/toggle_on" />
 </selector>
-<!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/GameMasterTool/app/src/main/res/drawable/checkbox.xml -->
+<!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/GameMasterTool/app/src/main/res/drawable/checkbox.xml -->

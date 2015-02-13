@@ -5,14 +5,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <TextView android:id="@+id/charActive"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:gravity="center_vertical"
-        android:textSize="@dimen/table_chararacter_title"
-        android:textColor="@color/text_dark"
-        android:layout_weight="10" />
-
     <TextView android:id="@+id/charName"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
@@ -37,21 +29,4 @@
         android:textColor="@color/text_dark"
         android:layout_weight="12" />
 
-    <TextView android:id="@+id/charStamina"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:textSize="@dimen/table_chararacter_title"
-        android:textColor="@color/text_dark"
-        android:layout_weight="12" />
-
-    <TextView android:id="@+id/charNPC"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:gravity="center_vertical"
-        android:textSize="@dimen/table_chararacter_title"
-        android:textColor="@color/text_dark"
-        android:layout_weight="10"/>
-
-</LinearLayout><!-- From: file:/C:/MittiUnityProjects/trunk/Android%20Studio/GameMasterTool/app/src/main/res/layout/charlist_item_row.xml -->
+</LinearLayout><!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/GameMasterTool/app/src/main/res/layout/charlist_item_row.xml -->
