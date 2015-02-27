@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="text_dice_size_1digit">12sp</dimen>
+    <dimen name="text_dice_size_2digit">12sp</dimen>
+    <dimen name="text_dice_size_3digit">10sp</dimen>
+    <dimen name="text_dice_size_clear">14sp</dimen>
+    <dimen name="text_dice_result_tag">14sp</dimen>
+    <dimen name="text_dice_result">40sp</dimen>
+    <dimen name="text_last_5_rolls_tag">14sp</dimen>
+    <dimen name="text_last_5_rolls">13sp</dimen>
+    <dimen name="table_chararacter_title">14sp</dimen>
+    <dimen name="detail_title">16dp</dimen>
+    <dimen name="detail_text">14sp</dimen>
     <dimen name="alert_label_normal">25sp</dimen>
+    <dimen name="text_editchar_label">15sp</dimen>
+    <dimen name="text_editchar_title">20sp</dimen>
+    <dimen name="text_btn_fight_control">12sp</dimen>
+    <dimen name="text_selectedcharacter_title">15sp</dimen>
+    <dimen name="text_selectedcharacter_label">13sp</dimen>
 </resources>

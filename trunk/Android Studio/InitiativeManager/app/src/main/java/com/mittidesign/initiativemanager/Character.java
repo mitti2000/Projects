@@ -2,6 +2,7 @@ package com.mittidesign.initiativemanager;
 
 public class Character {
     private long id;
+    private String active;
     private String name;
     private int healthPoints;
     private int initiative;
@@ -66,6 +67,15 @@ public class Character {
     public boolean isNpc() {
         return npc;
     }
+
+    public String getActive() {
+        return active;
+    }
+
+    public void setActive(String active) {
+        this.active=active;
+    }
+
 
     public void setNpc(int npc) {
         if(npc>0) this.npc=true;

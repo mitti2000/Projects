@@ -19,7 +19,7 @@ import java.util.Random;
 import org.w3c.dom.Text;
 
 
-public class MainActivity extends Activity { //ActionBar
+public class MainActivity extends Activity {
     public String[] last5rollsArray = new String[5];
 
     //TODO: Variabel for ListView Test

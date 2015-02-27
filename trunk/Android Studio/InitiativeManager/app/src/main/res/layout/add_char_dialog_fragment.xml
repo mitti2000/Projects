@@ -7,18 +7,94 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Name"
-        android:id="@+id/lab_char_name"
-        android:layout_alignParentStart="true"
-        android:textSize="@dimen/alert_label_normal"
-        android:textColor="@color/text_dark" />
+        android:id="@+id/lab_amount"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_editchar_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HealthPoints"
+        android:id="@+id/lab_HP"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_editchar_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/lab_amount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stamina_long"
+        android:id="@+id/lab_stamina"
+        android:layout_marginTop="31dp"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_editchar_label"
+        android:layout_below="@+id/lab_HP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/npc"
+        android:id="@+id/lab_npc"
+        android:layout_marginTop="39dp"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_editchar_label"
+        android:layout_below="@+id/lab_stamina"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/inp_amount"
+        android:inputType="text"
+        android:layout_toEndOf="@+id/lab_stamina"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_alignBottom="@+id/lab_amount"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inp_hp"
         android:inputType="number"
-        android:id="@+id/inp_char_name"
-        android:layout_alignTop="@+id/lab_char_name"
-        android:layout_toRightOf="@+id/lab_char_name"
-        android:textSize="@dimen/alert_label_normal" />
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignLeft="@+id/inp_amount"
+        android:layout_alignBottom="@+id/lab_HP"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inp_stamina"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/lab_stamina"
+        android:layout_alignLeft="@+id/inp_hp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chk_npc"
+        android:layout_alignBottom="@+id/lab_npc"
+        android:layout_alignLeft="@+id/inp_stamina"
+        android:layout_alignStart="@+id/inp_stamina" />
 
 </RelativeLayout>
