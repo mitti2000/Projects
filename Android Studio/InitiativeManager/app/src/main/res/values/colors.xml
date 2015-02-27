@@ -3,4 +3,6 @@
     <color name="text_white">#AAA</color>
     <color name="text_red">#F00</color>
     <color name="text_dark">#111</color>
+    <color name="selected_char">#999</color>
+    <color name="list_view_standard">#fff</color>
 </resources>

@@ -4,51 +4,41 @@ package com.mittidesign.initiativemanager;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-
 import java.util.ArrayList;
 
-public class CharDataSource {
-
-    private SQLiteDatabase database; //Variable for Database
-    private CharacterDbHelper dbHelper; //Variable for DB Helper
+public class CharDataSource extends DataSource{
 
     private String[] columns = { //Columns in Table
-            CharacterDbHelper.COLUMN_ID,
-            CharacterDbHelper.COLUMN_NAME,
-            CharacterDbHelper.COLUMN_HP,
-            CharacterDbHelper.COLUMN_STAMINA,
-            CharacterDbHelper.COLUMN_NPC,
+            DbHelper.COLUMN_CHAR_ID,
+            DbHelper.COLUMN_CHAR_NAME,
+            DbHelper.COLUMN_CHAR_HP,
+            DbHelper.COLUMN_CHAR_STAMINA,
+            DbHelper.COLUMN_CHAR_NPC
     };
 
     //Constructor
     public CharDataSource(Context context){
-        dbHelper = new CharacterDbHelper(context); //Get new DB helper in the Context of Acitivity
+        super(context);
     }
 
-    public void open(){
-        database = dbHelper.getWritableDatabase();
-    }
 
-    public void close(){
-        dbHelper.close();
-    }
+    public Character createCharacter(String name, int hp, int stamina, boolean npc){
+        int npcInt;
 
-    public Character createCharacter(String name){
-        //TODO: change variables to form values
-        int hp = 25;
-        int stamina = 12;
+        if (npc)  npcInt = 1;
+        else npcInt = 0;
 
         ContentValues values = new ContentValues();
-        values.put(CharacterDbHelper.COLUMN_NAME, name);
-        values.put(CharacterDbHelper.COLUMN_HP, hp);
-        values.put(CharacterDbHelper.COLUMN_STAMINA, stamina);
+        values.put(DbHelper.COLUMN_CHAR_NAME, name);
+        values.put(DbHelper.COLUMN_CHAR_HP, hp);
+        values.put(DbHelper.COLUMN_CHAR_STAMINA, stamina);
+        values.put(DbHelper.COLUMN_CHAR_NPC, npcInt);
 
-        long insertId = database.insert(CharacterDbHelper.TABLE_CHARACTERS,null,values);
+        long insertId = database.insert(DbHelper.TABLE_CHARLIST,null,values);
 
-        Cursor cursor = database.query(CharacterDbHelper.TABLE_CHARACTERS,
+        Cursor cursor = database.query(DbHelper.TABLE_CHARLIST,
                 columns,
-                CharacterDbHelper.COLUMN_ID + "=" + insertId,
+                DbHelper.COLUMN_CHAR_ID + "=" + insertId,
                 null,null,null,null);
         cursor.moveToFirst();
 
@@ -60,17 +50,18 @@ public class CharDataSource {
 
 
     public ArrayList<Character> getAllCharacters(){
-        String sortOrder = CharacterDbHelper.COLUMN_NAME + " DESC";
+        String sortOrder = DbHelper.COLUMN_CHAR_NAME + " DESC";
         int indexID;
         int indexName;
         int indexHP;
-        int indexInitiative;
+        int indexStamina;
+        int indexNpc;
         Character character;
         ArrayList<Character> chars;
 
 
         Cursor cursor= database.query(
-                CharacterDbHelper.TABLE_CHARACTERS,
+                DbHelper.TABLE_CHARLIST,
                 columns,
                 null,null,null,null,
                 sortOrder
@@ -79,38 +70,63 @@ public class CharDataSource {
 
         cursor.moveToPosition(-1);
         while(cursor.moveToNext()){
-            indexID = cursor.getColumnIndex(CharacterDbHelper.COLUMN_ID);
-            indexName =cursor.getColumnIndex(CharacterDbHelper.COLUMN_NAME);
-            indexHP = cursor.getColumnIndex(CharacterDbHelper.COLUMN_HP);
+            indexID = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_ID);
+            indexName =cursor.getColumnIndex(DbHelper.COLUMN_CHAR_NAME);
+            indexHP = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_HP);
+            indexStamina = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_STAMINA);
+            indexNpc = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_NPC);
 
             character = new Character(cursor.getString(indexName));
             character.setId(cursor.getLong(indexID));
             character.setHealthPoints(cursor.getInt(indexHP));
+            character.setStamina(cursor.getInt(indexStamina));
+            character.setNpc(cursor.getInt(indexNpc));
+
             chars.add(character);
         }
         cursor.close();
         return chars;
     }
 
+    public void deleteCharacter(Character character) {
+        database.delete(DbHelper.TABLE_CHARLIST, DbHelper.COLUMN_CHAR_ID + "=" + character.getId(), null);
+    }
+
+    public void editCharacter(Character character){
+        int npcInt;
+
+        if (character.isNpc())  npcInt = 1;
+        else npcInt = 0;
+
+        ContentValues values = new ContentValues();
+        values.put(DbHelper.COLUMN_CHAR_NAME, character.getName());
+        values.put(DbHelper.COLUMN_CHAR_HP, character.getHealthPoints());
+        values.put(DbHelper.COLUMN_CHAR_STAMINA, character.getStamina());
+        values.put(DbHelper.COLUMN_CHAR_NPC, npcInt);
+
+        database.update(DbHelper.TABLE_CHARLIST, values, DbHelper.COLUMN_CHAR_ID + "=" + character.getId(), null);
+    }
+
     public void deleteDatabase(){
-        database.delete(CharacterDbHelper.TABLE_CHARACTERS,null,null);
+        database.delete(DbHelper.TABLE_CHARLIST,null,null);
     }
 
     private Character populateCharacters(Cursor cursor){
-        int idIndex = cursor.getColumnIndex(CharacterDbHelper.COLUMN_ID);
-        int nameIndex = cursor.getColumnIndex(CharacterDbHelper.COLUMN_NAME);
-        int hpIndex = cursor.getColumnIndex(CharacterDbHelper.COLUMN_HP);
-        int staminaIndex = cursor.getColumnIndex(CharacterDbHelper.COLUMN_STAMINA);
-        int npcIndex = cursor.getColumnIndex(CharacterDbHelper.COLUMN_NPC);
+        int idIndex = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_ID);
+        int nameIndex = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_NAME);
+        int hpIndex = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_HP);
+        int staminaIndex = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_STAMINA);
+        int npcIndex = cursor.getColumnIndex(DbHelper.COLUMN_CHAR_NPC);
 
 
         Character character = new Character(cursor.getString(nameIndex));
         character.setId(cursor.getInt(idIndex));
         character.setHealthPoints(cursor.getInt(hpIndex));
         character.setStamina(cursor.getInt(staminaIndex));
-        character.setNpc(cursor.getInt(nameIndex));
+        character.setNpc(cursor.getInt(npcIndex));
 
         return character;
     }
 
 }
+

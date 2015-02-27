@@ -35,5 +35,19 @@
     <string name="add">Add</string>
     <string name="cancel">Cancel</string>
     <string name="title_activity_char_list">CharList</string>
+    <string name="delete_db">Delete DB</string>
+    <string name="edit_char">Edit Char</string>
+    <string name="title_activity_char_edit">CharEditActivity</string>
+    <string name="stamina_long">Stamina</string>
+    <string name="ok">Ok</string>
+    <string name="characters_in_fight">Characters in fight</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="delete">Delete</string>
+    <string name="new_character">New Character</string>
+    <string name="add_to_fight">Add to fight</string>
+    <string name="edit_character">Edit Character</string>
+    <string name="amount">How Many?</string>
 
 </resources>

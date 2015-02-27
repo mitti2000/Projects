@@ -15,16 +15,6 @@
         android:text= "@string/Name"
         android:layout_weight="44" />
 
-    <TextView android:id="@+id/charInitiative"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:textSize="@dimen/table_chararacter_title"
-        android:textColor="@color/text_dark"
-        android:text="@string/initiative_short"
-        android:layout_weight="12" />
-
     <TextView android:id="@+id/charHealthPoints"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
@@ -34,6 +24,27 @@
         android:text="@string/HealthPoints"
         android:layout_weight="12"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/charStamina"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/table_chararacter_title"
+        android:textColor="@color/text_dark"
+        android:text="@string/stamina"
+        android:layout_weight="12"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/charNPC"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/table_chararacter_title"
+        android:textColor="@color/text_dark"
+        android:text="@string/npc"
+        android:layout_weight="12" />
 
 
 </LinearLayout>

@@ -13,7 +13,7 @@
         android:textColor="@color/text_dark"
         android:layout_weight="44" />
 
-    <TextView android:id="@+id/charInitiative"
+    <TextView android:id="@+id/charHealthPoints"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:gravity="center_vertical"
@@ -21,7 +21,16 @@
         android:textColor="@color/text_dark"
         android:layout_weight="12" />
 
-    <TextView android:id="@+id/charHealthPoints"
+    <TextView android:id="@+id/charStamina"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/table_chararacter_title"
+        android:textColor="@color/text_dark"
+        android:layout_weight="12" />
+
+    <TextView
+        android:id="@+id/charNPC"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:gravity="center_vertical"
