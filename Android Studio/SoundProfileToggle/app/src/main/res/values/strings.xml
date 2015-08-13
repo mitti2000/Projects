@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sound Profile Widget</string>
+    <string name="title_activity_sound_profile_change">SoundProfileChange</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="imgDescription">SpeakerIcon</string>
+</resources>
