@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String[] hundeNamen = {"Fido", "Rex", "Kuddel", "Schnügi"};
+		String[] katzenNamen = {"Nacho", "Chulo", "Excalibur", "Bebe"};
+		Tier[] tier = new Tier[4];
+		
+		for (int i=0; i<4; i++){
+			
+		}
+		
+
+	}
+	
+
+}

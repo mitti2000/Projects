@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Hund einHund = new Hund();
+		Hund gleicherHund = (Hund) getObject(einHund);
+		
+
+	}
+	
+	public Object getObject(Object o){
+		return o;
+	}
+
+}

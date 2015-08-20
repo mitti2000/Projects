@@ -1,0 +1,19 @@
+
+public class Katze extends Tier{
+
+	@Override
+	void laufen() {
+		String laufen = "elegant";
+		System.out.prinln("Läuft " + laut);
+		
+	}
+
+	@Override
+	void gibLaut() {
+		String laut = "miau";
+		System.out.prinln("Gibt laut " + laut);
+		
+	}
+	
+
+}

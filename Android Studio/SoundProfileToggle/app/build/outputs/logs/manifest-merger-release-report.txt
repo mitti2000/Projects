@@ -13,44 +13,80 @@ ADDED from AndroidManifest.xml:2:1
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-application
+uses-permission#android.permission.VIBRATE
 ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+application
+ADDED from AndroidManifest.xml:7:5
 	android:label
-		ADDED from AndroidManifest.xml:8:9
+		ADDED from AndroidManifest.xml:10:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:6:9
+		ADDED from AndroidManifest.xml:8:9
 	android:icon
-		ADDED from AndroidManifest.xml:7:9
-	android:theme
 		ADDED from AndroidManifest.xml:9:9
+	android:theme
+		ADDED from AndroidManifest.xml:11:9
 receiver#com.mittidesign.soundprofiletoggle.SoundToggleWidgetProvider
-ADDED from AndroidManifest.xml:10:9
-	android:name
-		ADDED from AndroidManifest.xml:11:13
-intent-filter#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from AndroidManifest.xml:15:13
-action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from AndroidManifest.xml:16:17
-	android:name
-		ADDED from AndroidManifest.xml:16:25
-meta-data#android.appwidget.provider
-ADDED from AndroidManifest.xml:19:9
-	android:resource
-		ADDED from AndroidManifest.xml:21:13
-	android:name
-		ADDED from AndroidManifest.xml:20:13
-receiver#com.mittidesign.soundprofiletoggle.SoundToggleIntentReciever
-ADDED from AndroidManifest.xml:23:9
+ADDED from AndroidManifest.xml:12:9
 	android:label
-		ADDED from AndroidManifest.xml:25:13
+		ADDED from AndroidManifest.xml:15:13
+	android:icon
+		ADDED from AndroidManifest.xml:14:13
 	android:name
-		ADDED from AndroidManifest.xml:24:13
+		ADDED from AndroidManifest.xml:13:13
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:17:13
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:18:17
+	android:name
+		ADDED from AndroidManifest.xml:18:25
+meta-data#android.appwidget.provider
+ADDED from AndroidManifest.xml:21:9
+	android:resource
+		ADDED from AndroidManifest.xml:23:13
+	android:name
+		ADDED from AndroidManifest.xml:22:13
+receiver#com.mittidesign.soundprofiletoggle.SoundToggleIntentReciever
+ADDED from AndroidManifest.xml:25:9
+	android:label
+		ADDED from AndroidManifest.xml:27:13
+	android:icon
+		ADDED from AndroidManifest.xml:28:13
+	android:name
+		ADDED from AndroidManifest.xml:26:13
 intent-filter#com.mittidesign.intent.action.CHANGE_IMAGE
-ADDED from AndroidManifest.xml:26:13
+ADDED from AndroidManifest.xml:29:13
 action#com.mittidesign.intent.action.CHANGE_IMAGE
-ADDED from AndroidManifest.xml:27:17
+ADDED from AndroidManifest.xml:30:17
 	android:name
-		ADDED from AndroidManifest.xml:27:25
+		ADDED from AndroidManifest.xml:30:25
+receiver#com.mittidesign.soundprofiletoggle.RingerModeIntentReciever
+ADDED from AndroidManifest.xml:37:9
+	android:icon
+		ADDED from AndroidManifest.xml:39:13
+	android:name
+		ADDED from AndroidManifest.xml:38:13
+intent-filter#android.media.RINGER_MODE_CHANGED
+ADDED from AndroidManifest.xml:40:13
+action#android.media.RINGER_MODE_CHANGED
+ADDED from AndroidManifest.xml:41:17
+	android:name
+		ADDED from AndroidManifest.xml:41:25
+service#com.mittidesign.soundprofiletoggle.MyNotificationListener
+ADDED from AndroidManifest.xml:49:9
+	android:label
+		ADDED from AndroidManifest.xml:51:13
+	android:permission
+		ADDED from AndroidManifest.xml:52:13
+	android:name
+		ADDED from AndroidManifest.xml:50:13
+intent-filter#android.service.notification.NotificationListenerService
+ADDED from AndroidManifest.xml:53:13
+action#android.service.notification.NotificationListenerService
+ADDED from AndroidManifest.xml:54:17
+	android:name
+		ADDED from AndroidManifest.xml:54:25
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 	android:targetSdkVersion

@@ -2,11 +2,12 @@ package com.mittidesign.soundprofiletoggle;
 
 //Reciver Class to recieve the Click Event
 
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
-import android.util.Log;
+import android.os.Vibrator;
 import android.widget.RemoteViews;
 
 public class SoundToggleIntentReciever extends BroadcastReceiver {
@@ -19,7 +20,6 @@ public class SoundToggleIntentReciever extends BroadcastReceiver {
         }
     }
 
-
     private void updateWidgetPictureAndButtonListener(Context context) {
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.sound_toggle_layout);
         remoteViews.setImageViewResource(R.id.img_speaker, getImageToSet(context));
@@ -28,15 +28,23 @@ public class SoundToggleIntentReciever extends BroadcastReceiver {
     }
 
     private int getImageToSet(Context context) {
+
         final AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-        if (audioManager.getRingerMode() == 1) {
+        if (audioManager.getRingerMode() == 0) {
+            audioManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
+            Vibrator v = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+            v.vibrate(300);
+            return R.drawable.vibra2;
+        }
+        else if (audioManager.getRingerMode() == 1) {
             audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
             return R.drawable.speaker2;
         }
         else if (audioManager.getRingerMode() == 2) {
-            audioManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
-            return R.drawable.vibra2;
+            audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+            return R.drawable.mute2;
         }
+
         return R.drawable.speaker2;
     }
 }
