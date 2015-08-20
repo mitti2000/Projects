@@ -18,9 +18,10 @@ public final class R {
     }
     public static final class drawable {
         public static final int border=0x7f020000;
-        public static final int speaker=0x7f020001;
-        public static final int speaker2=0x7f020002;
-        public static final int vibra2=0x7f020003;
+        public static final int mute2=0x7f020001;
+        public static final int speaker=0x7f020002;
+        public static final int speaker2=0x7f020003;
+        public static final int vibra2=0x7f020004;
     }
     public static final class id {
         public static final int img_speaker=0x7f090001;
@@ -38,7 +39,8 @@ public final class R {
         public static final int app_name=0x7f080001;
         public static final int hello_world=0x7f080002;
         public static final int imgDescription=0x7f080003;
-        public static final int title_activity_sound_profile_change=0x7f080004;
+        public static final int service_name=0x7f080004;
+        public static final int title_activity_sound_profile_change=0x7f080005;
     }
     public static final class style {
         /**  Customize your theme here. 

@@ -1,0 +1,24 @@
+
+public class Katze extends Tier{
+	
+	public Katze (String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		tierart = "Katze";
+	}
+
+	@Override
+	void lauf() {
+		System.out.println("Die " + tierart + " mit dem Namen " + name + " läuft elegand");
+		
+	}
+
+	@Override
+	void gibLaut() {
+		String laut = "miau";
+		System.out.println("Die " + tierart + " mit dem Namen " + name + " mach Miau");
+		
+	}
+	
+
+}

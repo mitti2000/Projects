@@ -12,6 +12,7 @@
     <string name="app_name">Sound Profile Widget</string>
     <string name="hello_world">Hello world!</string>
     <string name="imgDescription">SpeakerIcon</string>
+    <string name="service_name">MyNotificationListener</string>
     <string name="title_activity_sound_profile_change">SoundProfileChange</string>
     <!-- From: file:/C:/MittiUnityProject/trunk/Android%20Studio/SoundProfileToggle/app/src/main/res/values/styles.xml -->
     <eat-comment/>

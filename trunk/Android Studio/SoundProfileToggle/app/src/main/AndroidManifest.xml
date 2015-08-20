@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mittidesign.soundprofiletoggle" >
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/speaker"
@@ -22,7 +24,7 @@
         </receiver>
         <receiver
             android:name="SoundToggleIntentReciever"
-            android:label="widgetBroadcastReciever"
+            android:label="@string/app_name"
             android:icon="@mipmap/speaker">
             <intent-filter>
                 <action android:name="com.mittidesign.intent.action.CHANGE_IMAGE" />
@@ -32,6 +34,27 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/sound_toggle_provider_info" />
         </receiver>
+        <receiver
+            android:name=".RingerModeIntentReciever"
+            android:icon="@mipmap/speaker">
+            <intent-filter>
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/sound_toggle_provider_info" />
+        </receiver>
+
+        <service
+            android:name=".MyNotificationListener"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
 
     </application>
 

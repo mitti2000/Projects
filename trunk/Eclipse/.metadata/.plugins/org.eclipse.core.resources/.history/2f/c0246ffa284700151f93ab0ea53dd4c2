@@ -1,0 +1,16 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Hund einHund = new Hund();
+		Hund gleicherHund = (Hund) getObject(einHund);
+		gleicherHund.gibLaut();
+		
+
+	}
+	
+	static Object getObject(Object o){
+		return o;
+	}
+
+}

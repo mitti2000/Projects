@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String[] namen = new String[4];
+				["Fido", "Rex", "Kuddel", "Schnügi"];
+		
+
+	}
+	
+	public Object getObject(Object o){
+		return o;
+	}
+
+}

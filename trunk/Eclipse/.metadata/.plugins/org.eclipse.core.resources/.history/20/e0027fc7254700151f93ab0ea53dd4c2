@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Hund einHund = new Hund;
+		
+
+	}
+	
+	public Object getObject(Object o){
+		return o;
+	}
+
+}

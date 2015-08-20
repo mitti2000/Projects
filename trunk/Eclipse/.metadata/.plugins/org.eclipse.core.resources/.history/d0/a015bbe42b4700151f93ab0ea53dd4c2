@@ -1,0 +1,16 @@
+
+public class Hund extends Tier{
+
+	@Override
+	void laufen() {
+		String laufen = "gallopierned";
+		System.out.println("Läuft " + laufen);
+		
+	}
+
+	@Override
+	void gibLaut() {
+		String laut = "WauWau";
+		System.out.println("Gibt laut " + laut);
+	}
+}

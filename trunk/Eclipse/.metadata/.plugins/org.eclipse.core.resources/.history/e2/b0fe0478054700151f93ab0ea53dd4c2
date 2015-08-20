@@ -1,0 +1,5 @@
+
+abstract public class Tier {
+	abstract void laufen();
+	abstract void gibLaut();
+}
