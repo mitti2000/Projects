@@ -1,8 +1,0 @@
-
-abstract public class Tier {
-	int alter;
-	String name;
-	String tierart;
-	abstract void laufen();
-	abstract void gibLaut();
-}

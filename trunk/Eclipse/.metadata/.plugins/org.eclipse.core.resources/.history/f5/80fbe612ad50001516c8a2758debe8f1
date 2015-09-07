@@ -1,0 +1,27 @@
+import java.awt.*;
+import javax.swing.*;import javax.swing.border.Border;
+
+public class Hauptprogramm {
+	JFrame hauptFrame; //Hauptfenster
+	JPanel panel; //Hintergrund
+	
+	public static void main (String[] args){
+		Hauptprogramm programm = new Hauptprogramm();
+		programm.drawGUI();
+	}
+	
+
+	
+	public void drawGUI(){
+		hauptFrame = new JFrame();
+		hauptFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel = new JPanel();
+		panel.setBackground(Color.darkGray);
+		
+		
+		hauptFrame.setBounds(50,50,300,300);
+		hauptFrame.pack();
+		hauptFrame.setVisible(true);
+	}
+}
+

@@ -1,0 +1,81 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;import javax.swing.border.Border;
+
+public class Hauptprogramm {
+	JFrame hauptFrame; //Hauptfenster
+	JPanel panel; //Hintergrund
+	
+	//topPanel
+	JPanel topPanel; //KW Umschalter
+	JButton kwLeft; //KW weniger
+	JButton kwRight; //KW mehr
+	JLabel kwLabel; //KW Label
+	
+	
+	public static void main (String[] args){
+		Hauptprogramm programm = new Hauptprogramm();
+		programm.drawGUI();
+	}
+	
+
+	
+	public void drawGUI(){
+		
+		//Main Part
+		hauptFrame = new JFrame("Kurzarbeitsrechner");
+		hauptFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel = new JPanel();
+		mainLayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
+		panel.setLayout(layout);
+		panel.setBackground(Color.darkGray);
+		
+		//KW Umschalter
+		
+		topPanel = new JPanel(new BoxLayout(topPanel, BoxLayout.X_AXIS));
+		
+		kwLeft=new JButton("<--");
+		kwLeft.addActionListener(new KWLeftActionListener());
+		topPanel.add(kwLeft);
+		
+		kwLabel = new JLabel("KW38"); //aktuelle KW aus DB holen
+		topPanel.add(kwLabel);
+		
+		kwRight = new JButton("-->");
+		kwRight.addActionListener(new KWRightActionListener());
+		topPanel.add(kwRight);
+		
+		
+		
+		
+		
+		
+		
+		
+		hauptFrame.setBounds(50,50,300,300);
+		hauptFrame.pack();
+		hauptFrame.setVisible(true);
+	}
+	
+	public class KWLeftActionListener implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+	
+	public class KWRightActionListener implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+}
+
+
+

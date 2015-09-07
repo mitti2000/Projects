@@ -1,0 +1,15 @@
+[core]
+	symlinks = false
+	repositoryformatversion = 0
+	filemode = false
+	logallrefupdates = true
+[remote "origin"]
+	url = http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	pushUrl = https://git.eclipse.org/r/recommenders/org.eclipse.recommenders.snipmatch.snippets.git
+	push = HEAD:refs/for/format-5
+[http]
+	sslVerify = false
+[branch "format-5"]
+	remote = origin
+	merge = refs/heads/format-5

@@ -1,0 +1,9 @@
+
+public class TestTest {
+	Test test;
+	public static void main (Strin[] args){
+		test = new Test();
+		System.out.println("TestInt: " + test.getTestInt);
+	}
+	
+}

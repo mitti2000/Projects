@@ -1,0 +1,11 @@
+
+public class Test implements TestInterface {
+	
+	int testInt = 5;
+	
+	public Int getTestInt(){
+		return testInt;
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+
+public class TestTest {
+	TestInterface test;
+	public static void main (String[] args){
+		TestTest testTest = new TestTest();
+		testTest.test = new Test();
+		System.out.println("TestInt: " + testTest.test.getTestInt());
+	}
+	
+}

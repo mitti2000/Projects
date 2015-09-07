@@ -1,5 +1,5 @@
 
-public class Katze extends Tier implements Haustier{
+abstract class Katze extends Tier implements Haustier{
 	
 	public Katze (String name, int alter){
 		this.name = name;

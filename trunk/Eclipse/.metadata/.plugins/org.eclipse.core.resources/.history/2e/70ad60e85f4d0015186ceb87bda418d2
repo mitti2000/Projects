@@ -1,0 +1,7 @@
+
+public class Test implements TestInterface {
+	
+	int testInt = 5;
+	
+
+}
