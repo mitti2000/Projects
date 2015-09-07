@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notifications>
+<event id="org.eclipse.epp.logging.aeri.notifications.event.response">
+<action selected="true" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.mylyn.builds.ui.events.PlanStatusChanged">
+<action selected="false" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="true" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.epp.logging.aeri.notifications.event.configure">
+<action selected="true" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.mylyn.builds.ui.events.BuildServiceChanged">
+<action selected="false" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="true" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.epp.logging.aeri.notifications.event.response.moreInfo">
+<action selected="true" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.epp.logging.aeri.notifications.event.fixed">
+<action selected="true" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.epp.logging.aeri.notifications.event.needinfo">
+<action selected="true" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+<event id="org.eclipse.epp.logging.aeri.notifications.event.newReport">
+<action selected="true" sink="org.eclipse.epp.logging.aeri.notifications.sink.popup"/>
+<action selected="false" sink="org.eclipse.mylyn.builds.ui.sink.View"/>
+<action selected="false" sink="org.eclipse.mylyn.commons.notifications.sink.Popup"/>
+</event>
+</notifications>

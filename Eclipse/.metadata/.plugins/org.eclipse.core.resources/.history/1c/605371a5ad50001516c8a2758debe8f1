@@ -1,0 +1,36 @@
+import java.awt.*;
+import javax.swing.*;import javax.swing.border.Border;
+
+public class Hauptprogramm {
+	JFrame hauptFrame; //Hauptfenster
+	JPanel panel; //Hintergrund
+	JPanel topPanel; //KW Umschalter
+	
+	public static void main (String[] args){
+		Hauptprogramm programm = new Hauptprogramm();
+		programm.drawGUI();
+	}
+	
+
+	
+	public void drawGUI(){
+		
+		//Main Part
+		hauptFrame = new JFrame("Kurzarbeitsrechner");
+		hauptFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel = new JPanel(new BoxLayout(panel, BoxLayout.Y_AXIS));
+		panel.setBackground(Color.darkGray);
+		
+		
+		topPanel = new JPanel(new BoxLayout(topPanel, BoxLayout.X_AXIS));
+		
+		
+		
+		
+		
+		hauptFrame.setBounds(50,50,300,300);
+		hauptFrame.pack();
+		hauptFrame.setVisible(true);
+	}
+}
+

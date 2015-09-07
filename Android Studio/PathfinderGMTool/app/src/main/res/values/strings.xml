@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pathfinder GM Tool</string>
+    <string name="title_activity_pathfider_gmtool">Pathfider GM Tool</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

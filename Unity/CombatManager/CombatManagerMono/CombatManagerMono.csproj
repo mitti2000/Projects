@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBF8DA20-E124-43B8-9080-840F4BCF0453}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CombatManagerMono</RootNamespace>
+    <AssemblyName>CombatManagerMono</AssemblyName>
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CrashReportingApiKey>
+    </CrashReportingApiKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="..\CombatManager\images\Annotate_Warning.ico">
+      <Link>Images\External\Annotate_Warning.ico</Link>
+    </None>
+    <None Include="..\CombatManager\images\d20-32.ico">
+      <Link>Images\External\d20-32.ico</Link>
+    </None>
+    <None Include="..\CombatManager\images\Network_Map.ico">
+      <Link>Images\External\Network_Map.ico</Link>
+    </None>
+    <None Include="..\CombatManager\images\sort.ico">
+      <Link>Images\External\sort.ico</Link>
+    </None>
+    <None Include="RELEASE-NOTES.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="CombatManagerMonoViewController.cs" />
+    <Compile Include="CombatManagerMonoViewController.designer.cs">
+      <DependentUpon>CombatManagerMonoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancerPanel.cs" />
+    <Compile Include="AdvancerPanel.designer.cs" />
+    <Compile Include="ButtonPropertyManager.cs" />
+    <Compile Include="ButtonStringPopover.cs" />
+    <Compile Include="CharacterListCellView.xib.cs">
+      <DependentUpon>CharacterListCellView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterListCellView.xib.designer.cs">
+      <DependentUpon>CharacterListCellView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterListView.cs" />
+    <Compile Include="CMDialogController.cs" />
+    <Compile Include="CMStyles.cs" />
+    <Compile Include="CMTab.cs" />
+    <Compile Include="CMUIColors.cs" />
+    <Compile Include="CombatListView.cs" />
+    <Compile Include="CombatTab.cs" />
+    <Compile Include="ConditionViewController.cs" />
+    <Compile Include="ConditionViewController.designer.cs" />
+    <Compile Include="DataListViewCell.cs" />
+    <Compile Include="DialogPopoverViewController.cs" />
+    <Compile Include="FeatsTab.cs" />
+    <Compile Include="GradientButton.cs" />
+    <Compile Include="GradientHelper.cs" />
+    <Compile Include="GradientView.cs" />
+    <Compile Include="GraphicUtils.cs" />
+    <Compile Include="HDEditorDialog.cs" />
+    <Compile Include="HDEditorDialog.designer.cs" />
+    <Compile Include="HealthViewPopover.xib.cs">
+      <DependentUpon>HealthViewPopover.xib</DependentUpon>
+    </Compile>
+    <Compile Include="HealthViewPopover.xib.designer.cs">
+      <DependentUpon>HealthViewPopover.xib</DependentUpon>
+    </Compile>
+    <Compile Include="LookupTab.cs" />
+    <Compile Include="MainUI.cs" />
+    <Compile Include="MonsterAddView.xib.cs">
+      <DependentUpon>MonsterAddView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterAddView.xib.designer.cs">
+      <DependentUpon>MonsterAddView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterEditorBasicPage.cs" />
+    <Compile Include="MonsterEditorBasicPage.designer.cs" />
+    <Compile Include="MonsterEditorDefensePage.cs" />
+    <Compile Include="MonsterEditorDefensePage.designer.cs" />
+    <Compile Include="MonsterEditorDescriptionPage.cs" />
+    <Compile Include="MonsterEditorDescriptionPage.designer.cs" />
+    <Compile Include="MonsterEditorDialog.cs" />
+    <Compile Include="MonsterEditorDialog.designer.cs" />
+    <Compile Include="MonsterEditorFeatsPage.cs" />
+    <Compile Include="MonsterEditorFeatsPage.designer.cs" />
+    <Compile Include="MonsterEditorOffensePage.cs" />
+    <Compile Include="MonsterEditorOffensePage.designer.cs" />
+    <Compile Include="MonsterEditorPage.cs" />
+    <Compile Include="MonsterEditorSpecialPage.cs" />
+    <Compile Include="MonsterEditorSpecialPage.designer.cs" />
+    <Compile Include="MonsterEditorStatisticsPage.cs" />
+    <Compile Include="MonsterEditorStatisticsPage.designer.cs" />
+    <Compile Include="MonstersTab.cs" />
+    <Compile Include="NumberModifyPopover.xib.cs">
+      <DependentUpon>NumberModifyPopover.xib</DependentUpon>
+    </Compile>
+    <Compile Include="NumberModifyPopover.xib.designer.cs">
+      <DependentUpon>NumberModifyPopover.xib</DependentUpon>
+    </Compile>
+    <Compile Include="NumPadView.xib.cs">
+      <DependentUpon>NumPadView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="NumPadView.xib.designer.cs">
+      <DependentUpon>NumPadView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="OpenDialog.cs" />
+    <Compile Include="OpenDialog.designer.cs" />
+    <Compile Include="RulesTab.cs" />
+    <Compile Include="SpellsTab.cs" />
+    <Compile Include="StandardDialogView.cs" />
+    <Compile Include="TextBoxDialog.cs" />
+    <Compile Include="TextBoxDialog.designer.cs" />
+    <Compile Include="ToolbarView.cs" />
+    <Compile Include="UIExtensions.cs" />
+    <Compile Include="SpecialAbilityView.cs" />
+    <Compile Include="DieRollerView.cs" />
+    <Compile Include="AttacksEditorDialog.cs" />
+    <Compile Include="AttacksEditorDialog.designer.cs">
+      <DependentUpon>AttacksEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttackItemView.cs" />
+    <Compile Include="AttackItemView.designer.cs">
+      <DependentUpon>AttackItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientView.designer.cs">
+      <DependentUpon>GradientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaturalAttackItemView.cs" />
+    <Compile Include="NaturalAttackItemView.designer.cs">
+      <DependentUpon>NaturalAttackItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaturalAttackDialog.cs" />
+    <Compile Include="NaturalAttackDialog.designer.cs">
+      <DependentUpon>NaturalAttackDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutView.cs" />
+    <Compile Include="AboutView.designer.cs">
+      <DependentUpon>AboutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreasureTab.cs" />
+    <Compile Include="SideTabBar.cs" />
+    <Compile Include="TreasureGeneratorPage.cs" />
+    <Compile Include="FeatEditorDialog.cs" />
+    <Compile Include="FeatEditorDialog.designer.cs">
+      <DependentUpon>FeatEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpellEditorDialog.cs" />
+    <Compile Include="SpellEditorDialog.designer.cs">
+      <DependentUpon>SpellEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpellLevelsDialog.cs" />
+    <Compile Include="SpellLevelsDialog.designer.cs">
+      <DependentUpon>SpellLevelsDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="CombatManagerMonoViewController_iPhone.xib" />
+    <InterfaceDefinition Include="CombatManagerMonoViewController_iPad.xib" />
+    <InterfaceDefinition Include="AdvancerPanel.xib" />
+    <InterfaceDefinition Include="CharacterListCellView.xib" />
+    <InterfaceDefinition Include="ConditionViewController.xib" />
+    <InterfaceDefinition Include="HDEditorDialog_iPad.xib" />
+    <InterfaceDefinition Include="HDEditorDialog_iPhone.xib" />
+    <InterfaceDefinition Include="HealthViewPopover.xib" />
+    <InterfaceDefinition Include="MonsterAddView.xib" />
+    <InterfaceDefinition Include="MonsterEditorBasicPage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorBasicPage_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorDefensePage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorDefensePage_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorDescriptionPage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorDescriptionPage_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorDialog_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorDialog_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorFeatsPage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorFeatsPage_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorOffensePage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorOffensePage_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorSpecialPage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorSpecialPage_iPhone.xib" />
+    <InterfaceDefinition Include="MonsterEditorStatisticsPage_iPad.xib" />
+    <InterfaceDefinition Include="MonsterEditorStatisticsPage_iPhone.xib" />
+    <InterfaceDefinition Include="NumberModifyPopover.xib" />
+    <InterfaceDefinition Include="NumPadView.xib" />
+    <InterfaceDefinition Include="OpenDialog.xib" />
+    <InterfaceDefinition Include="TextBoxDialog_iPad.xib" />
+    <InterfaceDefinition Include="TextBoxDialog_iPhone.xib" />
+    <InterfaceDefinition Include="AttacksEditorDialog_iPhone.xib" />
+    <InterfaceDefinition Include="AttacksEditorDialog_iPad.xib" />
+    <InterfaceDefinition Include="AttackItemView_iPhone.xib" />
+    <InterfaceDefinition Include="AttackItemView_iPad.xib" />
+    <InterfaceDefinition Include="NaturalAttackItemView_iPhone.xib" />
+    <InterfaceDefinition Include="NaturalAttackItemView_iPad.xib" />
+    <InterfaceDefinition Include="NaturalAttackDialog_iPhone.xib" />
+    <InterfaceDefinition Include="NaturalAttackDialog_iPad.xib" />
+    <InterfaceDefinition Include="AboutView_iPhone.xib" />
+    <InterfaceDefinition Include="AboutView_iPad.xib" />
+    <InterfaceDefinition Include="FeatEditorDialog_iPhone.xib" />
+    <InterfaceDefinition Include="FeatEditorDialog_iPad.xib" />
+    <InterfaceDefinition Include="SpellEditorDialog_iPhone.xib" />
+    <InterfaceDefinition Include="SpellEditorDialog_iPad.xib" />
+    <InterfaceDefinition Include="SpellLevelsDialog_iPhone.xib" />
+    <InterfaceDefinition Include="SpellLevelsDialog_iPad.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default-Landscape~ipad.png" />
+    <Content Include="Default-Portrait~ipad.png" />
+    <Content Include="icon.png" />
+    <Content Include="settingsicon.png" />
+    <Content Include="spotlighticon.png" />
+    <Content Include="RevisionInfo.txt" />
+    <Content Include="Images\Icon.png" />
+    <Content Include="..\CombatManager\images\ArrangeWindowsHS.png">
+      <Link>Images\External\ArrangeWindowsHS.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\arrowcurveleft-16.png">
+      <Link>Images\External\arrowcurveleft-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\arrowcurveright-16.png">
+      <Link>Images\External\arrowcurveright-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\arrowdown-16.png">
+      <Link>Images\External\arrowdown-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\arrowsdown-16.png">
+      <Link>Images\External\arrowsdown-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\arrowsup-16.png">
+      <Link>Images\External\arrowsup-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\arrowup-16.png">
+      <Link>Images\External\arrowup-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\battery-low-16.png">
+      <Link>Images\External\battery-low-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\bell-16.png">
+      <Link>Images\External\bell-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\bleeding-16.png">
+      <Link>Images\External\bleeding-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\blind-16.png">
+      <Link>Images\External\blind-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\book-16.png">
+      <Link>Images\External\book-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\bow-16.png">
+      <Link>Images\External\bow-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\broken-16.png">
+      <Link>Images\External\broken-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\brush-16.png">
+      <Link>Images\External\brush-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\bulb-16.png">
+      <Link>Images\External\bulb-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\CheckBox.png">
+      <Link>Images\External\CheckBox.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\CheckBox%402x.png">
+      <Link>Images\External\CheckBox%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\CheckBoxUnchecked.png">
+      <Link>Images\External\CheckBoxUnchecked.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\CheckBoxUnchecked%402x.png">
+      <Link>Images\External\CheckBoxUnchecked%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\claw-16.png">
+      <Link>Images\External\claw-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\clock-16.png">
+      <Link>Images\External\clock-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\clone-16.png">
+      <Link>Images\External\clone-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\cower-16.png">
+      <Link>Images\External\cower-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20-16.png">
+      <Link>Images\External\d20-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20-32.png">
+      <Link>Images\External\d20-32.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20-40.png">
+      <Link>Images\External\d20-40.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\dazed-16.png">
+      <Link>Images\External\dazed-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\dazzled-16.png">
+      <Link>Images\External\dazzled-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\dead-16.png">
+      <Link>Images\External\dead-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\deaf-16.png">
+      <Link>Images\External\deaf-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\delete-16.png">
+      <Link>Images\External\delete-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\dice-16.png">
+      <Link>Images\External\dice-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\disease-16.png">
+      <Link>Images\External\disease-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\ellipsis-16.png">
+      <Link>Images\External\ellipsis-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\exhausted-16.png">
+      <Link>Images\External\exhausted-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\facinated-16.png">
+      <Link>Images\External\facinated-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\fatigued-16.png">
+      <Link>Images\External\fatigued-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\flagblue-16.png">
+      <Link>Images\External\flagblue-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\flaggreen-16.png">
+      <Link>Images\External\flaggreen-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\flagred-16.png">
+      <Link>Images\External\flagred-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\foot-16.png">
+      <Link>Images\External\foot-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\hand-16.png">
+      <Link>Images\External\hand-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\handicapped-16.png">
+      <Link>Images\External\handicapped-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\hourglass-16.png">
+      <Link>Images\External\hourglass-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\import-16.png">
+      <Link>Images\External\import-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\incorporeal-16.png">
+      <Link>Images\External\incorporeal-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\invisible-16.png">
+      <Link>Images\External\invisible-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\keys-16.png">
+      <Link>Images\External\keys-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\lasso-16.png">
+      <Link>Images\External\lasso-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\lightning-16.png">
+      <Link>Images\External\lightning-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\link-16.png">
+      <Link>Images\External\link-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\lock-16.png">
+      <Link>Images\External\lock-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\magearmor-16.png">
+      <Link>Images\External\magearmor-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\monster-16.png">
+      <Link>Images\External\monster-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\nauseated-16.png">
+      <Link>Images\External\nauseated-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\next-16.png">
+      <Link>Images\External\next-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\NoteHS.png">
+      <Link>Images\External\NoteHS.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\notes-16.png">
+      <Link>Images\External\notes-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\openHS.png">
+      <Link>Images\External\openHS.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\panic-16.png">
+      <Link>Images\External\panic-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\pencil-16.png">
+      <Link>Images\External\pencil-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\person-16.png">
+      <Link>Images\External\person-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\personwindow-16.png">
+      <Link>Images\External\personwindow-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\pin-16.png">
+      <Link>Images\External\pin-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\poison-16.png">
+      <Link>Images\External\poison-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\prev-16.png">
+      <Link>Images\External\prev-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\PrintHS.png">
+      <Link>Images\External\PrintHS.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\prone-16.png">
+      <Link>Images\External\prone-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\qm-16.png">
+      <Link>Images\External\qm-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\reaper-16.png">
+      <Link>Images\External\reaper-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\redx.png">
+      <Link>Images\External\redx.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\redx%402x.png">
+      <Link>Images\External\redx%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\reset-16.png">
+      <Link>Images\External\reset-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\rock-16.png">
+      <Link>Images\External\rock-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\saveHS.png">
+      <Link>Images\External\saveHS.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\scared-16.png">
+      <Link>Images\External\scared-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\screen-16.png">
+      <Link>Images\External\screen-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\scroll-16.png">
+      <Link>Images\External\scroll-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\scrolleffect-16.png">
+      <Link>Images\External\scrolleffect-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\shaken-16.png">
+      <Link>Images\External\shaken-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\sheet.png">
+      <Link>Images\External\sheet.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\shield-16.png">
+      <Link>Images\External\shield-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\shield-error-16.png">
+      <Link>Images\External\shield-error-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\sick-16.png">
+      <Link>Images\External\sick-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\sleep-16.png">
+      <Link>Images\External\sleep-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\slow-16.png">
+      <Link>Images\External\slow-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\sort-16.png">
+      <Link>Images\External\sort-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\stable-16.png">
+      <Link>Images\External\stable-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\star-16.png">
+      <Link>Images\External\star-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\stop-16.png">
+      <Link>Images\External\stop-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\stunned-16.png">
+      <Link>Images\External\stunned-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\sword-16.png">
+      <Link>Images\External\sword-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\sword-single-16.png">
+      <Link>Images\External\sword-single-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\target-16.png">
+      <Link>Images\External\target-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\treasure-16.png">
+      <Link>Images\External\treasure-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\unlock-16.png">
+      <Link>Images\External\unlock-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\wand-16.png">
+      <Link>Images\External\wand-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\zoomin-16.png">
+      <Link>Images\External\zoomin-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\zoomout-16.png">
+      <Link>Images\External\zoomout-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\zzz-16.png">
+      <Link>Images\External\zzz-16.png</Link>
+    </Content>
+    <Content Include="Images\Sort.png" />
+    <Content Include="Images\Sort%402x.png" />
+    <Content Include="Images\Refresh.png" />
+    <Content Include="Images\Refresh%402x.png" />
+    <Content Include="..\CombatManager\images\check-16.png">
+      <Link>Images\External\check-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\info.png">
+      <Link>Images\External\info.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\info%402x.png">
+      <Link>Images\External\info%402x.png</Link>
+    </Content>
+    <Content Include="about.html" />
+    <Content Include="Images\DiePencil.jpg" />
+    <Content Include="Default-Portrait%402x.png" />
+    <Content Include="Default-Landscape%402x.png" />
+    <Content Include="App.png" />
+    <Content Include="RetinaApp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RetinaSettings.png" />
+    <Content Include="RetinaSpotlight.png" />
+    <Content Include="..\CombatManager\images\LeftArrow-24.png">
+      <Link>Images\External\LeftArrow-24.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\LeftArrow-24%402x.png">
+      <Link>Images\External\LeftArrow-24%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\RightArrow-24.png">
+      <Link>Images\External\RightArrow-24.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\RightArrow-24%402x.png">
+      <Link>Images\External\RightArrow-24%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\treasure-16%402x.png">
+      <Link>Images\External\treasure-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20-40%402x.png">
+      <Link>Images\External\d20-40%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20-32%402x.png">
+      <Link>Images\External\d20-32%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\star-16%402x.png">
+      <Link>Images\External\star-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\openHS%402x.png">
+      <Link>Images\External\openHS%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\saveHS%402x.png">
+      <Link>Images\External\saveHS%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\book-16%402x.png">
+      <Link>Images\External\book-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\lightning-16%402x.png">
+      <Link>Images\External\lightning-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\mail-16.png">
+      <Link>Images\External\mail-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\mail-16%402x.png">
+      <Link>Images\External\mail-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d12-16.png">
+      <Link>Images\External\d12-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d12-16%402x.png">
+      <Link>Images\External\d12-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20p-16.png">
+      <Link>Images\External\d20p-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d20p-16%402x.png">
+      <Link>Images\External\d20p-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d4-16.png">
+      <Link>Images\External\d4-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d4-16%402x.png">
+      <Link>Images\External\d4-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d6-16.png">
+      <Link>Images\External\d6-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d6-16%402x.png">
+      <Link>Images\External\d6-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d10-16.png">
+      <Link>Images\External\d10-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d10-16%402x.png">
+      <Link>Images\External\d10-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d8-16.png">
+      <Link>Images\External\d8-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d8-16%402x.png">
+      <Link>Images\External\d8-16%402x.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d100-16.png">
+      <Link>Images\External\d100-16.png</Link>
+    </Content>
+    <Content Include="..\CombatManager\images\d100-16%402x.png">
+      <Link>Images\External\d100-16%402x.png</Link>
+    </Content>
+    <Content Include="Images\icondoc320.png" />
+    <Content Include="Images\icondoc64.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\settings%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Images\External\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CombatManagerCore\CombatManagerCoreMono.csproj">
+      <Project>{A1770C4F-09EE-41F9-86AB-5672C3D42980}</Project>
+      <Name>CombatManagerCoreMono</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+  </ItemGroup>
+</Project>

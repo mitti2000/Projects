@@ -1,0 +1,101 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;import javax.swing.border.Border;
+
+public class Hauptprogramm {
+	JFrame hauptFrame; //Hauptfenster
+	JPanel panel; //Hintergrund
+	BoxLayout mainLayout;
+	
+	//topPanel
+	JPanel topPanel; //KW Umschalter
+	JButton kwLeft; //KW weniger
+	JButton kwRight; //KW mehr
+	JLabel kwLabel; //KW Label
+	BoxLayout topLayout;
+	
+	//centerPanel
+	JPanel centerPanel;
+	GridLayout centerLayout;
+	
+	
+	public static void main (String[] args){
+		Hauptprogramm programm = new Hauptprogramm();
+		programm.drawGUI();
+	}
+	
+
+	
+	public void drawGUI(){
+		
+		//Main Part
+		hauptFrame = new JFrame("Kurzarbeitsrechner");
+		hauptFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel = new JPanel();
+		mainLayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
+		panel.setLayout(mainLayout);
+		panel.setBackground(Color.darkGray);
+		hauptFrame.getContentPane().add(panel);
+		
+		//KW Umschalter		
+		topPanel = new JPanel();
+		topLayout = new BoxLayout(topPanel, BoxLayout.X_AXIS);
+		topPanel.setLayout(topLayout);
+		
+		kwLeft=new JButton("<--");
+		kwLeft.addActionListener(new KWLeftActionListener());
+		topPanel.add(kwLeft);
+		
+		kwLabel = new JLabel("KW38"); //aktuelle KW aus DB holen
+		topPanel.add(kwLabel);
+		
+		kwRight = new JButton("-->");
+		kwRight.addActionListener(new KWRightActionListener());
+		topPanel.add(kwRight);
+		
+		panel.add(topPanel);
+		
+		//Time Field
+		centerPanel = new JPanel();
+		centerLayout = new GridLayout(8,5);
+		centerPanel.setLayout(centerLayout);
+		
+		
+		
+		panel.add(centerPanel);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		hauptFrame.setBounds(50,50,300,300);
+		hauptFrame.pack();
+		hauptFrame.setVisible(true);
+	}
+	
+	public class KWLeftActionListener implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+	
+	public class KWRightActionListener implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+}
+
+
+
