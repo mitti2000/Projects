@@ -49,13 +49,21 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="false" key="create_unimplemented"/>
 	</section>
+<<<<<<< .mine
+||||||| .r55
+	<section name="quick_assist_proposal_size">
+	</section>
+=======
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
 		<item value="false" key="updateSimilarElements"/>
 	</section>
+>>>>>>> .r58
 </section>
