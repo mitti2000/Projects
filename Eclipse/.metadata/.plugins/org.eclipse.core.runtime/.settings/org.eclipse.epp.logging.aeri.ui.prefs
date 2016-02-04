@@ -1,4 +1,10 @@
 action=ASK
 configured=true
 eclipse.preferences.version=1
+<<<<<<< .mine
+problemsZipEtag="dab6e-524f530086fc0"
+||||||| .r55
+problemsZipEtag="437b2d-51d9c90808a00"
+=======
 problemsZipEtag="572693-51e57f4774b00"
+>>>>>>> .r58
