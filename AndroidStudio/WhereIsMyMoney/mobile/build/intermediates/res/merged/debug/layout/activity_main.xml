@@ -43,28 +43,68 @@
             android:hint="Blue" />
     </LinearLayout>
 
-    <Button
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Color"
-        android:id="@+id/btnChangeColor"
         android:layout_below="@+id/colorValues"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/buttonsLayout"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Color"
+            android:id="@+id/btnChangeColor"
+            android:layout_below="@+id/colorValues"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color Picker"
+            android:id="@+id/btnColorPicker"
+            android:layout_weight="1" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Alles OK"
         android:id="@+id/txtError"
-        android:layout_below="@+id/btnChangeColor"
+        android:layout_below="@+id/buttonsLayout"
         android:layout_centerHorizontal="true" />
 
-    <FrameLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/txtError"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
-        android:background="#000000"
-        android:id="@+id/colorField"></FrameLayout>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtError">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtError"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/colorChosen"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/colorDarker"
+            android:layout_weight="1"></FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/colorBrighter"
+            android:layout_weight="1"></FrameLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
