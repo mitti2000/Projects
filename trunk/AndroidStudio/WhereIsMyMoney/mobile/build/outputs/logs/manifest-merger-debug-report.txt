@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:2:1-20:12
+ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:2:1-26:12
 	xmlns:android
 		ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -14,7 +14,7 @@ ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\Androi
 		INJECTED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml
 		INJECTED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml
 application
-ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:5:5-18:19
+ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:5:5-24:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:8.4.0] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:19:5-20
@@ -111,6 +111,11 @@ MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStu
 MERGED from [com.google.android.gms:play-services-wearable:8.4.0] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 	android:supportsRtl
 		ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:9:9-35
 	android:label
@@ -135,6 +140,14 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:15:27-74
+activity#com.mittidesign.whereismymoney.CreateCatagory
+ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:18:9-23:20
+	android:label
+		ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:20:13-67
+	android:theme
+		ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:21:13-56
+	android:name
+		ADDED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml:19:13-43
 uses-sdk
 INJECTED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
@@ -259,6 +272,12 @@ MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStu
 MERGED from [com.google.android.gms:play-services-wearable:8.4.0] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from C:\Projects\trunk\AndroidStudio\WhereIsMyMoney\mobile\src\main\AndroidManifest.xml

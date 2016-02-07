@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Where Is My Money</string>
+    <string name="title_activity_create_catagory">Create Catagory</string>
+    <string name="title_txt_create_category">Create Category</string>
+    <string name="name_txt_create_category">Category Name</string>
+    <string name="input_txt_new_category">New Category</string>
+    <string name="title_choose_category_color">Choose Category Color</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="btn_color_picker">Color Picker</string>
+    <string name="btn_setColor">Set Color</string>
+    <string name="category_name">Category Name</string>
+    <string name="zero">0</string>
+    <string name="confirm">Comfirm</string>
+    <string name="reset">Reset</string>
 </resources>
