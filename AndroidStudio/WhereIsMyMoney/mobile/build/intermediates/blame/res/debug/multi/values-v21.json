@@ -7,36 +7,29 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 90,
-                    "endOffset": 141
+                    "endColumn": 68,
+                    "endOffset": 119
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 239,
-                        "endColumn": 90,
-                        "endOffset": 325
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 146,
-                    "endColumn": 102,
-                    "endOffset": 244
+                    "startOffset": 124,
+                    "endColumn": 63,
+                    "endOffset": 183
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\src\\main\\res\\values-v21\\strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 330,
-                        "endColumn": 102,
-                        "endOffset": 428
+                        "startOffset": 57,
+                        "endColumn": 63,
+                        "endOffset": 116
                     }
                 }
             },
@@ -44,1676 +37,1085 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 249,
-                    "endColumn": 102,
-                    "endOffset": 347
+                    "startOffset": 188,
+                    "endLine": 9,
+                    "endColumn": 12,
+                    "endOffset": 484
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 433,
-                        "endColumn": 102,
-                        "endOffset": 531
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 352,
-                    "endColumn": 104,
-                    "endOffset": 452
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 536,
-                        "endColumn": 104,
-                        "endOffset": 636
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 457,
-                    "endColumn": 106,
-                    "endOffset": 559
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 641,
-                        "endColumn": 106,
-                        "endOffset": 743
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 564,
-                    "endColumn": 108,
-                    "endOffset": 668
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 748,
-                        "endColumn": 108,
-                        "endOffset": 852
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 673,
-                    "endColumn": 108,
-                    "endOffset": 777
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 857,
-                        "endColumn": 108,
-                        "endOffset": 961
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 782,
-                    "endColumn": 108,
-                    "endOffset": 886
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 966,
-                        "endColumn": 108,
-                        "endOffset": 1070
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\src\\main\\res\\values-v21\\styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 891,
-                    "endColumn": 108,
-                    "endOffset": 995
+                    "startOffset": 489,
+                    "endColumn": 90,
+                    "endOffset": 575
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1075,
-                        "endColumn": 108,
-                        "endOffset": 1179
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1000,
-                    "endColumn": 108,
-                    "endOffset": 1104
+                    "startOffset": 580,
+                    "endColumn": 102,
+                    "endOffset": 678
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1184,
-                        "endColumn": 108,
-                        "endOffset": 1288
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1109,
-                    "endColumn": 106,
-                    "endOffset": 1211
+                    "startOffset": 683,
+                    "endColumn": 102,
+                    "endOffset": 781
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1293,
-                        "endColumn": 106,
-                        "endOffset": 1395
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1216,
-                    "endColumn": 102,
-                    "endOffset": 1314
+                    "startOffset": 786,
+                    "endColumn": 104,
+                    "endOffset": 886
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1400,
-                        "endColumn": 102,
-                        "endOffset": 1498
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1319,
-                    "endColumn": 118,
-                    "endOffset": 1433
+                    "startOffset": 891,
+                    "endColumn": 106,
+                    "endOffset": 993
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1503,
-                        "endColumn": 118,
-                        "endOffset": 1617
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1438,
-                    "endLine": 16,
-                    "endColumn": 12,
-                    "endOffset": 1588
+                    "startOffset": 998,
+                    "endColumn": 108,
+                    "endOffset": 1102
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1801,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 1951
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1107,
+                    "endColumn": 108,
+                    "endOffset": 1211
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1593,
-                    "endLine": 18,
-                    "endColumn": 12,
-                    "endOffset": 1743
+                    "startOffset": 1216,
+                    "endColumn": 108,
+                    "endOffset": 1320
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1956,
-                        "endLine": 22,
-                        "endColumn": 12,
-                        "endOffset": 2106
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1325,
+                    "endColumn": 108,
+                    "endOffset": 1429
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1748,
-                    "endColumn": 104,
-                    "endOffset": 1848
+                    "startOffset": 1434,
+                    "endColumn": 108,
+                    "endOffset": 1538
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 2295,
-                        "endColumn": 104,
-                        "endOffset": 2395
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1853,
-                    "endColumn": 120,
-                    "endOffset": 1969
+                    "startOffset": 1543,
+                    "endColumn": 106,
+                    "endOffset": 1645
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 2400,
-                        "endColumn": 120,
-                        "endOffset": 2516
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1974,
-                    "endColumn": 100,
-                    "endOffset": 2070
+                    "startOffset": 1650,
+                    "endColumn": 102,
+                    "endOffset": 1748
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 2521,
-                        "endColumn": 100,
-                        "endOffset": 2617
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2075,
-                    "endLine": 23,
-                    "endColumn": 12,
-                    "endOffset": 2217
+                    "startOffset": 1753,
+                    "endColumn": 118,
+                    "endOffset": 1867
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 2801,
-                        "endLine": 31,
-                        "endColumn": 12,
-                        "endOffset": 2943
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2222,
-                    "endLine": 25,
+                    "startOffset": 1872,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 2358
+                    "endOffset": 2022
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 2948,
-                        "endLine": 33,
-                        "endColumn": 12,
-                        "endOffset": 3084
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2363,
-                    "endColumn": 102,
-                    "endOffset": 2461
+                    "startOffset": 2027,
+                    "endLine": 26,
+                    "endColumn": 12,
+                    "endOffset": 2177
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 3273,
-                        "endColumn": 102,
-                        "endOffset": 3371
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2466,
-                    "endColumn": 118,
-                    "endOffset": 2580
+                    "startOffset": 2182,
+                    "endColumn": 104,
+                    "endOffset": 2282
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 3376,
-                        "endColumn": 118,
-                        "endOffset": 3490
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2585,
-                    "endColumn": 106,
-                    "endOffset": 2687
+                    "startOffset": 2287,
+                    "endColumn": 120,
+                    "endOffset": 2403
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 3495,
-                        "endColumn": 106,
-                        "endOffset": 3597
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2692,
-                    "endColumn": 102,
-                    "endOffset": 2790
+                    "startOffset": 2408,
+                    "endColumn": 100,
+                    "endOffset": 2504
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 3602,
-                        "endColumn": 102,
-                        "endOffset": 3700
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2795,
+                    "startOffset": 2509,
                     "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2937
+                    "endOffset": 2651
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 3884,
-                        "endLine": 43,
-                        "endColumn": 12,
-                        "endOffset": 4026
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2942,
+                    "startOffset": 2656,
                     "endLine": 33,
                     "endColumn": 12,
-                    "endOffset": 3092
+                    "endOffset": 2792
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 4031,
-                        "endLine": 45,
-                        "endColumn": 12,
-                        "endOffset": 4181
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 3097,
-                    "endLine": 35,
-                    "endColumn": 12,
-                    "endOffset": 3263
+                    "startOffset": 2797,
+                    "endColumn": 102,
+                    "endOffset": 2895
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 46,
-                        "startColumn": 4,
-                        "startOffset": 4186,
-                        "endLine": 47,
-                        "endColumn": 12,
-                        "endOffset": 4352
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2900,
+                    "endColumn": 118,
+                    "endOffset": 3014
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 3268,
-                    "endLine": 37,
-                    "endColumn": 12,
-                    "endOffset": 3412
+                    "startOffset": 3019,
+                    "endColumn": 106,
+                    "endOffset": 3121
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 4357,
-                        "endLine": 49,
-                        "endColumn": 12,
-                        "endOffset": 4501
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3126,
+                    "endColumn": 102,
+                    "endOffset": 3224
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 3417,
+                    "startOffset": 3229,
                     "endLine": 39,
                     "endColumn": 12,
-                    "endOffset": 3577
+                    "endOffset": 3371
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 4506,
-                        "endLine": 51,
-                        "endColumn": 12,
-                        "endOffset": 4666
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3582,
+                    "startOffset": 3376,
                     "endLine": 41,
                     "endColumn": 12,
-                    "endOffset": 3734
+                    "endOffset": 3526
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 4671,
-                        "endLine": 53,
-                        "endColumn": 12,
-                        "endOffset": 4823
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3739,
+                    "startOffset": 3531,
                     "endLine": 43,
                     "endColumn": 12,
-                    "endOffset": 3885
+                    "endOffset": 3697
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 4828,
-                        "endLine": 55,
-                        "endColumn": 12,
-                        "endOffset": 4974
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3890,
-                    "endColumn": 118,
-                    "endOffset": 4004
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 58,
-                        "startColumn": 4,
-                        "startOffset": 5163,
-                        "endColumn": 118,
-                        "endOffset": 5277
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 4009,
-                    "endLine": 46,
+                    "startOffset": 3702,
+                    "endLine": 45,
                     "endColumn": 12,
-                    "endOffset": 4153
+                    "endOffset": 3846
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 61,
-                        "startColumn": 4,
-                        "startOffset": 5461,
-                        "endLine": 62,
-                        "endColumn": 12,
-                        "endOffset": 5605
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 4158,
-                    "endLine": 48,
+                    "startOffset": 3851,
+                    "endLine": 47,
                     "endColumn": 12,
-                    "endOffset": 4302
+                    "endOffset": 4011
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 5610,
-                        "endLine": 64,
-                        "endColumn": 12,
-                        "endOffset": 5754
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 4307,
-                    "endColumn": 111,
-                    "endOffset": 4414
+                    "startOffset": 4016,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 4168
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 67,
-                        "startColumn": 4,
-                        "startOffset": 5943,
-                        "endColumn": 111,
-                        "endOffset": 6050
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4419,
-                    "endColumn": 146,
-                    "endOffset": 4561
+                    "startOffset": 4173,
+                    "endLine": 51,
+                    "endColumn": 12,
+                    "endOffset": 4319
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 70,
-                        "startColumn": 4,
-                        "startOffset": 6234,
-                        "endColumn": 146,
-                        "endOffset": 6376
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4566,
-                    "endLine": 52,
-                    "endColumn": 12,
-                    "endOffset": 4714
+                    "startOffset": 4324,
+                    "endColumn": 118,
+                    "endOffset": 4438
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 71,
-                        "startColumn": 4,
-                        "startOffset": 6381,
-                        "endLine": 72,
-                        "endColumn": 12,
-                        "endOffset": 6529
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4719,
+                    "startOffset": 4443,
                     "endLine": 54,
                     "endColumn": 12,
-                    "endOffset": 4861
+                    "endOffset": 4587
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 73,
-                        "startColumn": 4,
-                        "startOffset": 6534,
-                        "endLine": 74,
-                        "endColumn": 12,
-                        "endOffset": 6676
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4866,
-                    "endColumn": 74,
-                    "endOffset": 4936
+                    "startOffset": 4592,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 4736
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 77,
-                        "startColumn": 4,
-                        "startOffset": 6860,
-                        "endColumn": 74,
-                        "endOffset": 6930
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 56,
-                    "startColumn": 4,
-                    "startOffset": 4941,
-                    "endColumn": 88,
-                    "endOffset": 5025
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 6935,
-                        "endColumn": 88,
-                        "endOffset": 7019
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5030,
-                    "endColumn": 86,
-                    "endOffset": 5112
+                    "startOffset": 4741,
+                    "endColumn": 111,
+                    "endOffset": 4848
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 7024,
-                        "endColumn": 86,
-                        "endOffset": 7106
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5117,
-                    "endColumn": 100,
-                    "endOffset": 5213
+                    "startOffset": 4853,
+                    "endColumn": 146,
+                    "endOffset": 4995
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 7111,
-                        "endColumn": 100,
-                        "endOffset": 7207
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5218,
-                    "endLine": 102,
+                    "startOffset": 5000,
+                    "endLine": 60,
                     "endColumn": 12,
-                    "endOffset": 8281
+                    "endOffset": 5148
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 7212,
-                        "endLine": 124,
-                        "endColumn": 12,
-                        "endOffset": 10275
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 103,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 8286,
-                    "endLine": 105,
+                    "startOffset": 5153,
+                    "endLine": 62,
                     "endColumn": 12,
-                    "endOffset": 8467
+                    "endOffset": 5295
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 125,
-                        "startColumn": 4,
-                        "startOffset": 10280,
-                        "endLine": 127,
-                        "endColumn": 12,
-                        "endOffset": 10461
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 106,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 8472,
-                    "endLine": 149,
-                    "endColumn": 12,
-                    "endOffset": 11547
+                    "startOffset": 5300,
+                    "endColumn": 74,
+                    "endOffset": 5370
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 128,
-                        "startColumn": 4,
-                        "startOffset": 10466,
-                        "endLine": 171,
-                        "endColumn": 12,
-                        "endOffset": 13541
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 150,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 11552,
-                    "endLine": 152,
-                    "endColumn": 12,
-                    "endOffset": 11745
+                    "startOffset": 5375,
+                    "endColumn": 88,
+                    "endOffset": 5459
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 172,
-                        "startColumn": 4,
-                        "startOffset": 13546,
-                        "endLine": 174,
-                        "endColumn": 12,
-                        "endOffset": 13739
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 153,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 11750,
-                    "endLine": 154,
-                    "endColumn": 12,
-                    "endOffset": 11868
+                    "startOffset": 5464,
+                    "endColumn": 86,
+                    "endOffset": 5546
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 177,
-                        "startColumn": 4,
-                        "startOffset": 13923,
-                        "endLine": 178,
-                        "endColumn": 12,
-                        "endOffset": 14041
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 155,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 11873,
-                    "endLine": 156,
-                    "endColumn": 12,
-                    "endOffset": 11991
+                    "startOffset": 5551,
+                    "endColumn": 100,
+                    "endOffset": 5647
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 179,
-                        "startColumn": 4,
-                        "startOffset": 14046,
-                        "endLine": 180,
-                        "endColumn": 12,
-                        "endOffset": 14164
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 11996,
-                    "endLine": 158,
+                    "startOffset": 5652,
+                    "endLine": 110,
                     "endColumn": 12,
-                    "endOffset": 12104
+                    "endOffset": 8715
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 181,
-                        "startColumn": 4,
-                        "startOffset": 14169,
-                        "endLine": 182,
-                        "endColumn": 12,
-                        "endOffset": 14277
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 159,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 12109,
-                    "endLine": 161,
+                    "startOffset": 8720,
+                    "endLine": 113,
                     "endColumn": 12,
-                    "endOffset": 12287
+                    "endOffset": 8901
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 183,
-                        "startColumn": 4,
-                        "startOffset": 14282,
-                        "endLine": 185,
-                        "endColumn": 12,
-                        "endOffset": 14460
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 12292,
-                    "endLine": 163,
+                    "startOffset": 8906,
+                    "endLine": 157,
                     "endColumn": 12,
-                    "endOffset": 12418
+                    "endOffset": 11981
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 186,
-                        "startColumn": 4,
-                        "startOffset": 14465,
-                        "endLine": 187,
-                        "endColumn": 12,
-                        "endOffset": 14591
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 12423,
+                    "startOffset": 11986,
+                    "endLine": 160,
+                    "endColumn": 12,
+                    "endOffset": 12179
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 12184,
+                    "endLine": 162,
+                    "endColumn": 12,
+                    "endOffset": 12302
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 12307,
+                    "endLine": 164,
+                    "endColumn": 12,
+                    "endOffset": 12425
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "startOffset": 12430,
                     "endLine": 166,
                     "endColumn": 12,
-                    "endOffset": 12619
+                    "endOffset": 12538
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 188,
-                        "startColumn": 4,
-                        "startOffset": 14596,
-                        "endLine": 190,
-                        "endColumn": 12,
-                        "endOffset": 14792
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 12624,
-                    "endColumn": 88,
-                    "endOffset": 12708
+                    "startOffset": 12543,
+                    "endLine": 169,
+                    "endColumn": 12,
+                    "endOffset": 12721
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 191,
-                        "startColumn": 4,
-                        "startOffset": 14797,
-                        "endColumn": 88,
-                        "endOffset": 14881
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 168,
-                    "startColumn": 4,
-                    "startOffset": 12713,
-                    "endColumn": 110,
-                    "endOffset": 12819
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 192,
-                        "startColumn": 4,
-                        "startOffset": 14886,
-                        "endColumn": 110,
-                        "endOffset": 14992
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 169,
-                    "startColumn": 4,
-                    "startOffset": 12824,
-                    "endColumn": 126,
-                    "endOffset": 12946
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 193,
-                        "startColumn": 4,
-                        "startOffset": 14997,
-                        "endColumn": 126,
-                        "endOffset": 15119
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 12951,
-                    "endColumn": 100,
-                    "endOffset": 13047
+                    "startOffset": 12726,
+                    "endLine": 171,
+                    "endColumn": 12,
+                    "endOffset": 12852
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 194,
-                        "startColumn": 4,
-                        "startOffset": 15124,
-                        "endColumn": 100,
-                        "endOffset": 15220
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 171,
-                    "startColumn": 4,
-                    "startOffset": 13052,
-                    "endColumn": 94,
-                    "endOffset": 13142
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 195,
-                        "startColumn": 4,
-                        "startOffset": 15225,
-                        "endColumn": 94,
-                        "endOffset": 15315
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 13147,
-                    "endColumn": 122,
-                    "endOffset": 13265
+                    "startOffset": 12857,
+                    "endLine": 174,
+                    "endColumn": 12,
+                    "endOffset": 13053
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 196,
-                        "startColumn": 4,
-                        "startOffset": 15320,
-                        "endColumn": 122,
-                        "endOffset": 15438
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 173,
-                    "startColumn": 4,
-                    "startOffset": 13270,
-                    "endColumn": 128,
-                    "endOffset": 13394
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 197,
-                        "startColumn": 4,
-                        "startOffset": 15443,
-                        "endColumn": 128,
-                        "endOffset": 15567
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 174,
-                    "startColumn": 4,
-                    "startOffset": 13399,
-                    "endColumn": 116,
-                    "endOffset": 13511
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 198,
-                        "startColumn": 4,
-                        "startOffset": 15572,
-                        "endColumn": 116,
-                        "endOffset": 15684
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13516,
-                    "endLine": 177,
-                    "endColumn": 12,
-                    "endOffset": 13688
+                    "startOffset": 13058,
+                    "endColumn": 88,
+                    "endOffset": 13142
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 199,
-                        "startColumn": 4,
-                        "startOffset": 15689,
-                        "endLine": 201,
-                        "endColumn": 12,
-                        "endOffset": 15861
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 13147,
+                    "endColumn": 110,
+                    "endOffset": 13253
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 13258,
+                    "endColumn": 126,
+                    "endOffset": 13380
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13693,
-                    "endColumn": 98,
-                    "endOffset": 13787
+                    "startOffset": 13385,
+                    "endColumn": 100,
+                    "endOffset": 13481
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 202,
-                        "startColumn": 4,
-                        "startOffset": 15866,
-                        "endColumn": 98,
-                        "endOffset": 15960
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13792,
-                    "endLine": 180,
-                    "endColumn": 12,
-                    "endOffset": 13922
+                    "startOffset": 13486,
+                    "endColumn": 94,
+                    "endOffset": 13576
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 203,
-                        "startColumn": 4,
-                        "startOffset": 15965,
-                        "endLine": 204,
-                        "endColumn": 12,
-                        "endOffset": 16095
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 180,
+                    "startColumn": 4,
+                    "startOffset": 13581,
+                    "endColumn": 122,
+                    "endOffset": 13699
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13927,
-                    "endLine": 182,
-                    "endColumn": 12,
-                    "endOffset": 14065
+                    "startOffset": 13704,
+                    "endColumn": 128,
+                    "endOffset": 13828
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 205,
-                        "startColumn": 4,
-                        "startOffset": 16100,
-                        "endLine": 206,
-                        "endColumn": 12,
-                        "endOffset": 16238
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 13833,
+                    "endColumn": 116,
+                    "endOffset": 13945
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 14070,
-                    "endLine": 184,
+                    "startOffset": 13950,
+                    "endLine": 185,
                     "endColumn": 12,
-                    "endOffset": 14200
+                    "endOffset": 14122
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 207,
-                        "startColumn": 4,
-                        "startOffset": 16243,
-                        "endLine": 208,
-                        "endColumn": 12,
-                        "endOffset": 16373
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 185,
+                    "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 14205,
-                    "endLine": 186,
-                    "endColumn": 12,
-                    "endOffset": 14319
+                    "startOffset": 14127,
+                    "endColumn": 98,
+                    "endOffset": 14221
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 209,
-                        "startColumn": 4,
-                        "startOffset": 16378,
-                        "endLine": 210,
-                        "endColumn": 12,
-                        "endOffset": 16492
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14324,
-                    "endLine": 190,
+                    "startOffset": 14226,
+                    "endLine": 188,
                     "endColumn": 12,
-                    "endOffset": 14520
+                    "endOffset": 14356
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 211,
-                        "startColumn": 4,
-                        "startOffset": 16497,
-                        "endLine": 214,
-                        "endColumn": 12,
-                        "endOffset": 16693
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 14361,
+                    "endLine": 190,
+                    "endColumn": 12,
+                    "endOffset": 14499
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14525,
+                    "startOffset": 14504,
                     "endLine": 192,
                     "endColumn": 12,
-                    "endOffset": 14639
+                    "endOffset": 14634
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 215,
-                        "startColumn": 4,
-                        "startOffset": 16698,
-                        "endLine": 216,
-                        "endColumn": 12,
-                        "endOffset": 16812
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14644,
-                    "endColumn": 92,
-                    "endOffset": 14732
+                    "startOffset": 14639,
+                    "endLine": 194,
+                    "endColumn": 12,
+                    "endOffset": 14753
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 217,
-                        "startColumn": 4,
-                        "startOffset": 16817,
-                        "endColumn": 92,
-                        "endOffset": 16905
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 194,
-                    "startColumn": 4,
-                    "startOffset": 14737,
-                    "endColumn": 110,
-                    "endOffset": 14843
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 218,
-                        "startColumn": 4,
-                        "startOffset": 16910,
-                        "endColumn": 110,
-                        "endOffset": 17016
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 14848,
-                    "endColumn": 55,
-                    "endOffset": 14899
+                    "startOffset": 14758,
+                    "endLine": 198,
+                    "endColumn": 12,
+                    "endOffset": 14954
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 219,
-                        "startColumn": 4,
-                        "startOffset": 17021,
-                        "endColumn": 55,
-                        "endOffset": 17072
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 196,
+                    "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 14904,
-                    "endLine": 197,
+                    "startOffset": 14959,
+                    "endLine": 200,
                     "endColumn": 12,
-                    "endOffset": 15006
+                    "endOffset": 15073
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 220,
-                        "startColumn": 4,
-                        "startOffset": 17077,
-                        "endLine": 221,
-                        "endColumn": 12,
-                        "endOffset": 17179
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 198,
+                    "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 15011,
-                    "endLine": 201,
-                    "endColumn": 12,
-                    "endOffset": 15201
+                    "startOffset": 15078,
+                    "endColumn": 92,
+                    "endOffset": 15166
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 222,
-                        "startColumn": 4,
-                        "startOffset": 17184,
-                        "endLine": 225,
-                        "endColumn": 12,
-                        "endOffset": 17374
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15206,
-                    "endLine": 203,
-                    "endColumn": 12,
-                    "endOffset": 15312
+                    "startOffset": 15171,
+                    "endColumn": 110,
+                    "endOffset": 15277
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 226,
-                        "startColumn": 4,
-                        "startOffset": 17379,
-                        "endLine": 227,
-                        "endColumn": 12,
-                        "endOffset": 17485
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 203,
+                    "startColumn": 4,
+                    "startOffset": 15282,
+                    "endColumn": 55,
+                    "endOffset": 15333
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15317,
+                    "startOffset": 15338,
                     "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15445
+                    "endOffset": 15440
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 228,
-                        "startColumn": 4,
-                        "startOffset": 17490,
-                        "endLine": 229,
-                        "endColumn": 12,
-                        "endOffset": 17618
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15450,
-                    "endColumn": 94,
-                    "endOffset": 15540
+                    "startOffset": 15445,
+                    "endLine": 209,
+                    "endColumn": 12,
+                    "endOffset": 15635
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 230,
-                        "startColumn": 4,
-                        "startOffset": 17623,
-                        "endColumn": 94,
-                        "endOffset": 17713
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 207,
-                    "startColumn": 4,
-                    "startOffset": 15545,
-                    "endColumn": 90,
-                    "endOffset": 15631
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 231,
-                        "startColumn": 4,
-                        "startOffset": 17718,
-                        "endColumn": 90,
-                        "endOffset": 17804
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 208,
-                    "startColumn": 4,
-                    "startOffset": 15636,
-                    "endColumn": 90,
-                    "endOffset": 15722
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 232,
-                        "startColumn": 4,
-                        "startOffset": 17809,
-                        "endColumn": 90,
-                        "endOffset": 17895
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 209,
-                    "startColumn": 4,
-                    "startOffset": 15727,
-                    "endColumn": 116,
-                    "endOffset": 15839
-                },
-                "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 233,
-                        "startColumn": 4,
-                        "startOffset": 17900,
-                        "endColumn": 116,
-                        "endOffset": 18012
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15844,
+                    "startOffset": 15640,
                     "endLine": 211,
                     "endColumn": 12,
-                    "endOffset": 15978
+                    "endOffset": 15746
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 234,
-                        "startColumn": 4,
-                        "startOffset": 18017,
-                        "endLine": 235,
-                        "endColumn": 12,
-                        "endOffset": 18151
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 15983,
-                    "endLine": 218,
+                    "startOffset": 15751,
+                    "endLine": 213,
                     "endColumn": 12,
-                    "endOffset": 16331
+                    "endOffset": 15879
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 238,
-                        "startColumn": 4,
-                        "startOffset": 18335,
-                        "endLine": 244,
-                        "endColumn": 12,
-                        "endOffset": 18683
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 219,
+                    "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 16336,
-                    "endLine": 225,
-                    "endColumn": 12,
-                    "endOffset": 16696
+                    "startOffset": 15884,
+                    "endColumn": 94,
+                    "endOffset": 15974
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 245,
-                        "startColumn": 4,
-                        "startOffset": 18688,
-                        "endLine": 251,
-                        "endColumn": 12,
-                        "endOffset": 19048
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 226,
+                    "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 16701,
-                    "endLine": 235,
-                    "endColumn": 12,
-                    "endOffset": 17376
+                    "startOffset": 15979,
+                    "endColumn": 90,
+                    "endOffset": 16065
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 252,
-                        "startColumn": 4,
-                        "startOffset": 19053,
-                        "endLine": 261,
-                        "endColumn": 12,
-                        "endOffset": 19728
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 236,
+                    "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 17381,
+                    "startOffset": 16070,
+                    "endColumn": 90,
+                    "endOffset": 16156
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 16161,
+                    "endColumn": 116,
+                    "endOffset": 16273
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 218,
+                    "startColumn": 4,
+                    "startOffset": 16278,
+                    "endLine": 219,
+                    "endColumn": 12,
+                    "endOffset": 16412
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 16417,
+                    "endLine": 226,
+                    "endColumn": 12,
+                    "endOffset": 16765
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 16770,
+                    "endLine": 233,
+                    "endColumn": 12,
+                    "endOffset": 17130
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 234,
+                    "startColumn": 4,
+                    "startOffset": 17135,
+                    "endLine": 243,
+                    "endColumn": 12,
+                    "endOffset": 17810
+                },
+                "from": {
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 244,
+                    "startColumn": 4,
+                    "startOffset": 17815,
                     "endColumn": 56,
-                    "endOffset": 17433
+                    "endOffset": 17867
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 262,
-                        "startColumn": 4,
-                        "startOffset": 19733,
-                        "endColumn": 56,
-                        "endOffset": 19785
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 245,
                     "startColumn": 4,
-                    "startOffset": 17438,
+                    "startOffset": 17872,
                     "endColumn": 57,
-                    "endOffset": 17491
+                    "endOffset": 17925
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 263,
-                        "startColumn": 4,
-                        "startOffset": 19790,
-                        "endColumn": 57,
-                        "endOffset": 19843
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 238,
+                    "startLine": 246,
                     "startColumn": 4,
-                    "startOffset": 17496,
+                    "startOffset": 17930,
                     "endColumn": 121,
-                    "endOffset": 17613
+                    "endOffset": 18047
                 },
                 "from": {
-                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\8.4.0\\res\\values-v21\\appinvite_styles.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 101,
-                        "endColumn": 121,
-                        "endOffset": 218
-                    }
+                    "file": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\mobile\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\8.4.0\\res\\values-v21\\appinvite_styles.xml"
                 }
             }
         ]
