@@ -4,12 +4,12 @@
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",

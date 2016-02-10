@@ -3,6 +3,8 @@ package com.mittidesign.whereismymoney;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,6 +16,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+
+import java.io.IOException;
 
 public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnColorChangedListener {
 
@@ -32,6 +37,7 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
     //Checkboxes
     CheckBox[] chkColor;
     RadioButton[] rdoColor;
+    RadioGroup rdoColorGroup;
 
     //Intent
 
@@ -66,18 +72,7 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
         chkColor = new CheckBox[10];
         rdoColor = new RadioButton[10];
 
-        //Fill Checkbox Array
-        chkColor[0] = (CheckBox) findViewById(R.id.chk_color_1);
-        chkColor[1] = (CheckBox) findViewById(R.id.chk_color_2);
-        chkColor[2] = (CheckBox) findViewById(R.id.chk_color_3);
-        chkColor[3] = (CheckBox) findViewById(R.id.chk_color_4);
-        chkColor[4] = (CheckBox) findViewById(R.id.chk_color_5);
-        chkColor[5] = (CheckBox) findViewById(R.id.chk_color_6);
-        chkColor[6] = (CheckBox) findViewById(R.id.chk_color_7);
-        chkColor[7] = (CheckBox) findViewById(R.id.chk_color_8);
-        chkColor[8] = (CheckBox) findViewById(R.id.chk_color_9);
-        chkColor[9] = (CheckBox) findViewById(R.id.chk_color_10);
-
+        rdoColorGroup = (RadioGroup) findViewById(R.id.rdo_colorChoice);
         rdoColor[0] = (RadioButton) findViewById(R.id.rdoColor1);
         rdoColor[1] = (RadioButton) findViewById(R.id.rdoColor2);
         rdoColor[2] = (RadioButton) findViewById(R.id.rdoColor3);
@@ -124,7 +119,12 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
             public void onClick(View v) {
 
                 String name = categoryName.getText().toString();
-                int color = Color.rgb(Integer.parseInt(inputRed.getText().toString()), Integer.parseInt(inputGreen.getText().toString()), Integer.parseInt(inputBlue.getText().toString()));
+                int color = Color.BLACK;
+
+                Drawable radioButtonBackground = findViewById(rdoColorGroup.getCheckedRadioButtonId()).getBackground();
+                if(radioButtonBackground instanceof ColorDrawable)
+                    color = ((ColorDrawable) radioButtonBackground).getColor();
+                else Log.d("Fehler", "Fehler");
 
                 Category category = new Category(name, color);
 
