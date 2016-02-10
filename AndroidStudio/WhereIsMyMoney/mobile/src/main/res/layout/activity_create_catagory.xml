@@ -221,32 +221,62 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rdoColor1" />
+            android:id="@+id/rdoColor1"
+            android:layout_weight="1" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rdoColor2" />
+            android:id="@+id/rdoColor2"
+            android:layout_weight="1" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rdoColor3" />
+            android:id="@+id/rdoColor3"
+            android:layout_weight="1" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rdoColor4" />
+            android:id="@+id/rdoColor4"
+            android:layout_weight="1" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rdoColor5" />
+            android:id="@+id/rdoColor5"
+            android:layout_weight="1" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rdoColor6" />
+            android:id="@+id/rdoColor6"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoColor7"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoColor8"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoColor9"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoColor10"
+            android:layout_weight="1" />
     </RadioGroup>
 
     <LinearLayout

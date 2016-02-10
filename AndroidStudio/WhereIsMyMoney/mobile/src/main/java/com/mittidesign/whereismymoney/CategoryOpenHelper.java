@@ -7,6 +7,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class CategoryOpenHelper extends SQLiteOpenHelper {
 
     //Database Version
@@ -16,31 +19,31 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "WIMMDB";
 
     //Table Names
-    private static final String CATEGORY_TABLE_NAME = "dictionary";
+    private static final String CATEGORY_TABLE_NAME = "categories";
 
     //Field Names
     //Category
     private static final String CATEGORY_FIELD_NAME = "category_name";
     private static final String CATEGORY_FIELD_COLOR = "category_color";
-    private static final String CATEGORY_FIELD_MASTER = "category_master";
+    //private static final String CATEGORY_FIELD_MASTER = "category_master";
 
     //Keys
     //Category
     private static final String CATEGORY_KEY_ID = "id";
     private static final String CATEGORY_KEY_NAME = "name";
     private static final String CATEGORY_KEY_COLOR = "color";
-    private static final String CATEGORY_KEY_MASTER = "master";
+    //private static final String CATEGORY_KEY_MASTER = "master";
 
-    private static final String[] CATEGORY_COLUMNS = {CATEGORY_KEY_NAME, CATEGORY_KEY_COLOR};
+    private static final String[] CATEGORY_COLUMNS = {CATEGORY_KEY_ID, CATEGORY_KEY_NAME, CATEGORY_KEY_COLOR};
 
     //Create strings
     //Category
     private static final String CATEGORY_TABLE_CREATE =
-            "CREATE TABLE " + CATEGORY_TABLE_NAME + " (" +
-                    "id INTEGER PRIMARY KEY AUTO INCREMENT, " +
-                    CATEGORY_FIELD_NAME + " TEXT, " +
-                    CATEGORY_FIELD_COLOR + " INTEGER, " +
-                    CATEGORY_FIELD_MASTER + " INTEGER);";
+            "CREATE TABLE " + CATEGORY_TABLE_NAME + " ( " +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    CATEGORY_KEY_NAME + " TEXT, " +
+                    CATEGORY_KEY_COLOR + " INTEGER) ; ";// +
+             //       CATEGORY_FIELD_MASTER + " INTEGER);";
 
     public CategoryOpenHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -61,7 +64,7 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
 
     }
 
-    public void addCategory (Category category){
+    public int addCategory (Category category){
         //1. Get reference to writable database
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -72,12 +75,14 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
         //values.put(CATEGORY_KEY_MASTER, category.getMaster()); //change return value to id
 
         //3. insert
-        db.insert(CATEGORY_TABLE_NAME, //table name
+        int i = (int) db.insert(CATEGORY_TABLE_NAME, //table name
                 null, //nullCokumnHack
                 values); //key, Value = column_names/Values = column values
 
         //4. close
         db.close();
+
+        return i;
     }
 
     public Category getCategory(int id){
@@ -101,9 +106,73 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
         }
 
         //4. build category object
-        Category category = new Category("", 0);
-        category.
+        Category category = new Category();
+        category.setId(cursor.getInt(0));
+        category.setName(cursor.getString(1));
+        category.setColor(cursor.getInt(2));
 
+        cursor.close();
 
+        return category;
+    }
+
+    public List<Category> getAllCategorys(){
+        List<Category> categories = new LinkedList<Category>();
+
+        //1. Build the query
+        String query = "SELECT * FROM " + CATEGORY_TABLE_NAME;
+
+        //2. get reference to writaable Database
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+
+        //3. go over each row, build category and add it to list
+        Category category = null;
+        if(cursor.moveToFirst()){
+            do{
+                category = new Category();
+                category.setId(cursor.getInt(0));
+                category.setName(cursor.getString(1));
+                category.setColor(cursor.getInt(2));
+
+                //add category to categories
+                categories.add(category);
+            } while (cursor.moveToNext());
+        }
+
+        return categories;
+    }
+
+    public int updateCategory(Category category){
+        //1. get reference to writable database
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        //2. create ContentValues to add key "column/value"
+        ContentValues values = new ContentValues();
+        values.put(CATEGORY_KEY_NAME, category.getName());
+        values.put(CATEGORY_KEY_COLOR, category.getColor());
+
+        //3. Updating row
+        int i = db.update(CATEGORY_TABLE_NAME, //Table
+                values, //Column values
+                CATEGORY_KEY_ID + " = ?", //selections
+                new String[] {String.valueOf(category.getId()) }); //selection arguments
+
+        db.close();
+
+        return i;
+    }
+
+    public void deleteCategory (Category category){
+        //1. get reference to writable database
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        //2. Delete
+        db.delete(CATEGORY_TABLE_NAME, //Table name
+                CATEGORY_KEY_ID + " ?", //Selection
+                new String[] {String.valueOf(category.getId())}); //selection arguments
+
+        //3. Close
+        db.close();
     }
 }

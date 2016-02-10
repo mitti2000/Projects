@@ -16,4 +16,25 @@
         android:id="@+id/btn_startActivity1"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCategoryName"
+        android:layout_below="@+id/btn_startActivity1"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:id="@+id/txtCategoryColor"
+        android:layout_below="@+id/txtCategoryName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCategoryID"
+        android:layout_below="@+id/txtCategoryColor" />
+
 </RelativeLayout>

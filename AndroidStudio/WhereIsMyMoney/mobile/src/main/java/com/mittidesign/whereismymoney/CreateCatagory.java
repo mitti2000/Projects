@@ -64,7 +64,7 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
 
         //Checkboxes
         chkColor = new CheckBox[10];
-        rdoColor = new RadioButton[6];
+        rdoColor = new RadioButton[10];
 
         //Fill Checkbox Array
         chkColor[0] = (CheckBox) findViewById(R.id.chk_color_1);
@@ -84,6 +84,13 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
         rdoColor[3] = (RadioButton) findViewById(R.id.rdoColor4);
         rdoColor[4] = (RadioButton) findViewById(R.id.rdoColor5);
         rdoColor[5] = (RadioButton) findViewById(R.id.rdoColor6);
+        rdoColor[6] = (RadioButton) findViewById(R.id.rdoColor7);
+        rdoColor[7] = (RadioButton) findViewById(R.id.rdoColor8);
+        rdoColor[8] = (RadioButton) findViewById(R.id.rdoColor9);
+        rdoColor[9] = (RadioButton) findViewById(R.id.rdoColor10);
+
+        //SQLite Open Helper
+        final CategoryOpenHelper dbHelper = new CategoryOpenHelper(this);
 
 
         btnColorPicker.setOnClickListener(new View.OnClickListener() {
@@ -115,8 +122,18 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String name = categoryName.getText().toString();
+                int color = Color.rgb(Integer.parseInt(inputRed.getText().toString()), Integer.parseInt(inputGreen.getText().toString()), Integer.parseInt(inputBlue.getText().toString()));
+
+                Category category = new Category(name, color);
+
+                int newId = dbHelper.addCategory(category);
+                category.setId(newId);
+
                 Intent i = new Intent(CreateCatagory.this, MainActivity.class);
-                //i.putExtra("Category", category);
+                i.putExtra("id", newId);
+
                 startActivity(i);
             }
         });
