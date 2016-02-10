@@ -20,72 +20,72 @@
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_light_normal.9.png"
-    },
-    {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_disabled.9.png"
-    },
-    {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_light_focused.9.png"
-    },
-    {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_full_cancel.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\drawable-hdpi-v4\\ic_full_cancel.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_focused.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
@@ -96,12 +96,12 @@
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_disabled.9.png"
-    },
-    {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
@@ -124,16 +124,16 @@
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_focused.9.png"
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_ic_googleplayservices.png",
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_ic_googleplayservices.png"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
@@ -204,16 +204,16 @@
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
@@ -240,28 +240,28 @@
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\drawable-hdpi-v4\\ic_full_sad.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\card_frame_pressed.9.png",
         "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\drawable-hdpi-v4\\card_frame_pressed.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_full_cancel.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\drawable-hdpi-v4\\ic_full_cancel.png"
-    },
-    {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_full_cancel.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\drawable-hdpi-v4\\ic_full_cancel.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
@@ -276,24 +276,24 @@
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
-    },
-    {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_google_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",

@@ -11,16 +11,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ListView;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.vision.Frame;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity{
 
     Button btnActivity1;
-    TextView txtCategoryName;
-    TextView txtCategoryID;
-    TextView txtCategoryColor;
+    TableLayout categoryList;
+    List<Category> categories;
+    TextView tableLine;
 
 
 
@@ -30,12 +34,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
         btnActivity1 = (Button) findViewById(R.id.btn_startActivity1);
-
-        txtCategoryColor = (TextView) findViewById(R.id.txtCategoryColor);
-        txtCategoryName = (TextView) findViewById(R.id.txtCategoryName);
-        txtCategoryID = (TextView) findViewById(R.id.txtCategoryID);
-
-
+        categoryList = (TableLayout) findViewById(R.id.categoryList);
 
 
         btnActivity1.setOnClickListener(new View.OnClickListener() {
@@ -46,22 +45,29 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        Category category;
-            Bundle bundle = getIntent().getExtras();
+        CategoryOpenHelper dbHelper = new CategoryOpenHelper(this);
+        categories = dbHelper.getAllCategorys();
+        for(Category category : categories){
+            tableLine = new TextView(this);
+            tableLine.setText("Category: " + category.getName() + ", ID: " + category.getId());
+            tableLine.setBackgroundColor(category.getColor());
+            categoryList.addView(tableLine);
+        }
+
+
+
+        //Category category;
+            /*Bundle bundle = getIntent().getExtras();
             if (bundle==null){
-                txtCategoryID.setText("no ID");
-                txtCategoryName.setText("no Name");
-                txtCategoryColor.setBackgroundColor(Color.BLACK);
+
             }
             else{
                 if (bundle.getInt("id") != 0) {
                     CategoryOpenHelper dbHelper = new CategoryOpenHelper(this);
                     category = dbHelper.getCategory(bundle.getInt("id"));
-                    txtCategoryID.setText(category.getId());
-                    txtCategoryName.setText(category.getName());
-                    txtCategoryColor.setBackgroundColor(category.getColor());
+
                 }
-            }
+            }*/
 
 
 

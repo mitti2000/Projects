@@ -21,12 +21,6 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
     //Table Names
     private static final String CATEGORY_TABLE_NAME = "categories";
 
-    //Field Names
-    //Category
-    private static final String CATEGORY_FIELD_NAME = "category_name";
-    private static final String CATEGORY_FIELD_COLOR = "category_color";
-    //private static final String CATEGORY_FIELD_MASTER = "category_master";
-
     //Keys
     //Category
     private static final String CATEGORY_KEY_ID = "id";
@@ -40,9 +34,9 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
     //Category
     private static final String CATEGORY_TABLE_CREATE =
             "CREATE TABLE " + CATEGORY_TABLE_NAME + " ( " +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    CATEGORY_KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     CATEGORY_KEY_NAME + " TEXT, " +
-                    CATEGORY_KEY_COLOR + " INTEGER) ; ";// +
+                    CATEGORY_KEY_COLOR + " INTEGER )";// +
              //       CATEGORY_FIELD_MASTER + " INTEGER);";
 
     public CategoryOpenHelper(Context context) {
