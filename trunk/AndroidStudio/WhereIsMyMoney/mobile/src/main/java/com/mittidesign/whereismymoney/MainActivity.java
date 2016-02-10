@@ -18,6 +18,9 @@ import com.google.android.gms.vision.Frame;
 public class MainActivity extends AppCompatActivity{
 
     Button btnActivity1;
+    TextView txtCategoryName;
+    TextView txtCategoryID;
+    TextView txtCategoryColor;
 
 
 
@@ -28,6 +31,13 @@ public class MainActivity extends AppCompatActivity{
 
         btnActivity1 = (Button) findViewById(R.id.btn_startActivity1);
 
+        txtCategoryColor = (TextView) findViewById(R.id.txtCategoryColor);
+        txtCategoryName = (TextView) findViewById(R.id.txtCategoryName);
+        txtCategoryID = (TextView) findViewById(R.id.txtCategoryID);
+
+
+
+
         btnActivity1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +45,25 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(act1);
             }
         });
+
+        Category category;
+            Bundle bundle = getIntent().getExtras();
+            if (bundle==null){
+                txtCategoryID.setText("no ID");
+                txtCategoryName.setText("no Name");
+                txtCategoryColor.setBackgroundColor(Color.BLACK);
+            }
+            else{
+                if (bundle.getInt("id") != 0) {
+                    CategoryOpenHelper dbHelper = new CategoryOpenHelper(this);
+                    category = dbHelper.getCategory(bundle.getInt("id"));
+                    txtCategoryID.setText(category.getId());
+                    txtCategoryName.setText(category.getName());
+                    txtCategoryColor.setBackgroundColor(category.getColor());
+                }
+            }
+
+
 
 
     }

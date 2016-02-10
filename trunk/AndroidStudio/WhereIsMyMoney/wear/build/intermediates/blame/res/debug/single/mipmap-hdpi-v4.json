@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
         "source": "C:\\Projects\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\MittiUnityProject\\trunk\\AndroidStudio\\WhereIsMyMoney\\wear\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]
