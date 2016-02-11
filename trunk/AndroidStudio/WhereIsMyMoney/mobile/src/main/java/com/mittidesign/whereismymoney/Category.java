@@ -3,14 +3,15 @@ package com.mittidesign.whereismymoney;
 public class Category {
     private int id;
     private String name;
-    //private Category master;
+    private Category master;
     private int color;
+    private CategoryOpenHelper dbHelper;
 
-    /*public Category(String name, Category master, int color){
+    public Category(String name, Category master, int color){
         this.name = name;
         this.master = master;
         this.color = color;
-        }*/
+        }
 
     public Category(String name, int color){
         this.name = name;
@@ -18,7 +19,6 @@ public class Category {
     }
 
     public Category(){
-
     }
 
     public int getId(){
@@ -33,9 +33,13 @@ public class Category {
         return color;
     }
 
-    /*public Category getMaster(){
+    public Category getMaster(){
         return master;
-    }*/
+    }
+
+    public int getMasterId(){
+        return master.getId();
+    }
 
     public void setId(int id){
         this.id = id;
@@ -49,9 +53,13 @@ public class Category {
         this.color = color;
     }
 
-    /*public void setMaster(Category master){
+    public void setMaster(Category master){
         this.master = master;
-    }*/
+    }
+
+    public void setMasterId(int id){
+
+    }
 
 
 }

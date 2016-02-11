@@ -26,9 +26,9 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
     private static final String CATEGORY_KEY_ID = "id";
     private static final String CATEGORY_KEY_NAME = "name";
     private static final String CATEGORY_KEY_COLOR = "color";
-    //private static final String CATEGORY_KEY_MASTER = "master";
+    private static final String CATEGORY_KEY_MASTER = "master";
 
-    private static final String[] CATEGORY_COLUMNS = {CATEGORY_KEY_ID, CATEGORY_KEY_NAME, CATEGORY_KEY_COLOR};
+    private static final String[] CATEGORY_COLUMNS = {CATEGORY_KEY_ID, CATEGORY_KEY_NAME, CATEGORY_KEY_COLOR, CATEGORY_KEY_MASTER};
 
     //Create strings
     //Category
@@ -36,8 +36,8 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + CATEGORY_TABLE_NAME + " ( " +
                     CATEGORY_KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     CATEGORY_KEY_NAME + " TEXT, " +
-                    CATEGORY_KEY_COLOR + " INTEGER )";// +
-             //       CATEGORY_FIELD_MASTER + " INTEGER);";
+                    CATEGORY_KEY_COLOR + " INTEGER, "+
+                    CATEGORY_KEY_MASTER + " INTEGER);";
 
     public CategoryOpenHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -66,7 +66,7 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(CATEGORY_KEY_NAME, category.getName());
         values.put(CATEGORY_KEY_COLOR, category.getColor());
-        //values.put(CATEGORY_KEY_MASTER, category.getMaster()); //change return value to id
+        values.put(CATEGORY_KEY_MASTER, category.getMasterId());
 
         //3. insert
         int i = (int) db.insert(CATEGORY_TABLE_NAME, //table name
@@ -104,6 +104,7 @@ public class CategoryOpenHelper extends SQLiteOpenHelper {
         category.setId(cursor.getInt(0));
         category.setName(cursor.getString(1));
         category.setColor(cursor.getInt(2));
+        category.setMasterId(cursor.getInt(3));
 
         cursor.close();
 
