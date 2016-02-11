@@ -12,13 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 
 import java.io.IOException;
+import java.util.List;
 
 public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnColorChangedListener {
 
@@ -39,8 +42,8 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
     RadioButton[] rdoColor;
     RadioGroup rdoColorGroup;
 
-    //Intent
-
+    //Spinner
+    Spinner spnMasterCategory;
 
     //Colors
     int colorChosen;
@@ -48,6 +51,9 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
     float[] colorHSVTemp = new float[3];
     int colorTemp;
     float brightnessValue;
+
+    //DB Helper
+    CategoryOpenHelper dbHelper;
 
 
     @Override
@@ -84,14 +90,22 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
         rdoColor[8] = (RadioButton) findViewById(R.id.rdoColor9);
         rdoColor[9] = (RadioButton) findViewById(R.id.rdoColor10);
 
+        //Spinner
+        spnMasterCategory = (Spinner) findViewById(R.id.spin_Master_category);
+
         //SQLite Open Helper
-        final CategoryOpenHelper dbHelper = new CategoryOpenHelper(this);
+        dbHelper = new CategoryOpenHelper(this);
+
+        //Spinner
+        spnMasterCategory.setAdapter(getCategoryArrayAdapter());
 
 
+        //Buttons
         btnColorPicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new ColorPicker(CreateCatagory.this, CreateCatagory.this, Color.RED).show();
+                setColor();
             }
         });
 
@@ -152,12 +166,12 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
         colorHSVTemp = colorChosenHsv;
 
 
-        for(int i=chkColor.length-1; i>=0; i--){
+        /*for(int i=chkColor.length-1; i>=0; i--){
             brightnessValue = i/10.0F;
             colorHSVTemp[1] = 1.0F-brightnessValue;
             colorTemp=Color.HSVToColor(colorHSVTemp);
             chkColor[i].setBackgroundColor(colorTemp);
-        }
+        }*/
 
         for(int j=rdoColor.length-1; j>=0; j--){
             brightnessValue = j/10.0F;
@@ -181,6 +195,18 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
     public void getColor(View v) {
         new ColorPicker(activity, CreateCatagory.this, Color.WHITE)
                 .show();
+    }
+
+    public ArrayAdapter<String> getCategoryArrayAdapter(){
+        List<Category> categories = dbHelper.getAllCategorys();
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.master_category_spinner_layout);
+
+        for(Category category : categories){
+            adapter.add(category.getName());
+        }
+
+        return adapter;
     }
 
 
