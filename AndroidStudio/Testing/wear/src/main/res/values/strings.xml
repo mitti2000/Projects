@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Testing</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_newentry">New Entry</string>
+    <string name="title_volume">Amount</string>
+    <string name="title_date">Date</string>
+    <string name="title_distance">Distance</string>
+    <string name="title_priceperunit">Price per unit</string>
+    <string name="title_activity_choose_date">ChooseDate</string>
+</resources>
