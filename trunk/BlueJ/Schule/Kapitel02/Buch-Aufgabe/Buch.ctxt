@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=buchautor\ buchtitel
+comment0.target=Buch(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Setze\ den\ Autor\ und\ den\ Titel,\ wenn\ ein\ Exemplar\ erzeugt\ wird.\r\n
+numComments=1

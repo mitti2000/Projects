@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -23,7 +24,7 @@ import android.widget.Spinner;
 import java.io.IOException;
 import java.util.List;
 
-public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnColorChangedListener {
+public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnColorChangedListener, AdapterView.OnItemSelectedListener {
 
     //Buttons
     Button btnSetColor;
@@ -44,6 +45,7 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
 
     //Spinner
     Spinner spnMasterCategory;
+    Category master;
 
     //Colors
     int colorChosen;
@@ -207,6 +209,15 @@ public class CreateCatagory extends AppCompatActivity implements ColorPicker.OnC
         }
 
         return adapter;
+    }
+
+    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id){
+        master = (Category) parent.getItemAtPosition(pos);
+        Log.d("MasterCategory","Item is: " + master.getName());
+    }
+
+    public void onNothingSelected(AdapterView<?> parent){
+        master = null;
     }
 
 

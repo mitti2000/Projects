@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=kapital\ anlagetage\ zinssatz
+comment0.target=Zinsrechner(double,\ int,\ double)
+comment0.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Zinsrechner\r\n
+comment1.params=
+comment1.target=double\ gibKapital()
+comment2.params=
+comment2.target=double\ gibAnlagetage()
+comment3.params=
+comment3.target=double\ gibZinssatz()
+comment4.params=
+comment4.target=double\ berechneZins()
+comment5.params=
+comment5.target=double\ berechneNeuesVermoegen()
+numComments=6

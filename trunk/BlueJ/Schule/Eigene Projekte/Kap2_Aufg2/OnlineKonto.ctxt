@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=besitzer\ telefonnummer
+comment0.target=OnlineKonto(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ OnlineKonto\r\n
+comment1.params=
+comment1.target=double\ gibKontostand()
+comment2.params=betrag
+comment2.target=void\ einzahlen(double)
+comment3.params=betrag
+comment3.target=void\ auszahlen(double)
+comment4.params=
+comment4.target=void\ kontostandAusgeben()
+numComments=5

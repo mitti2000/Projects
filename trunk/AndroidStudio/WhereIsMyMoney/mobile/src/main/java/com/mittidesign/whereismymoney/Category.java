@@ -4,6 +4,7 @@ public class Category {
     private int id;
     private String name;
     private Category master;
+    private int masterId;
     private int color;
     private CategoryOpenHelper dbHelper;
 
@@ -38,7 +39,7 @@ public class Category {
     }
 
     public int getMasterId(){
-        return master.getId();
+        return masterId;
     }
 
     public void setId(int id){
@@ -58,7 +59,7 @@ public class Category {
     }
 
     public void setMasterId(int id){
-
+        this.masterId = id;
     }
 
 
