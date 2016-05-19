@@ -1,0 +1,26 @@
+#BlueJ package file
+package.editor.height=286
+package.editor.width=408
+package.editor.x=287
+package.editor.y=203
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+readme.editor.height=526
+readme.editor.width=748
+readme.editor.x=0
+readme.editor.y=0
+target1.editor.height=577
+target1.editor.width=748
+target1.editor.x=73
+target1.editor.y=104
+target1.height=50
+target1.name=Ticketautomat
+target1.naviview.expanded=false
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=110
+target1.x=80
+target1.y=40

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=breite\ laenge
+comment0.target=Rechteck(int,\ int)
+comment0.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Rechteck\r\n
+comment1.params=
+comment1.target=void\ berechneUmfange()
+comment2.params=
+comment2.target=void\ berechneFlaeche()
+comment3.params=
+comment3.target=void\ pruefeObQuadrat()
+numComments=4

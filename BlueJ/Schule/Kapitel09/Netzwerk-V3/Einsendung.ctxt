@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=autor
+comment0.target=Einsendung(java.lang.String)
+comment0.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Einsendung.\r\n\ \r\n\ @param\ autor\ \ \ \ Der\ Benutzername\ des\ Einsenders.\r\n
+comment1.params=
+comment1.target=void\ gefaellt()
+comment1.text=\r\n\ Halte\ fest,\ dass\ die\ Einsendung\ von\ einem\ Benutzer\ mit\ 'gef\u00E4llt'\ bewertet\ wurde.\r\n
+comment2.params=
+comment2.target=void\ gefaelltNicht()
+comment2.text=\r\n\ Halte\ fest,\ dass\ ein\ Benutzer\ seine\ 'gef\u00E4llt'-Bewertung\ zur\u00FCckgezogen\ hat.\r\n
+comment3.params=text
+comment3.target=void\ erfasseKommentar(java.lang.String)
+comment3.text=\r\n\ F\u00FCge\ der\ Einsendung\ einen\ Kommentar\ hinzu.\r\n\ \r\n\ @param\ text\ \ Der\ neu\ hinzuzuf\u00FCgende\ Kommentar.\r\n
+comment4.params=
+comment4.target=long\ gibZeitstempel()
+comment4.text=\r\n\ Liefere\ die\ Zeit,\ zu\ der\ die\ Einsendung\ erstellt\ wurde.\r\n\ \r\n\ @return\ die\ Zeit,\ zu\ der\ die\ Einsendung\ erstellt\ wurde\ (als\ Systemzeit-Wert)..\r\n
+comment5.params=
+comment5.target=void\ anzeigen()
+comment5.text=\r\n\ Zeige\ die\ Details\ der\ Einsendung\ an.\r\n\ \r\n\ (Aktuell\ werden\ die\ Daten\ auf\ die\ Konsole\ ausgegeben,wodurch\ momentan\ die\ \r\n\ Anzeige\ im\ Webbrowser\ simuliert\ werden\ soll.)\r\n
+comment6.params=zeit
+comment6.target=java.lang.String\ zeitString(long)
+comment6.text=\r\n\ Erzeuge\ einen\ String,\ der\ einen\ in\ der\ Vergangenheit\ liegenden\ Zeitpunkt\ im\ Vergleich\r\n\ zur\ aktuellen\ Zeit\ beschreibt,\ also\ beispielsweise\ "vor\ 30\ Sekunden"\ oder\ "vor\ 7\ Minuten".\r\n\ Derzeit\ werden\ nur\ Sekunden\ und\ Minuten\ f\u00FCr\ den\ String\ verwendet.\r\n\ \r\n\ @param\ zeit\ \ der\ umzuwandelnde\ Zeitwert\ (in\ System-Millisekunden)\r\n\ @return\ \ \ \ \ \ eine\ relative\ Zeitbeschreibung\ f\u00FCr\ den\ gegebenen\ Zeitwert\r\n
+numComments=7

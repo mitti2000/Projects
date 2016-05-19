@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BallDemo()
+comment0.text=\r\n\ Erzeuge\ ein\ Exemplar\ von\ BallDemo.\r\n\ Es\ wird\ ein\ frischer\ Canvas\ erzeugt\ und\ sichtbar\ gemacht.\r\n
+comment1.params=
+comment1.target=void\ springenLassen()
+comment1.text=\r\n\ Simuliere\ zwei\ springende\ B\u00E4lle.\r\n
+numComments=2

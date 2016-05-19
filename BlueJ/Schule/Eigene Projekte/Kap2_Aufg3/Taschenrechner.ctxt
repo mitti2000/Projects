@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Taschenrechner()
+comment0.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Taschenrechner\r\n
+comment1.params=
+comment1.target=double\ gibZahl1()
+comment2.params=
+comment2.target=double\ gibZahl2()
+comment3.params=
+comment3.target=double\ gibResultat()
+comment4.params=zahl1\ zahl2
+comment4.target=void\ addieren(double,\ double)
+comment5.params=zahl1\ zahl2
+comment5.target=void\ subtrahieren(double,\ double)
+comment6.params=zahl1\ zahl2
+comment6.target=void\ multiplizieren(double,\ double)
+comment7.params=zahl1\ zahl2
+comment7.target=void\ dividieren(double,\ double)
+numComments=8
