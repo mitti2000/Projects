@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=name\ stundenansatz\ sollZeit\ faktorUeberzeit\ faktorWochenende
+comment0.target=Wochenlohnprogramm(java.lang.String,\ double,\ double,\ double,\ double)
+comment1.params=stunden
+comment1.target=void\ neuerTag(double)
+comment2.params=
+comment2.target=void\ stundenblatt()
+numComments=3
