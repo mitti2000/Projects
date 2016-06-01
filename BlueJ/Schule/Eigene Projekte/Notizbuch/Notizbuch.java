@@ -10,6 +10,7 @@ public class Notizbuch
     private ArrayList<Notiz> notizen;
     
     public boolean erstelleNotiz(int prioritaet, int tag, int monat, int jahr, String text){
+        notizen = new ArrayList<Notiz>;
         notizen.add(new Notiz(prioritaet, tag, monat, jahr, text));
         return true;
     }
