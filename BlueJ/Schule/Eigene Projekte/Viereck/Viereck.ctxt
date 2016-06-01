@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=posX\ posY\ laenge\ breite
+comment0.target=Viereck(int,\ int,\ int,\ int)
+comment1.params=a\ b\ c\ d
+comment1.target=Viereck(Punkt,\ Punkt,\ Punkt,\ Punkt)
+comment2.params=wert
+comment2.target=void\ verschiebeHorizontal(int)
+comment3.params=wert
+comment3.target=void\ verschiebeVertikal(int)
+comment4.params=wert
+comment4.target=void\ laengeAendern(int)
+comment5.params=wert
+comment5.target=void\ breiteAendern(int)
+comment6.params=
+comment6.target=boolean\ istQuadrad()
+numComments=7
