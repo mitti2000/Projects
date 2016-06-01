@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Ampel()
+comment1.params=start
+comment1.target=Ampel(boolean)
+comment2.params=
+comment2.target=void\ schalten()
+comment3.params=
+comment3.target=void\ ausgeben()
+numComments=4
