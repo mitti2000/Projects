@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=prioritaet\ tag\ monat\ jahr\ text
+comment0.target=Notiz(int,\ int,\ int,\ int,\ java.lang.String)
+comment1.params=
+comment1.target=int\ getPrioritaet()
+comment2.params=
+comment2.target=Datum\ getDatum()
+comment3.params=
+comment3.target=java.lang.String\ getText()
+comment4.params=
+comment4.target=java.lang.String\ getNotizAlsText()
+numComments=5

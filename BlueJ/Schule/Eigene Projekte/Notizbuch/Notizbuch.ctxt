@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Notizbuch()
+comment1.params=prioritaet\ tag\ monat\ jahr\ text
+comment1.target=boolean\ erstelleNotiz(int,\ int,\ int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=int\ gibAnzahlGespeicherteNotizen()
+comment3.params=nummer
+comment3.target=Notiz\ gibNotizMitNummer(int)
+comment4.params=
+comment4.target=void\ gibAlleNotizenAus()
+numComments=5

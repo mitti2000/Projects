@@ -29,8 +29,8 @@ public class Notiz
         return this.text;
     }
     
-    public String gibNotizAlsText(){
-        String notiz=null;
+    public String getNotizAlsText(){
+        String notiz = new String();
         notiz += "Prioritaet: " + this.prioritaet;
         notiz += ", Datum: " + this.datum.gibDatumAlsText();
         notiz += ", Text: "+ this.text;
