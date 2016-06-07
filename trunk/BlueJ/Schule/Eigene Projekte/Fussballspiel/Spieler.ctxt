@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=b
+comment0.target=Spieler(Ball)
+comment1.params=s
+comment1.target=void\ spieleBallAnSpieler(Spieler)
+comment2.params=b
+comment2.target=void\ nimmBall(Ball)
+comment3.params=s
+comment3.target=void\ gibBall(Spieler)
+numComments=4

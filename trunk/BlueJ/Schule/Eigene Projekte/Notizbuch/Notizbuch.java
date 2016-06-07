@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Beschreiben Sie hier die Klasse Notizbuch.
  * 
@@ -9,30 +9,41 @@ public class Notizbuch
 {
     private ArrayList<Notiz> notizen;
     
+    public Notizbuch (){
+        notizen = new ArrayList<Notiz>();
+    }
+    
     public boolean erstelleNotiz(int prioritaet, int tag, int monat, int jahr, String text){
-        notizen = new ArrayList<Notiz>;
         notizen.add(new Notiz(prioritaet, tag, monat, jahr, text));
         return true;
     }
     
     public int gibAnzahlGespeicherteNotizen(){
-        return notizen.size();
+        if (notizen.size()>0) return notizen.size();
+        else return 0;
     }
     
     public Notiz gibNotizMitNummer(int nummer){
-        return notizen.get(nummer-1);
+        if(notizen.size()>=nummer) return notizen.get(nummer-1);
+        else {
+            System.out.println ("Es gibt nur "+notizen.size()+" Notizen.");
+            return null;
+        }
     }
     
     public void gibAlleNotizenAus(){
         Notiz tempNotiz;
-        Interator it = notizen.iterator();
-        while(it.hasNext(){
-            tempNotiz = it.next();
-            System.out.println("*******************");
-            System.out.println("Notiz");
-            System.out.println("Prioritaet: "+tempNotiz.gibPrioritaet());
-            System.out.println("Datum: "+temp.
+        Iterator it = notizen.iterator();
+        if(it.hasNext()){
+            while(it.hasNext()){
+                tempNotiz = (Notiz) it.next();
+                System.out.println("*******************");
+                System.out.println("Notiz");
+                System.out.println(tempNotiz.getNotizAlsText());
+                
+            }
         }
+        else System.out.println("Keine Notizen vorhanden");
     }
     
 }
