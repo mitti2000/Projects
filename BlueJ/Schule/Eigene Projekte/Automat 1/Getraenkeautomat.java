@@ -53,10 +53,6 @@ public class Getraenkeautomat
         geldEingeworfen += betrag;
     }
     
-    /**
-     * Gibt den Geldbetrag im Automaten zurück
-     * @return Geldbetrag als float
-     */
     public float geldEingeworfen(){
         return geldEingeworfen;
     }

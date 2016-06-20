@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Automat()
+comment1.params=anzahl\ name\ preis\ tag\ monat\ jahr
+comment1.target=void\ produktHinzu(int,\ java.lang.String,\ float,\ int,\ int,\ int)
+comment2.params=betrag
+comment2.target=void\ geldEinwerfen(float)
+comment3.params=
+comment3.target=float\ betragImAutomat()
+comment4.params=
+comment4.target=float\ rueckgeldAuszahlen()
+comment5.params=name
+comment5.target=int\ anzahlProdukt(java.lang.String)
+comment6.params=name
+comment6.target=void\ produktKaufen(java.lang.String)
+numComments=7
