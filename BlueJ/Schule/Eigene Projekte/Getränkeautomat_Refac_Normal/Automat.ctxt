@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=produkt1\ produkt2\ produkt3\ produkt4
+comment0.target=Automat(Produkt,\ Produkt,\ Produkt,\ Produkt)
+comment0.text=\r\n\ Konstruktor\ der\ fertige\ Produkte\ erwartet\r\n\ \r\n\ @param\ produkt1\ Fertiges\ Produkt\ 1\ vom\ Typ\ Produkt\r\n\ @param\ anzahlP1\ Anzahl\ von\ Produkt\ 1\r\n\ @param\ produkt1\ Fertiges\ Produkt\ 2\ vom\ Typ\ Produkt\r\n\ @param\ anzahlP1\ Anzahl\ von\ Produkt\ 2\r\n\ @param\ produkt1\ Fertiges\ Produkt\ 3\ vom\ Typ\ Produkt\r\n\ @param\ anzahlP1\ Anzahl\ von\ Produkt\ 3\r\n\ @param\ produkt1\ Fertiges\ Produkt\ 4\ vom\ Typ\ Produkt\r\n\ @param\ anzahlP1\ Anzahl\ von\ Produkt\ 4\r\n
+comment1.params=name1\ preis1\ tag1\ monat1\ jahr1\ anzahl1\ name2\ preis2\ tag2\ monat2\ jahr2\ anzahl2\ name3\ preis3\ tag3\ monat3\ jahr3\ anzahl3\ name4\ preis4\ tag4\ monat4\ jahr4\ anzahl4
+comment1.target=Automat(java.lang.String,\ double,\ int,\ int,\ int,\ int,\ java.lang.String,\ double,\ int,\ int,\ int,\ int,\ java.lang.String,\ double,\ int,\ int,\ int,\ int,\ java.lang.String,\ double,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Konruktor,\ der\ die\ Produkte\ anhand\ deren\ Grunddaten\ direkt\ erstellt\r\n\ \r\n\ @param\ name1\ Name\ als\ String\ von\ Produkt\ 1\r\n\ @param\ preis1\ Preis\ als\ double\ von\ Produkt\ 1\r\n\ @param\ tag1\ Verfallstag\ als\ int\ von\ Produkt\ 1\r\n\ @param\ monat1\ Verfallsmonat\ als\ int\ von\ Produkt\ 1\r\n\ @param\ jahr1\ Verfallsjahr\ als\ int\ von\ Produkt\ 1\r\n\ @param\ anzahl1\ Anzahl\ als\ int\ von\ Produkt\ 1\r\n\ @param\ name2\ Name\ als\ String\ von\ Produkt\ 2\r\n\ @param\ preis2\ Preis\ als\ double\ von\ Produkt\ 2\r\n\ @param\ tag2\ Verfallstag\ als\ int\ von\ Produkt\ 2\r\n\ @param\ monat2\ Verfallsmonat\ als\ int\ von\ Produkt\ 2\r\n\ @param\ jahr2\ Verfallsjahr\ als\ int\ von\ Produkt\ 2\r\n\ @param\ anzahl2\ Anzahl\ als\ int\ von\ Produkt\ 2\r\n\ @param\ name3\ Name\ als\ String\ von\ Produkt\ 3\r\n\ @param\ preis3\ Preis\ als\ double\ von\ Produkt\ 3\r\n\ @param\ tag3\ Verfallstag\ als\ int\ von\ Produkt\ 3\r\n\ @param\ monat3\ Verfallsmonat\ als\ int\ von\ Produkt\ 3\r\n\ @param\ jahr3\ Verfallsjahr\ als\ int\ von\ Produkt\ 3\r\n\ @param\ anzahl3\ Anzahl\ als\ int\ von\ Produkt\ 3\r\n\ @param\ name4\ Name\ als\ String\ von\ Produkt\ 4\r\n\ @param\ preis4\ Preis\ als\ double\ von\ Produkt\ 4\r\n\ @param\ tag4\ Verfallstag\ als\ int\ von\ Produkt\ 4\r\n\ @param\ monat4\ Verfallsmonat\ als\ int\ von\ Produkt\ 4\r\n\ @param\ jahr4\ Verfallsjahr\ als\ int\ von\ Produkt\ 4\r\n\ @param\ anzahl4\ Anzahl\ als\ int\ von\ Produkt\ 4\r\n
+comment2.params=betrag
+comment2.target=void\ geldEinwerfen(double)
+comment2.text=\r\n\ Geld\ in\ Automaten\ einzahlen\r\n\ \r\n\ @param\ betrag\ Eingezahlter\ Betrag\ als\ double\r\n
+comment3.params=
+comment3.target=void\ geldEingeworfen()
+comment3.text=\r\n\ Gibt\ aus,\ wieviel\ Geld\ im\ Automat\ ist\r\n
+comment4.params=
+comment4.target=void\ rueckgeldAuszahlen()
+comment4.text=\r\n\ R\u00FCckgeld\ auszahlen.\ Betrag\ im\ Automat\ wird\ auf\ 0\ gesetzt\ und\ das\ R\u00FCckgeld\ ausbezahlt\r\n
+comment5.params=
+comment5.target=void\ produkteImAutomat()
+comment5.text=\r\n\ Gibt\ alle\ Produkte\ und\ deren\ Anzahl\ im\ Display\ aus\r\n
+comment6.params=name
+comment6.target=void\ produktKaufen(java.lang.String)
+comment6.text=\r\n\ Kauf\ ein\ gew\u00FCnschtes\ Produkt\r\n\ \r\n\ @param\ name\ Names\ des\ Produkts\r\n
+comment7.params=displayAusgabe
+comment7.target=void\ displayAusgaben(int)
+comment7.text=\r\n\ Diverse\ Displayausgaben\r\n\ \r\n\ @param\ displayAusgabe\ Nummer\ der\ gew\u00FCnschten\ Ausgabe\r\n
+numComments=8

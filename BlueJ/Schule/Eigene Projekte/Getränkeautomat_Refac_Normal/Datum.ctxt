@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=tag\ monat\ jahr
+comment0.target=Datum(int,\ int,\ int)
+comment0.text=\ Konstruktor\:\ Setzt\ das\ Abluafdatum\ auf\ die\ gew\u00FCnschten\ Daten.\ Es\ wirk\ keine\ \u00DCberpr\u00FCfung\ vorgenommen.\r\n\ @param\ tag\ Tag\ als\ int\r\n\ @param\ monat\ Monat\ als\ int\r\n\ @param\ jahr\ Jahr\ als\ int\r\n
+comment1.params=
+comment1.target=java.lang.String\ getDatum()
+comment1.text=\r\n\ Gibt\ das\ Datum\ als\ String\ zur\u00FCck\r\n\ \r\n\ @return\ Das\ Datum\ als\ String\r\n
+comment2.params=tag\ monat\ jahr
+comment2.target=void\ setDatum(int,\ int,\ int)
+comment2.text=\r\n\ Setzt\ das\ Datum\ auf\ die\ gew\u00FCnschten\ Daten\r\n\ \r\n\ @param\ tag\ Tag\ als\ int\r\n\ @param\ monat\ Monat\ als\ int\r\n\ @param\ jar\ Jahr\ als\ int\r\n
+numComments=3
