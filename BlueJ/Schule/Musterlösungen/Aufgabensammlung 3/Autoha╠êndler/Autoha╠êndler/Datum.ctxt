@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=tag\ monat\ jahr
+comment0.target=Datum(int,\ int,\ int)
+comment1.params=
+comment1.target=int\ gibTag()
+comment2.params=
+comment2.target=int\ gibMonat()
+comment3.params=
+comment3.target=int\ gibJahr()
+comment4.params=
+comment4.target=java.lang.String\ gibDatumAlsString()
+comment5.params=datum
+comment5.target=boolean\ equals(Datum)
+numComments=6

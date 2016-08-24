@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Freunde()
+comment0.text=\n\ Erzeugt\ eine\ Instanz\ von\ ArrayList\ und\ stellt\n\ die\ Sammlung\ der\ Klasse\ zur\ Verf\u00FCgung.\n
+comment1.params=name
+comment1.target=boolean\ hinzufuegen(java.lang.String)
+comment1.text=\n\ F\u00FCgt\ eine\ neue\ String-Referenz\ der\ Sammlung\ hinzu\n\ @param\ name\ Name\ eines\ Freundes\n
+comment2.params=position
+comment2.target=java.lang.String\ gibName(int)
+comment2.text=\n\ Liefert\ den\ Namen\ eines\ Freundes\ an\ einer\ bestimmten\n\ Position\ innerhalb\ der\ Sammlung\n\ @param\ position\ Index\ \ der\ Sammlung,\ beginnend\ bei\ 0\n\ @return\ liefert\ den\ gefundenen\ Namen\ an\ der\ Position\ oder\ null\n
+comment3.params=
+comment3.target=int\ gibAnzahlFreunde()
+comment3.text=\n\ Liefert\ die\ Anzahl\ der\ gespeicherten\ Referenzen\ der\ Sammlung\n\ @return\ Anzahl\ gespeicherter\ Refernzen\ in\ Sammlung\n
+comment4.params=position
+comment4.target=boolean\ loescheFreund(int)
+comment4.text=\n\ Entfernt\ eine\ Objektreferenz\ innerhalb\ der\ Sammlung,\ wenn\n\ Position\ g\u00FCltig\ ist\n\ @param\ position\ Index\ eines\ Elements\ beginnend\ bei\ 0\n\ @return\ true\ wenn\ das\ Entfernen\ geklappt\ hat,\ ansonsten\ false\n
+comment5.params=
+comment5.target=void\ alleNamenAusgeben()
+comment5.text=\n\ Gibt\ alle\ Namen\ der\ Sammlung\ in\ der\ Konsole\ aus\n
+comment6.params=name
+comment6.target=boolean\ sucheFreund(java.lang.String)
+comment6.text=\n\ Sucht\ einen\ Namen\ in\ der\ Sammlung\ und\ liefert\ true,\n\ wenn\ Name\ in\ der\ Sammlung\ vorhanden\n\ @param\ name\ Der\ gesuchte\ Name\n\ @return\ true\ wenn\ Name\ gefunden,\ ansonsten\ false\n
+comment7.params=name
+comment7.target=int\ gibPosition(java.lang.String)
+comment7.text=\n\ Liefert\ die\ Position\ (Index)\ eines\ Namens\ innerhalb\ der\ Sammlung\n\ @param\ name\ Gesuchter\ Name\ der\ Person\n\ @return\ der\ Index\ der\ gesuchten\ Person\n
+numComments=8
