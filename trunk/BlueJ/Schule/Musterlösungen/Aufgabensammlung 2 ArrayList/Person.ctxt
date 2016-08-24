@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=vorname\ nachname\ alter\ telefonnummer\ mobiltelefonnummer
+comment0.target=Person(java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
+comment0.text=\n\ Initialisiert\ alle\ Datenfelder\ mittels\ Parameter\n
+comment1.params=
+comment1.target=java.lang.String\ gibVorname()
+comment1.text=\n\ Liefert\ den\ Vornamen\ einer\ Person\n\ @return\ Vorname\ einer\ Person\n
+comment2.params=
+comment2.target=java.lang.String\ gibNachname()
+comment2.text=\ \n\ Liefert\ den\ Nachnamen\ einer\ Person\n\ @return\ Nachname\ einer\ Person\n
+comment3.params=
+comment3.target=int\ gibAlter()
+comment3.text=\n\ Liefert\ das\ Alter\ einer\ Person\n\ @return\ Alter\ einer\ Person\n
+comment4.params=
+comment4.target=java.lang.String\ gibTelefonnummer()
+comment4.text=\ \n\ Liefert\ die\ Telefonnummer\ einer\ Person\n\ @reurn\ Telefonnummer\ einer\ Person\n
+comment5.params=
+comment5.target=java.lang.String\ gibMobiltelefonnummer()
+comment5.text=\ \n\ Liefert\ die\ Mobiltelefonnummer\ einer\ Person\n\ @return\ Mobiltelefonnummer\ einer\ Person\n
+comment6.params=
+comment6.target=java.lang.String\ gibPersonAlsString()
+comment6.text=\ \n\ Liefert\ alle\ Attribute\ einer\ Person\ in\ einem\ String\n\ @return\ Alle\ Attribute\ einer\ Person\ als\ String\n
+numComments=7

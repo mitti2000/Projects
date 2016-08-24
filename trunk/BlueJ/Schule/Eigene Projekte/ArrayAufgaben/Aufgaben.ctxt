@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ aufgabe1()
+comment1.params=
+comment1.target=void\ aufgabe2()
+comment2.params=anzahl
+comment2.target=void\ aufgabe3(int)
+comment3.params=
+comment3.target=void\ aufgabe4()
+comment4.params=
+comment4.target=void\ aufgabe5()
+comment5.params=anzahl\ grenze
+comment5.target=void\ aufgabe6(int,\ int)
+comment6.params=
+comment6.target=void\ aufgabe7()
+numComments=7

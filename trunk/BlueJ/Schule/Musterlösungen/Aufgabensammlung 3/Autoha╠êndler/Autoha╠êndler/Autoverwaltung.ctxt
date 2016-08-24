@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Autoverwaltung()
+comment1.params=auto
+comment1.target=boolean\ hinzufuegen(Auto)
+comment2.params=auto
+comment2.target=Auto\ sucheFahrzeug(Auto)
+comment3.params=marke
+comment3.target=int\ gibAnzahlBestimmteMarke(java.lang.String)
+comment4.params=marke\ modell
+comment4.target=int\ gibAnzahlBestimmteMarkenModelle(java.lang.String,\ java.lang.String)
+comment5.params=
+comment5.target=Auto\ gibGuenstigesFahrzeugImVerkauf()
+comment6.params=
+comment6.target=double\ gibGesamtenEinkaufswertAllerNichtVerkaufterFahrzeuge()
+comment7.params=datum
+comment7.target=java.util.ArrayList\ gibFahrzeugeVerkauftAnDatum(Datum)
+comment8.params=
+comment8.target=double\ gibBesteVerkaufsMarge()
+numComments=9
