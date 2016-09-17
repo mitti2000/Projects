@@ -22,13 +22,13 @@ comment14.target=Person[]\ sortByFirstname(boolean)
 comment14.text=\r\n\ Gibt\ eine\ nach\ dem\ Vornamen\ sortierte\ Liste\ zur\u00FCck,\ ohne\ die\ interne\ Sammlung\ der\ Klasse\ zu\ beinflussen.\r\n\ Wenn\ der\ Parameter\ true\ ist,\ wird\ absteigend,\ ansonsten\ aufsteigend\ sortiert.\r\n\ @return\ Person[]\ Nach\ Vornamen\ sortierte\ Liste\r\n\ @param\ direction\ true\ \=\ absteigen,\ false\ \=\ aufsteigend\r\n
 comment15.params=p\ position
 comment15.target=boolean\ move(Person,\ int)
-comment15.text=\r\n\ Verschiebt\ ein\ Element\ der\ Sammlung\ an\ eine\ neue\ Stelle,\ Liefert\ rue\ bei\ Erfolg,\ ansosnten\ false\r\n\ @return\ true\ bei\ Erfolg,\ sonst\ false\r\n\ @param\ p\ Einzuf\u00FCgende\ Person\r\n\ @param\ position\ Einzuf\u00FCgende\ Position\ als\ int\r\n
+comment15.text=\r\n\ Verschiebt\ ein\ Element\ der\ Sammlung\ an\ eine\ neue\ Stelle,\ Liefert\ rue\ bei\ Erfolg,\ ansosnten\ false\r\n\ @return\ true\ bei\ Erfolg,\ sonst\ false\r\n\ @param\ p\ zu\ verschiebende\ Person\r\n\ @param\ position\ Position\ wo\ die\ Person\ hinsoll\ als\ int\r\n
 comment16.params=
 comment16.target=java.util.ArrayList\ invert()
-comment16.text=\r\n\ Liefert\ eine\ invertierte\ Version\ der\ Sammlung\ in\ Form\ einer\ ArrayList\ zur\u00FCck\ ohne\ de\ interne\ Sammlung\ der\ Klasse\ zu\ beeinflussen\r\n\ @return\ ArrayList<Person>\ Invertierte\ Liste\ als\ ArrayList\r\n
+comment16.text=\r\n\ Liefert\ eine\ invertierte\ Version\ der\ Sammlung\ in\ Form\ einer\ ArrayList\ zur\u00FCck\ ohne\ die\ interne\ Sammlung\ der\ Klasse\ zu\ beeinflussen\r\n\ @return\ ArrayList<Person>\ Invertierte\ Liste\ als\ ArrayList\r\n
 comment17.params=from\ to\ remove
 comment17.target=Person[]\ cutOut(int,\ int,\ boolean)
-comment17.text=\r\n\ Liefert\ einen\ Abschnitt\ der\ Sammlung\ von\ Position\ from\ bis\ und\ mit\ Position\ to.\ Wenn\ remote\ ture\ ist,\ wird\ die\ Sammlung\ um\ diesen\ Bereich\ gek\u00FCrzt,\r\n\ bei\ false\ wird\ nur\ der\ Ausschnitt\ zur\u00FCckgegeben\ ohne\ dass\ die\ interne\ Sammlung\ der\ Klasse\ beeinflusst\ wird\r\n\ @return\ Person[]\ Gew\u00FCnschter\ Ausschnitt\ als\ Array\r\n\ @from\ Startposition\r\n\ @to\ Endposition\r\n\ @remove\ Soll\ der\ Abschnitt\ aus\ dem\ Array\ entfernt\ werden?\r\n
+comment17.text=\r\n\ Liefert\ einen\ Abschnitt\ der\ Sammlung\ von\ Position\ from\ bis\ und\ mit\ Position\ to.\ Wenn\ remove\ true\ ist,\ wird\ die\ Sammlung\ um\ diesen\ Bereich\ gek\u00FCrzt,\r\n\ bei\ false\ wird\ nur\ der\ Ausschnitt\ zur\u00FCckgegeben\ ohne\ dass\ die\ interne\ Sammlung\ der\ Klasse\ beeinflusst\ wird\r\n\ @return\ Person[]\ Gew\u00FCnschter\ Ausschnitt\ als\ Array\r\n\ @from\ Startposition\r\n\ @to\ Endposition\r\n\ @remove\ Soll\ der\ Abschnitt\ aus\ dem\ Array\ entfernt\ werden?\r\n
 comment18.params=p\ position
 comment18.target=boolean\ insert(Person[],\ int)
 comment18.text=\r\n\ F\u00FCgt\ eine\ Sammlung\ in\ der\ bestehende\ Sammlung\ der\ Klasse\ ein.\ Liefert\ tur\ bei\ Erfolg,\ oder\ false\ bei\ Misserfolg\r\n\ @return\ true\ bei\ Erfolf,\ false\ bei\ Misserfolg\r\n\ @param\ p\ Einzuf\u00FCgende\ Liste\ als\ Array\r\n\ @param\ position\ Einzuf\u00FCgende\ Position\ als\ int\r\n
