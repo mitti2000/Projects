@@ -322,24 +322,40 @@ public class MyArrayList
     /*
      * Verschiebt ein Element der Sammlung an eine neue Stelle, Liefert rue bei Erfolg, ansosnten false
      * @return true bei Erfolg, sonst false
-     * @param p Einzufügende Person
-     * @param position Einzufügende Position als int
+     * @param p zu verschiebende Person
+     * @param position Position wo die Person hinsoll als int
      */
     public boolean move(Person p, int position){
-        return true;
+        boolean isFound =false;
+        int zaehler = -1;
+        Person tempPerson;
+        if(p != null){
+            while(!isFound && zaehler<personen.length-1){
+                zaehler++;
+                if(personen[zaehler].equals(p)) isFound = true;
+            }
+            tempPerson = personen[zaehler];
+            personen[zaehler]=null;
+            cleanup();
+            return add(position, tempPerson);
+        }
+        return false;
     }
     
     /*
-     * Liefert eine invertierte Version der Sammlung in Form einer ArrayList zurück ohne de interne Sammlung der Klasse zu beeinflussen
+     * Liefert eine invertierte Version der Sammlung in Form einer ArrayList zurück ohne die interne Sammlung der Klasse zu beeinflussen
      * @return ArrayList<Person> Invertierte Liste als ArrayList
      */
     public ArrayList<Person> invert(){
-        ArrayList<Person> personen = new ArrayList<Person>();
-        return personen;
+        ArrayList<Person> personenArray = new ArrayList<Person>();
+        for(int i=personen.length-1; i>=0; i--){
+            if(personen[i] != null) personenArray.add(personen[i]);
+        }
+        return personenArray;
     }
     
     /*
-     * Liefert einen Abschnitt der Sammlung von Position from bis und mit Position to. Wenn remote ture ist, wird die Sammlung um diesen Bereich gekürzt,
+     * Liefert einen Abschnitt der Sammlung von Position from bis und mit Position to. Wenn remove true ist, wird die Sammlung um diesen Bereich gekürzt,
      * bei false wird nur der Ausschnitt zurückgegeben ohne dass die interne Sammlung der Klasse beeinflusst wird
      * @return Person[] Gewünschter Ausschnitt als Array
      * @from Startposition
@@ -347,8 +363,31 @@ public class MyArrayList
      * @remove Soll der Abschnitt aus dem Array entfernt werden?
      */
     public Person[] cutOut(int from, int to, boolean remove){
-        Person[] personen = new Person[5];
-        return personen;
+        int anzahl;
+        int start = 0;
+        int stop = 0;
+        if(from>to) {
+            anzahl = (from - to)+1;
+            start = to;
+            stop = from;
+        }
+        else if (to>from) {
+            anzahl = (to-from)+1;
+            start = from;
+            stop = to;
+        }
+        else anzahl = 0;
+        Person[] personenTemp = new Person[anzahl];
+        int zaehler=0;
+        if(anzahl>0){
+            for(int i=start; i<=stop; i++){
+                personenTemp[zaehler] = personen[i];
+                if(remove) personen[i]=null;
+                zaehler++;
+            }
+        }
+        if (remove && anzahl>0) cleanup();    
+        return personenTemp;
     }
     
     /*
@@ -358,7 +397,16 @@ public class MyArrayList
      * @param position Einzufügende Position als int
      */
     public boolean insert(Person[] p, int position){
-        return true;
+        int zaehler = 0;
+        boolean allesGut = false;
+        for(int i = 0; i<p.length; i++){
+            if(p[i] != null){
+                allesGut = add(position+zaehler, p[i]);
+                zaehler++;
+            }
+        }
+        
+        return allesGut;
     }
     
     /*
@@ -368,7 +416,8 @@ public class MyArrayList
      * @param position Einzufügende Position als int
      */
     public boolean insert(ArrayList<Person> p, int position){
-        return true;
+        Person[] personenTemp = new Person[p.size()];
+        return insert(personenTemp, position);
     }
 
     
