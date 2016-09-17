@@ -3,8 +3,16 @@ dependency1.from=MyArrayList
 dependency1.to=Person
 dependency1.type=UsesDependency
 objectbench.height=76
+<<<<<<< .mine
+objectbench.width=847
+package.editor.height=801
+||||||| .r82
+objectbench.width=542
+package.editor.height=801
+=======
 objectbench.width=847
 package.editor.height=707
+>>>>>>> .r83
 package.editor.width=739
 package.editor.x=39
 package.editor.y=40
