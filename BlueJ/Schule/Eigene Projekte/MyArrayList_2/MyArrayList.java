@@ -280,15 +280,19 @@ public class MyArrayList
      * @return boolean True wenn alles suaber gelöscht wurde
      */
     public boolean removeDuplicates(){
-        for(int i=0;i<personen.length;i++){
-            for(int j=i+1; j<personen.length;j++){
-                if(personen[j].equals(personen[i])) personen[j] = null;
+        for(int i=0;i<personen.length-1;i++){
+            if(personen[i]!=null){
+                for(int j=i+1; j<personen.length;j++){
+                    if(personen[j] != null){
+                        if(personen[j].equals(personen[i])) personen[j] = null;
+                    }
+                }
             }
         }
         cleanup();
         return true;
     }
-    
+
     /*
      * Gibt eine nach dem Vornamen sortierte Liste zurück, ohne die interne Sammlung der Klasse zu beinflussen.
      * Wenn der Parameter true ist, wird absteigend, ansonsten aufsteigend sortiert.
@@ -298,27 +302,30 @@ public class MyArrayList
     public Person[] sortByFirstname(boolean direction){
         Person[] personenTemp = personen;
         boolean isSorted = false;
-            while(!isSorted){
-                isSorted = true;
-                for(int i=0; i<personenTemp.length;i++){
+        while(!isSorted){ //läuft in die Ewigkeit FEHLER!!!!!!!!
+            isSorted = true;
+            for(int i=0; i<personenTemp.length-1;i++){
+                if(personenTemp[i]!=null && personenTemp[i+1] != null){
                     if(direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())<=0){
                         Person temp = personenTemp[i];
                         personenTemp[i] = personenTemp[i+1];
                         personenTemp[i+1] = temp;
                         isSorted = false;
                     }
-                    
-                    if(!direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())>=0){
+
+                    else if(!direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())>=0){
                         Person temp = personenTemp[i];
                         personenTemp[i] = personenTemp[i+1];
                         personenTemp[i+1] = temp;
                         isSorted = false;
                     }
+                    else isSorted = true;
                 }
             }
+        }
         return personenTemp;
     }
-    
+
     /*
      * Verschiebt ein Element der Sammlung an eine neue Stelle, Liefert rue bei Erfolg, ansosnten false
      * @return true bei Erfolg, sonst false
@@ -341,7 +348,7 @@ public class MyArrayList
         }
         return false;
     }
-    
+
     /*
      * Liefert eine invertierte Version der Sammlung in Form einer ArrayList zurück ohne die interne Sammlung der Klasse zu beeinflussen
      * @return ArrayList<Person> Invertierte Liste als ArrayList
@@ -353,7 +360,7 @@ public class MyArrayList
         }
         return personenArray;
     }
-    
+
     /*
      * Liefert einen Abschnitt der Sammlung von Position from bis und mit Position to. Wenn remove true ist, wird die Sammlung um diesen Bereich gekürzt,
      * bei false wird nur der Ausschnitt zurückgegeben ohne dass die interne Sammlung der Klasse beeinflusst wird
@@ -389,7 +396,7 @@ public class MyArrayList
         if (remove && anzahl>0) cleanup();    
         return personenTemp;
     }
-    
+
     /*
      * Fügt eine Sammlung in der bestehende Sammlung der Klasse ein. Liefert tur bei Erfolg, oder false bei Misserfolg
      * @return true bei Erfolf, false bei Misserfolg
@@ -405,10 +412,10 @@ public class MyArrayList
                 zaehler++;
             }
         }
-        
+
         return allesGut;
     }
-    
+
     /*
      * Fügt eine Sammlung in der bestehende Sammlung der Klasse ein. Liefert tur bei Erfolg, oder false bei Misserfolg
      * @return true bei Erfolf, false bei Misserfolg
@@ -420,5 +427,52 @@ public class MyArrayList
         return insert(personenTemp, position);
     }
 
+    //***************************************
+    //Testmethoden
+    //**************************************
+    public void create10Diff(){
+        add(new Person("1","1",1));
+        add(new Person("2","2",1));
+        add(new Person("3","3",1));
+        add(new Person("4","4",1));
+        add(new Person("5","5",1));
+        add(new Person("6","6",1));
+        add(new Person("7","7",1));
+        add(new Person("8","8",1));
+        add(new Person("9","9",1));
+        add(new Person("10","10",1));
+    }
+
+    public void create10Mix(){
+        add(new Person("Hans","Muster",1)); //0
+        add(new Person("Philip","Müller",1)); //1
+        add(new Person("Karl","Heinzelreiter",1)); //2
+        personen[3] = personen[0];//3
+        add(new Person("Thomas","Mittermair",1)); //4
+        personen[5] = personen[4]; //5
+        add(new Person("Max","Zinzer",1)); //6
+        add(new Person("Xavier","Xaversson",1)); //7
+        add(new Person("Max","Zinzer",1)); //8
+        personen[9] = personen[2]; //9
+    }
     
+    public void createPersonArrayInsert1(){
+        Person[] personenTemp = {
+            new Person("Thomas","Mittermair2",1),
+            new Person("Thomas","Mittermair2",1),
+            new Person("Thomas","Mittermair2",1),
+        };
+        
+        insert(personenTemp,2);
+    }
+    
+    public void createPersonArrayListInsert1(){
+        ArrayList<Person> personenTemp = new ArrayList<Person>();
+            personenTemp.add(new Person("Thomas","Mittermair2",1));
+            personenTemp.add(new Person("Thomas","Mittermair2",1));
+            personenTemp.add(new Person("Thomas","Mittermair2",1));
+  
+        
+        insert(personenTemp,2);
+    }
 }
