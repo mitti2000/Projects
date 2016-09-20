@@ -302,24 +302,24 @@ public class MyArrayList
     public Person[] sortByFirstname(boolean direction){
         Person[] personenTemp = personen;
         boolean isSorted = false;
-        while(!isSorted){ //läuft in die Ewigkeit FEHLER!!!!!!!!
+        while(!isSorted){
             isSorted = true;
             for(int i=0; i<personenTemp.length-1;i++){
                 if(personenTemp[i]!=null && personenTemp[i+1] != null){
-                    if(direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())<=0){
+                    if(direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())<0){
                         Person temp = personenTemp[i];
                         personenTemp[i] = personenTemp[i+1];
                         personenTemp[i+1] = temp;
                         isSorted = false;
                     }
 
-                    else if(!direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())>=0){
+                    else if(!direction && personenTemp[i].getVorname().compareToIgnoreCase(personenTemp[i+1].getVorname())>0){
                         Person temp = personenTemp[i];
                         personenTemp[i] = personenTemp[i+1];
                         personenTemp[i+1] = temp;
                         isSorted = false;
                     }
-                    else isSorted = true;
+                    //else isSorted = true;
                 }
             }
         }
@@ -424,6 +424,9 @@ public class MyArrayList
      */
     public boolean insert(ArrayList<Person> p, int position){
         Person[] personenTemp = new Person[p.size()];
+        for(int i=0; i<personenTemp.length; i++){
+            personenTemp[i] = p.get(i);
+        }
         return insert(personenTemp, position);
     }
 
