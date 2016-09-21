@@ -1,6 +1,0 @@
-
-public class TestOberklasse {
-	public int oberZahl(){
-		System.out.println("Oberzahl" + 15);
-	}
-}

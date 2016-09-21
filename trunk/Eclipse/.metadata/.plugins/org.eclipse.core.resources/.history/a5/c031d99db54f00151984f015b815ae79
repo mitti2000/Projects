@@ -1,6 +1,0 @@
-
-public class TestUnterklasse extends TestOberklasse{
-	public void unterZahl(){
-		System.out.println("Unterzahl: " + 30);
-	}
-}

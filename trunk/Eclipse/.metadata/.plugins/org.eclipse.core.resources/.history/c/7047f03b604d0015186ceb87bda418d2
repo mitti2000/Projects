@@ -1,8 +1,0 @@
-
-public class TestTest {
-	Test test = new Test();
-	public static void main (Strin[] args){
-		System.out.println("TestInt: " + test.getTestInt);
-	}
-	
-}
