@@ -1,5 +1,0 @@
-
-public class TestTest {
-	Test test = new Test();
-	System.out.println("TestInt: " + test.getTestInt);
-}

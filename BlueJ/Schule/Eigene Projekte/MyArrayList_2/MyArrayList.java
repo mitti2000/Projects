@@ -319,7 +319,6 @@ public class MyArrayList
                         personenTemp[i+1] = temp;
                         isSorted = false;
                     }
-                    //else isSorted = true;
                 }
             }
         }
@@ -373,6 +372,7 @@ public class MyArrayList
         int anzahl;
         int start = 0;
         int stop = 0;
+        //Überprüfung, ob from und to im gültigen Bereich
         if(from>to) {
             anzahl = (from - to)+1;
             start = to;
@@ -460,22 +460,18 @@ public class MyArrayList
     }
     
     public void createPersonArrayInsert1(){
-        Person[] personenTemp = {
-            new Person("Thomas","Mittermair2",1),
-            new Person("Thomas","Mittermair2",1),
-            new Person("Thomas","Mittermair2",1),
-        };
+        Person p = new Person("Thomas","Mittermair2",1);
+        Person[] personenTemp = {p,p,p};
         
         insert(personenTemp,2);
     }
     
     public void createPersonArrayListInsert1(){
+        Person p = new Person("Thomas","Mittermair2",1);
         ArrayList<Person> personenTemp = new ArrayList<Person>();
-            personenTemp.add(new Person("Thomas","Mittermair2",1));
-            personenTemp.add(new Person("Thomas","Mittermair2",1));
-            personenTemp.add(new Person("Thomas","Mittermair2",1));
-  
-        
+        personenTemp.add(p);
+        personenTemp.add(p);
+        personenTemp.add(p);        
         insert(personenTemp,2);
     }
 }

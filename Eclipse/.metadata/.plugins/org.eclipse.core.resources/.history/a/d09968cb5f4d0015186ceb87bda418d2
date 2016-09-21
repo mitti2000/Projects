@@ -1,8 +1,0 @@
-
-abstract class Test implements TestInterface {
-	@Override
-	public void lässtSichStreicheln(){
-		
-	}
-
-}
