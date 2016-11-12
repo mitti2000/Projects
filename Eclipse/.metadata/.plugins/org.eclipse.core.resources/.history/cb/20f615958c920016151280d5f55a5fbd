@@ -1,0 +1,11 @@
+package ch.mitti.tuerme;
+
+public class Draw {
+
+	public Draw(){
+		
+	}
+	
+	
+	
+}

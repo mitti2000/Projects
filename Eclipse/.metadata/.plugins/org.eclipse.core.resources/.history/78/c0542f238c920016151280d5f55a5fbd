@@ -1,0 +1,14 @@
+package ch.mitti.tuerme;
+
+public class Main {
+	
+	
+	
+
+	public static void main(String[] args) {
+		
+		public Create create = new create();
+
+	}
+
+}

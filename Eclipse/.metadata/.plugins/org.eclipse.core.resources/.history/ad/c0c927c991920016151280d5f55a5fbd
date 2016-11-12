@@ -1,0 +1,42 @@
+package ch.mitti.tuerme;
+
+import java.util.ArrayList;
+
+public class Draw {
+	private int p1Size;
+	private int p2Size;
+	private int p3Size;
+	
+	public Draw(){
+		
+	}
+	
+	public void drawPillars(int[] p1, int[] p2, int[] p3){
+		System.out.println("*****************************************************************");
+		System.out.println("Pillar 1:");
+		for(int i1=4; i1>=0; i1--){
+			p1Size = p1[i1].getSize
+			for(int j1=9; j1>=1; j1--){
+				if(j1>p1Size) System.out.print(" ");
+				else System.out.print("*");
+			}
+			System.out.println("||");
+			for(int k1=1;k1<=9;k1++){
+				if(k1<p1Size) System.out.println("*");
+				else System.out.print(" ");
+			}
+		}
+		System.out.println("========");
+		//****************************************************
+		System.out.println("Pillar 2:");
+		
+		System.out.println("========");
+		//****************************************************
+		System.out.println("Pillar 3:");
+		
+		System.out.println("========");
+		//****************************************************
+		System.out.println("*****************************************************************");
+	}
+	
+}

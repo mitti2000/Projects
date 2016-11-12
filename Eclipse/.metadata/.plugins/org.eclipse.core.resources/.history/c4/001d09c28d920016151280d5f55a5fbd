@@ -1,0 +1,39 @@
+package ch.mitti.tuerme;
+
+import java.util.ArrayList;
+
+public class Draw {
+	
+	private Ring ring1;
+	private Ring ring3;
+	private Ring ring5;
+	private Ring ring7;
+	private Ring ring9;
+	
+	private ArrayList<Ring> pillar1;
+	private ArrayList<Ring> pillar2;
+	private ArrayList<Ring> pillar3;
+	
+	
+	
+	public Draw(Ring ring1, Ring ring3, Ring ring5, Ring ring7, Ring ring9){
+		this.ring1 = ring1;
+		this.ring3 = ring3;
+		this.ring5 = ring5;
+		this.ring7 = ring7;
+		this.ring9 = ring9;
+		
+		pillar1 = new ArrayList<Ring>();
+		pillar2 = new ArrayList<Ring>();
+		pillar3 = new ArrayList<Ring>();
+	}
+	
+	public void drawPillar1(){
+		System.out.println("*****************************************************************");
+		
+		
+		
+		System.out.println("*****************************************************************");
+	}
+	
+}
