@@ -38,5 +38,8 @@
 <fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
 <fullyQualifiedTypeName name="ch.mitti.auktion.Person"/>
 <fullyQualifiedTypeName name="ch.mitti.tuerme.Ring"/>
+<fullyQualifiedTypeName name="ch.mitti.netzwerkv1.Einsendung"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="ch.mitti.domev1.Datenbank"/>
 </qualifiedTypeNameHistroy>

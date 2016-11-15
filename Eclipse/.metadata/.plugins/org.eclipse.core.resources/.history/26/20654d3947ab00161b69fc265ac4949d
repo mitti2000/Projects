@@ -1,0 +1,11 @@
+package ch.mitti.domev1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		CD cd1 = new CD("Dark side of the moon", "Pink Floyd", "10", "1h 10min");
+
+	}
+
+}

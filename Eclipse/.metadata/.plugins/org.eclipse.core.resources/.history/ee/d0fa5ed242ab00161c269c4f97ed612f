@@ -1,0 +1,63 @@
+package ch.mitti.netzwerkv1;
+
+/**
+ * Diese Klasse speichert Informationen über eine Einsendung innerhalb eines sozialen
+ * Netzwerks. Der Hauptteil der Einsendung besteht aus einer (möglicherweise 
+ * mehrzeiligen) Textnachricht. Weitere Daten, wie Autor und Datum, werden ebenfalls 
+ * gespeichert.
+ * 
+ * @autor Michael Kölling und David J. Barnes
+ * @version 0.1
+ */
+public class NachrichtenEinsendung extends Einsendung
+{
+    private String nachricht;     // eine beliebig lange, mehrzeilige Nachricht
+
+
+    /**
+     * Konstruktor für Objekte der Klasse NachrichtenEinsendung.
+     * 
+     * @param autor    der Benutzername des Einsenders.
+     * @param text      der Text dieser Einsendung.
+     */
+    public NachrichtenEinsendung(String autor, String text)
+    {
+    	super(autor);
+        nachricht = text;
+    }
+
+
+    /**
+     * Liefere den Text dieser Einsendung.
+     * 
+     * @return den Text der Einsendung.
+     */
+    public String gibText()
+    {
+        return nachricht;
+    }
+
+    @Override
+    public void anzeigen()
+    {
+        System.out.println(super.getBenutzername());
+        System.out.println(nachricht);
+        System.out.print(super.zeitString(super.getZeitstempel()));
+        
+        if(super.getGefielWieOft() > 0) {
+            System.out.println("  -  " + super.getGefielWieOft() + " Person(en) gefaellt dies.");
+        }
+        else {
+            System.out.println();
+        }
+        
+        if(super.getKommentare().isEmpty()) {
+            System.out.println("   Keine Kommentare.");
+        }
+        else {
+            System.out.println("   " + super.getKommentare().size() + 
+                               " Kommentar(e). Zum Einsehen hier klicken.");
+        }
+    }
+    
+}
