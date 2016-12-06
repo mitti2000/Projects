@@ -1,0 +1,10 @@
+package ch.mitti.konstruktorenverkettung;
+
+public class KonstruktorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

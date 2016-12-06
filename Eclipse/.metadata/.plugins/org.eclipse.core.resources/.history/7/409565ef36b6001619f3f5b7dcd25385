@@ -1,0 +1,10 @@
+package ch.mitti.geometrische_figuren;
+
+public class Main {
+
+	public static void main(String[] args) {
+		new Dreieck(5, 5, 100, 100, 500, 500, "Red");
+
+	}
+
+}

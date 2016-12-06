@@ -1,0 +1,30 @@
+package ch.mitti.geometrische_figuren;
+
+import java.awt.geom.*; //Alle Klassen des Geometrie-Pakets
+
+public class Linie extends Figur {
+    public int xEnde; 
+    public int yEnde; 
+    
+    // Konstruktor
+    public Linie() {
+        super(10,10,"black");
+        this.xEnde=100; 
+        this.yEnde=100; 
+        this.draw();
+    }
+    
+    public Linie(int xPosition,int yPosition,int xEnde,int yEnde, String color ) {
+        super(xPosition, yPosition, color);
+        this.xEnde=xEnde; 
+        this.yEnde=yEnde; 
+        this.draw();
+    }
+    
+    // Dienste
+    public void draw(){ //mit private und public ausprobieren
+        Canvas canvas = Canvas.getCanvas();
+        canvas.draw(this, super.getColor() , "Line", new Line2D.Double(super.getxPosition(), super.getyPosition(), xEnde, yEnde ));
+    }
+
+}

@@ -1,0 +1,27 @@
+package ch.mitti.MitarbeiterKunden;
+
+public class Mitarbeiter extends Person {
+	private int mitarbeiterNummer;
+	private int anstellungsgradInProzent;
+	private int lohn;
+	
+	public Mitarbeiter(String vorname, String nachname, int alter, int mitarbeiterNummer, int anstellungsgradInProzent,
+			int lohn) {
+		super(vorname, nachname, alter);
+		this.mitarbeiterNummer = mitarbeiterNummer;
+		this.anstellungsgradInProzent = anstellungsgradInProzent;
+		this.lohn = lohn;
+	}
+	public Mitarbeiter(String vorname, String nachname, int mitarbeiterNummer, int anstellungsgradInProzent, int lohn) {
+		super(vorname, nachname);
+		this.mitarbeiterNummer = mitarbeiterNummer;
+		this.anstellungsgradInProzent = anstellungsgradInProzent;
+		this.lohn = lohn;
+	}
+	
+	
+	
+	
+	
+	
+}

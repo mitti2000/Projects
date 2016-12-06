@@ -37,6 +37,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\mitti\Desktop\Vererbung"/>
 			<item value="C:\Users\mitti\Desktop\DoME-V1"/>
 			<item value="C:\Users\mitti\SoftwareProjects\trunk\BlueJ\Schule\Kapitel08\Netzwerk-V1"/>
 			<item value="C:\Users\mitti\SoftwareProjects\trunk\BlueJ\Schule\Kapitel04\Auktion"/>

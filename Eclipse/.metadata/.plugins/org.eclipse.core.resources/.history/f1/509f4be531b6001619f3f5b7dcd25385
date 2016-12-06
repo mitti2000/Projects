@@ -1,0 +1,6 @@
+package ch.mitti.MitarbeiterKunden;
+
+public class Lehrling extends Person{
+	private int aktuellesLehrjahr;
+	private int anzahlLehrjahre;
+}

@@ -1,0 +1,20 @@
+package ch.mitti.MitarbeiterKunden;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Person> personen = new ArrayList<Person>();
+		
+		personen.add(new Mitarbeiter("Hans", "Müller", 53, 5836, 80, 5300));
+		personen.add(new Mitarbeiter("Fritz", "Meier", 38, 5736, 100, 6300));
+		personen.add(new Lehrling("Felix", "Fleixon", 15, 2, 4));
+		personen.add(new Chef("Max", "Power", 42, 5, "GL"));
+		personen.add(new Kunde("Fehr", "Braunwalder", 2, 'A'));
+		personen.add(new Kunde("Bill", "Gates", 1, 'E'));
+		
+
+	}
+
+}

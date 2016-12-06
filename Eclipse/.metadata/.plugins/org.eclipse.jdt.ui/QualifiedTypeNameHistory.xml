@@ -40,6 +40,11 @@
 <fullyQualifiedTypeName name="ch.mitti.tuerme.Ring"/>
 <fullyQualifiedTypeName name="ch.mitti.netzwerkv1.Einsendung"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="ch.mitti.domev1.Datenbank"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="ch.mitti.MitarbeiterKunden.Lehrling"/>
+<fullyQualifiedTypeName name="ch.mitti.MitarbeiterKunden.Chef"/>
+<fullyQualifiedTypeName name="ch.mitti.MitarbeiterKunden.Kunde"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="ch.mitti.geometrische_figuren.Dreieck"/>
 </qualifiedTypeNameHistroy>

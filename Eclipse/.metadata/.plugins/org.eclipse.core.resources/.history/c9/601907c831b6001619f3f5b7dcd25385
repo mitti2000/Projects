@@ -1,0 +1,7 @@
+package ch.mitti.MitarbeiterKunden;
+
+public class Mitarbeiter extends Person {
+	private int mitarbeiterNummer;
+	private int anstellungsgradInProzent;
+	private int lohn;
+}

@@ -1,0 +1,30 @@
+package ch.mitti.MitarbeiterKunden;
+
+public class Chef extends Person{
+	private int kaderstufe;
+	private String abteilung;
+	public Chef(String vorname, String nachname, int alter, int kaderstufe, String abteilung) {
+		super(vorname, nachname, alter);
+		this.kaderstufe = kaderstufe;
+		this.abteilung = abteilung;
+	}
+	public Chef(String vorname, String nachname, int kaderstufe, String abteilung) {
+		super(vorname, nachname);
+		this.kaderstufe = kaderstufe;
+		this.abteilung = abteilung;
+	}
+	public int getKaderstufe() {
+		return kaderstufe;
+	}
+	public void setKaderstufe(int kaderstufe) {
+		this.kaderstufe = kaderstufe;
+	}
+	public String getAbteilung() {
+		return abteilung;
+	}
+	public void setAbteilung(String abteilung) {
+		this.abteilung = abteilung;
+	}
+	
+	
+}

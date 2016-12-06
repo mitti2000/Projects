@@ -1,0 +1,42 @@
+import java.awt.*;
+public class Dreieck {
+    private int xPnt1;
+    private int yPnt1;
+    private int xPnt2;
+    private int yPnt2;
+    private int xPnt3;
+    private int yPnt3;
+    private String color;
+
+    public Dreieck() {
+        this.xPnt1=100;
+        this.yPnt1=10;
+        this.xPnt2=20;
+        this.yPnt2=100;
+        this.xPnt3=180;
+        this.yPnt3=100;
+        this.color = "green";
+        this.draw();
+    }
+
+    public Dreieck(int xPnt1,int yPnt1,int xPnt2,int yPnt2,int xPnt3,int yPnt3, String color) {
+        this.xPnt1=xPnt1;
+        this.yPnt1=yPnt1;
+        this.xPnt2=xPnt2;
+        this.yPnt2=yPnt2;
+        this.xPnt3=xPnt3;
+        this.yPnt3=yPnt3;
+        this.color = color;
+        draw();
+    }
+
+    
+    public void draw() {
+            Canvas canvas = Canvas.getCanvas();
+            int[] xpoints = { xPnt1, xPnt2, xPnt3 };
+            int[] ypoints = { yPnt1, yPnt2, yPnt3 };
+            canvas.draw(this, color, "Dreeieck", new Polygon(xpoints, ypoints, 3));
+            canvas.wait(10);
+    }
+
+}

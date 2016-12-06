@@ -1,0 +1,14 @@
+package ch.mitti.MitarbeiterKunden;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Person> personen = new ArrayList<Person>();
+		
+		personen.add(new Mitarbeiter("Hans", "Müller", 5836, 80, 5300));
+
+	}
+
+}
