@@ -1,0 +1,13 @@
+package ch.mitti.geometrische_figuren;
+
+public class Figur {
+	private int xPosition;
+	private int yPosition;
+	private String color;
+	
+	
+	
+	public void draw(){
+		Canvas canvas = Canvas.getCanvas();
+	}
+}

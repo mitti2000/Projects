@@ -1,0 +1,7 @@
+package ch.mitti.mitarbeiter_kunden;
+
+public class Figur {
+	private int xPosition;
+	private int yPosition
+	private String color;
+}

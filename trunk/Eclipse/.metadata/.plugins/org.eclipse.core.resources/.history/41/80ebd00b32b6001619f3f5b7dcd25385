@@ -1,0 +1,18 @@
+package ch.mitti.MitarbeiterKunden;
+
+public class Kunde extends Person{
+	private int kundennummer;
+	private char kundentyp;
+	public Kunde(String vorname, String nachname, int alter, int kundennummer, char kundentyp) {
+		super(vorname, nachname, alter);
+		this.kundennummer = kundennummer;
+		this.kundentyp = kundentyp;
+	}
+	public Kunde(String vorname, String nachname, int kundennummer, char kundentyp) {
+		super(vorname, nachname);
+		this.kundennummer = kundennummer;
+		this.kundentyp = kundentyp;
+	}
+	
+	
+}

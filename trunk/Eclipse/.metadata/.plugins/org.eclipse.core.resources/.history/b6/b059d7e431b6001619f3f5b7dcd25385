@@ -1,0 +1,6 @@
+package ch.mitti.MitarbeiterKunden;
+
+public class Chef extends Person{
+	private int kaderstufe;
+	private String abteilung;
+}

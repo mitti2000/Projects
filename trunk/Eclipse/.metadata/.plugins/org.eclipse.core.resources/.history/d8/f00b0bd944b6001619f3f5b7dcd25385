@@ -1,0 +1,48 @@
+package ch.mitti.geometrische_figuren;
+
+public class Figur {
+	private int xPosition;
+	private int yPosition;
+	private String color;
+	Canvas canvas;
+	
+	public Figur(int xPosition, int yPosition, String color) {
+		this.xPosition = xPosition;
+		this.yPosition = yPosition;
+		this.color = color;
+	}
+	
+	public Figur(){
+		this.xPosition = 10;
+		this.yPosition = 10;
+	}
+
+	public int getxPosition() {
+		return xPosition;
+	}
+
+	public void setxPosition(int xPosition) {
+		this.xPosition = xPosition;
+	}
+
+	public int getyPosition() {
+		return yPosition;
+	}
+
+	public void setyPosition(int yPosition) {
+		this.yPosition = yPosition;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public void draw(){
+		Canvas canvas = Canvas.getCanvas();
+	}
+	
+}

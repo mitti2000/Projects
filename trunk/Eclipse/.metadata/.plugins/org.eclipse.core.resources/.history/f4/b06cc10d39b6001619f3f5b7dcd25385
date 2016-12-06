@@ -1,0 +1,35 @@
+package ch.mitti.geometrische_figuren;
+
+import java.awt.*; //Alle Klasse des Abstrakt Window Toolkit
+import java.awt.geom.*; //Alle Klassen des Geometrie-Pakets
+
+public class Linie extends Figur {
+    public int xEnde; 
+    public int yEnde; 
+    public String color; //FŸllfarbe des Rechtecks
+    
+    // Konstruktor
+    public Linie() {
+        super(10,10,"black");
+        this.xEnde=100; 
+        this.yEnde=100; 
+        this.color="black";
+        this.draw();
+    }
+    
+    public Linie(int xStart,int yStart,int xEnde,int yEnde, String color ) {
+        this.xStart=xStart; 
+        this.yStart=yStart; 
+        this.xEnde=xEnde; 
+        this.yEnde=yEnde; 
+        this.color=color;
+        this.draw();
+    }
+    
+    // Dienste
+    public void draw(){ //mit private und public ausprobieren
+        Canvas canvas = Canvas.getCanvas();
+        canvas.draw(this, color, "Line", new Line2D.Double( xStart, yStart, xEnde, yEnde ));
+    }
+
+}

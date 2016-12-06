@@ -1,0 +1,8 @@
+package ch.mitti.ueberschreiben;
+
+public class C extends B{
+	public void sagHallo(){
+		super.sagHallo();
+		System.out.println("Guten Tag");
+	}
+}
